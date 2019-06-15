@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Worlds/World1.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Bombs.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Players.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Interface.tscn" type="PackedScene" id=4]
+
+[node name="World1" type="Node"]
+script = ExtResource( 1 )
+Bomb = ExtResource( 2 )
+
+[node name="TimerWorld" type="Timer" parent="."]
+
+[node name="TimerScore" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="InitialPosition" type="Position2D" parent="."]
+position = Vector2( 65.7782, 146.751 )
+
+[node name="InitialPosition2" type="Position2D" parent="."]
+position = Vector2( 1234.04, 124.889 )
+
+[node name="InitialPosition3" type="Position2D" parent="."]
+position = Vector2( 77.8922, 620.185 )
+
+[node name="InitialPosition4" type="Position2D" parent="."]
+position = Vector2( 1234.2, 638.623 )
+
+[node name="Player1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 52.3212, -46.455 )
+UP = "Aaron Up"
+LEFT = "Aaron Left"
+RIGHT = "Aaron Right"
+DOWN = "Aaron Down"
+bombCapacity = 8
+
+[node name="Player2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 138.77, -46.4899 )
+UP = "Ashley Up"
+LEFT = "Ashley Left"
+RIGHT = "Ashley Right"
+DOWN = "Ashley Down"
+device = 1
+bombCapacity = 8
+
+[node name="Player3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 231.16, -44.7746 )
+UP = "Bummer Up"
+LEFT = "Bummer Left"
+RIGHT = "Bummer Right"
+DOWN = "Bummer Down"
+device = 2
+bombCapacity = 8
+
+[node name="Player4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 318.871, -47.2391 )
+UP = "Britney Up"
+LEFT = "Britney Left"
+RIGHT = "Britney Right"
+DOWN = "Britney Down"
+device = 3
+bombCapacity = 8
+
+[node name="Interface" parent="." instance=ExtResource( 4 )]
+
+[connection signal="timeout" from="TimerWorld" to="." method="_on_TimerWorld_timeout"]
+[connection signal="timeout" from="TimerScore" to="." method="_on_TimerScore_timeout"]
+[connection signal="makeBomb" from="Player1" to="." method="_on_Player_makeBomb"]
+[connection signal="makeBomb" from="Player2" to="." method="_on_Player_makeBomb"]
+[connection signal="makeBomb" from="Player3" to="." method="_on_Player_makeBomb"]
+[connection signal="makeBomb" from="Player4" to="." method="_on_Player_makeBomb"]
+[connection signal="start_gameF" from="Interface" to="." method="NewGame"]
