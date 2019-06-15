@@ -1,0 +1,339 @@
+%Tarea1
+
+% --- Clase de archivo ---
+% Con este comando se define que tipo de documento vamos a hacer
+% en este caso un articulo, en una hoja a4 y con tamanio de fuente 11pt.
+\documentclass[a4paper,12pt]{article}
+% los tamanios mas utilizados son 10,11 y 12 pt y representan un tamanio de referencia, o sea que al cambiar a 12 pt todos los textos van a aumentar proporcionalmente, al estilo homotecia.
+
+
+% A partir de aqui se definiran ciertos paquetes o funciones a ser utilizadas
+% dentro del documento.
+
+
+% --- codificacion de archivo ---
+% El paquete inputenc sirve para que el compilador pueda interpretar los acentos en espaniol de forma estandar, dependiendo del sistema operativo hay que darle una configuracion diferente:
+\usepackage[utf8]{inputenc}
+% ----------------------------------
+
+
+% --- idioma ---
+% El paquete babel sirve para separar correctamente las palabras en muchos idiomas, aquií­ esta configurado con espaniol (spanish). Tambien sirve para que el Ií­ndic etenga tií­tulo "Indice" en lugar de "Contents".
+\usepackage[spanish]{babel} 
+% --------------
+
+
+% --- Fuentes ---
+% El paquete fontenc sirve para controlar las fuentes que utiliza el documento
+\usepackage[T1]{fontenc}
+% Si dejamos comentado el paquete de abajo utilizaremos la fuente por defecto
+% si se quita el comentario se usa sans. Se puede usar times, y otras opciones que se dejan comentadas. 
+%\usepackage{sans}
+%\usepackage{fbb}
+%\usepackage{bera}
+%\usepackage{sans}
+%\usepackage{times}
+%\usepackage{libertine} 
+
+
+\usepackage{dirtytalk} % Paquete para facilitar la notación de citas con el comando \say{}
+
+
+
+% --- Gráficos ---
+% El paquete graphicx sirve para controlar figuras con \includegraphics.
+\usepackage{graphicx}
+% Esta linea indica el lugar (path) en el cual se encuentra la carpeta donde colocamos imágenes, para ahorrar colocarlo en cada
+% llamado de una imagen en el documento.
+\graphicspath{{./figuras/}}
+% Estos paquetes permiten colocar varias figuras en el entorno "figure" como subfiguras (cualquiera de los dos).
+\usepackage{float}
+\usepackage{subfig} 
+
+
+% --- Lenguaje matemático ---
+% fuentes para escribir sí­mbolos
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+
+
+% --- Tablas ---
+% Paquetes para el manejo de tablas, creación de filas y columnas unidas.
+\usepackage{multirow} 
+\usepackage{multicol} 
+% Control de color en tablas muy versátil.
+\usepackage[table]{xcolor}
+
+
+% --- Hipervínculos ---
+% paquete para marcar los hiperví­nculos en i­ndice y referencias
+\usepackage{hyperref}
+% Para citar referencias  
+\usepackage{cite} 
+\hypersetup{colorlinks, urlcolor=cyan, citecolor=green, linkcolor=blue} % Pinta con color las referencias
+\usepackage[hypcap]{caption} % Las imágenes tienen hiperreferencia y se ven completas y no solo la leyenda. 
+% Para hacer hiperreferencias a páginas web
+\usepackage{url} 
+
+
+\usepackage{booktabs} 
+
+% --- Numeración ---
+% Paquete que cambia como se representa la numeración de las imágenes, ecuaciones y tablas
+\usepackage{chngcntr}
+% Ahora se nombran por sección reiniciando el conteo en cada sección
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+
+
+% Para agregar al índice las refencias
+\usepackage[nottoc,notlot,notlof]{tocbibind} 
+
+
+
+% Aqui comienzan los datos del trabajo. El comando \date{\today} asigna la fecha en que se compila como la fecha del trabajo, tambien se puede escibe directamente, ej. \date{5 de setiembre de 2012}.
+
+\title{Tarea 1 Problemas conceptuales} 
+\author{%
+  Iván David Valderrama Corredor\\ %
+  Ingeniería de Sistemas y Ciencias de la Computación\\ %
+  Pontificia Universidad Javeriana, Cali}
+\date{\today}
+% ------------------------
+
+%\pagestyle{empty}
+% ====================================
+
+
+%El paquete colortbl sirve para darle color a las tablas
+\usepackage{colortbl}
+
+% Este paquete se utiliza para generar texto de relleno.
+\usepackage{blindtext}
+
+% este paquete determina que el texto tenga como fuente normal: times, consultar el eva de latex para mas opciones.
+%\usepackage{times}
+
+
+% ===== Encabezado =====
+% esta es una posible configuración para el encabezado. 
+%Si se comentan estas dos lineas no habrá encabezado y la numeración de página aparecerá abajo de cada hoja. En la página donde se llame a \maketitle no se coloca encabezado.
+\pagestyle{myheadings}
+\markright{}
+% ======================
+
+
+%% ===== Ajuste layout pagina =====
+% define el ancho del texto en la hoja
+\setlength{\textwidth}{155mm}
+% define el alto del texto en la hoja
+\setlength{\textheight}{210mm}
+% los márgenes pueden ser editador con
+\oddsidemargin=-.25cm
+%% ================================
+
+% --- commandos definidos a gusto del usuario ---
+\newcommand{\ds}{\displaystyle}
+\def\x{{\bf x}}
+
+\newcommand{\subfigureautorefname}{\figureautorefname}
+
+% -----------------
+
+% =====================================================
+% =====================================================
+\usepackage{listings}
+
+
+
+% =====================================================
+% ========  Aca comienza el cuerpo del texto ==========
+%
+\begin{document}
+	
+% Se renuevan comandos ya existentes de LaTeX como se desee, en este caso del nombre de tablas y figuras.	
+\renewcommand{\tablename}{\bfseries Tabla} % Cambia nombre de tablas
+\renewcommand{\figurename}{\bfseries Figura} % Cambia nombre de figuras 
+%\newcommand{\subfigureautorefname}{\figureautorefname} % Para que al referenciar una subfigura aparezca "Figura"	
+% Se refiere a las tablas y figuras con el comando \autoref{label} para que aparezca referenciado automáticamente el nombre de lo referenciado (Tabla o Figura) continuado por el número de la misma.	
+%
+% El comando \verb+maketitle+ sirve para escribir la cabecera con los datos del trabajo (título, autor y fecha).
+\maketitle
+
+% índice
+\tableofcontents
+
+% para separar la carátula del texto introducimos un salto de pagina
+\newpage
+
+% definimos una sección con el comando section
+
+\section{Problemas conceptuales}
+
+\subsection{Escribir el código de honor del curso}
+Como miembro de la comunidad académica de la Pontificia Universidad Javeriana Cali me comprometo a seguir los más altos estándares de integridad académica.
+
+\subsection{Ejercicios 2 y 4: Orden asintótico y eficiencia algorítmica (Kleinberg and Tardos páginas 67 y 68)}
+\textbf{Ejercicio 2}
+
+Supongamos que tiene algoritmos con los seis tiempos de ejecución enumerados a continuación.(Suponga que este es el número exacto de operaciones realizadas en función del tamaño de entrada n.) Suponga que tiene una computadora que puede realizar $10^{10}$ operaciones por segundo, y necesita calcular un resultado como máximo una hora de cálculo. Para cada uno de los algoritmos, ¿cuál es el tamaño de entrada más grande n para el que podría obtener el resultado en una hora?\\
+ $(a)$, $n^2$\\
+ $(b)$, $n^3$\\
+ $(c)$, $100n^2$\\
+ $(d)$, $nlog(n)$\\
+ $(e)$, $2^n$\\
+ $(f)$, $2^{2^n}$\\\\
+
+\textbf{Respuesta}\\\\
+$10^{10}$ operaciones por segundo, 1 hora tiene 60 minutos y 1 minuto tiene 60 segundos. Por lo que nuestro computador puede realizar 3.6x$10^{13}$(60x60x$10^{10}$) operaciones por hora.\\\\
+$n^2 = 3.6*10^{13}$\\
+$n =\sqrt{ 3.6x10^{13}}$\\
+R//: n=6'000,000 \\\\\\
+$n^3 = 3.6*10^{13}$\\
+$n = \sqrt[3]{3.6*10^{13}}$\\
+R//: n=33,019\\\\\\
+$100*n^2 = 3.6*10^{13}$ \\
+$n^2 = \frac{3.6*10^{13}}{100}$\\
+$n = \sqrt{\frac{(3.6*10^{13})}{100}}$\\
+R//: n=600.000\\\\\\
+$n*log(n)= 3.6*10^{13}$\\
+Resultado generado mediante WolframAlpha:\\
+R//: n=$1.29095*10^{12}$\\\\
+Usando bisección:
+\lstinputlisting{nlogn.py}
+\cite{liori}\\
+R//: n=$2.7*10^3$\\\\\\
+$2^n = 3.6*10^{13}$ \\ 
+$log(2^n) = log(3.6*10^{13})$\\
+$n*log(2) = log(3.6*10^{13})$\\
+$n = \frac{log(3.6*10^{13})}{log(2)} = 45.033$\\\\
+R//: n=45\\\\\\
+$2^{2^n} = 3.6*10^{13}$\\
+$log(2^{2^n}) = log(3.6*10^{13})$\\
+$2^n*log(2) = log(3.6*10^{13})$\\
+$2^n = \frac{log(3.6*10^{13})}{log(2)}$\\
+$log(2^n) = log(\frac{log(3.6*10^{13})}{log(2)})$\\
+$log(2)*n = log(\frac{log(3.6*10^{13})}{log(2)})$\\
+$n = \frac{log(\frac{log(3.6*10^{13})}{log(2)})}{log(2)} = 5.492$\\
+R//: n=5\\\\
+
+\textbf{Ejercicio 4}
+
+Tome la siguiente lista de funciones y organícelas en orden ascendente de la tasa de crecimiento. Es decir, si la función g(n) sigue inmediatamente a la función f(n) en su lista, entonces debería ser el caso de que f(n) sea O(g(n)).\\
+ $g_{1}(n)$= $2\sqrt{log(n)}$\\
+ $g_{2}(n)$= $2^n$\\
+ $g_{3}(n)$= $n(log(n))^3$\\
+ $g_{4}(n)$= $n^{4/3}$\\
+ $g_{5}(n)$= $n^{log(n)}$\\
+ $g_{6}(n)$= $2^{2^n}$\\
+ $g_{7}(n)$= $2^{n^2}$\\\\
+
+\textbf{Respuesta}\\\\
+Mediante desmos (https://www.desmos.com/calculator/) pude visualizar el comportamiento de cada función.\\
+ $g_{1}(n)$= $2\sqrt{log(n)}$\\
+ <\\
+ $g_{3}(n)$= $n(log(n))^3$\\
+ <\\
+ $g_{4}(n)$= $n^{4/3}$\\
+ <\\
+ $g_{5}(n)$= $n^{log(n)}$\\
+ <\\
+ $g_{2}(n)$= $2^n$\\
+ <\\
+ $g_{7}(n)$= $2^{n^2}$\\
+ <\\
+ $g_{6}(n)$= $2^{2^n}$\\
+
+
+\subsection{Ejercicio 6:Array Sums(Kleinberg and Tardos página 68 y 69).}
+
+Considere el siguiente problema básico. Se le da una matriz A que consta de n enteros A [1], A [2], ..., A [n]. Le gustaría generar una matriz bidimensional n-por-n en la que B [i, j] (para i <j) contiene la suma de las entradas de matriz A [i] a A [j]. la suma A [i] + A [i + 1]] ... + A [j]. (El valor de la entrada de la matriz B [i, j] se deja sin especificar siempre que i> = j, por lo que no importa cual es la salida de estos valores.)\\\\
+(a) Para alguna función f que debe elegir, indique un límite de la forma O (f (n)) en el tiempo de ejecución de este algoritmo en una entrada de tamaño n (es decir, un límite en el número de operaciones realizadas por el algoritmo) .\\\\
+\textbf{Respuesta}\\
+\lstinputlisting{Punto6.c}
+n (ciclo principal)*n(ciclo inmerso)*(n(añadir entradas desde A[i] hasta A[j] y guardar resultados)\\
+Por lo que el peor de los casos seria O($n^3$)\\\\
+(b)Para esta misma función f, muestre que el tiempo de ejecución del algoritmo en un tamaño de entrada n también es $\Omega$(f(n)).(Esto muestra un límite estrechamente asintótico de $\Theta$(f(n)) en el tiempo de ejecución).\\\\
+\textbf{Respuesta}\\
+El anteroir algoritmo se puede ver de la forma $n*(\sum_{i=1}^{n}i+1)$\\
+$n*(\frac{(n+1)*(n+2)}{2})$\\
+$(\Omega)= \frac{n^3+3n^2+2n}{2}$\\
+por lo tanto $F(n) \in O(n^3)$
+$F(n) >= g(n)*c$\\
+$F(n) >= n^3*c$\\
+$F(n) \in \Omega(n^3)$\\
+el c que serviria en este caso seria $\frac{1}{2}$\\
+$\frac{n^3+3n^2+2*n}{2}>=\frac{n^3}{2}$\\
+$n^3+3n^2+2*n>=n^3$\\
+$3n^2+2*n>=0$\\
+para $n>=1$\\\\
+(c)Aunque el algoritmo que se analizó en las partes (a) y (b) es la forma más natural de resolver el problema, simplemente itera a través de las entradas relevantes de la matriz B, completando un valor para cada una de ellas. Proporcione un algoritmo diferente para resolver este problema, con un tiempo de ejecución mejor asintótico. En otras palabras, debe diseñar un algoritmo con tiempo de ejecución O(g(n)), donde $\lim_{n \to \infty}g(n)/f(n)=0.$\\\\
+\textbf{Respuesta}\\
+Una manera de optimizar el codigo, sería a través de una suma que llevara A[i] hasta A[j], ya que nos ahorrariamos el comando (Add up array) que tiene un costo de n. logrando asi unicamente el costo de los 2 ciclos que seria O($n^2$)\\
+\lstinputlisting{Punto6b.c}
+\cite{pdiniz}\\
+\subsection{Ejercicio 7:Folk Songs(Kleinberg and Tardos página 69).}
+Hay una clase de canciones populares y festivas en las que cada verso consta del verso anterior, con una línea adicional agregada. "Los doce días de Navidad" tiene esta propiedad; por ejemplo, cuando llegas al quinto verso, cantas sobre los cinco anillos de oro y luego, repitiendo las líneas del cuarto verso, también cubres los cuatro pájaros que llaman, las tres gallinas francesas, las dos palomas tortugas y, por supuesto, el Perdiz en el peral. La canción aramea "Had gadya" de PassoVer Haggadah también funciona así, al igual que muchas otras canciones.
+Estas canciones tienden a durar mucho tiempo, a pesar de tener guiones relativamente cortos. En particular, puede transmitir las palabras más instrucciones para una de estas canciones especificando solo la nueva línea que se agrega en cada verso, sin tener que escribir todas las líneas anteriores cada vez. (Por lo tanto, la frase "[cinco anillos de oro]" solo se debe escribir una vez, aunque aparecerá en los versículos cinco y adelante).
+Hay algo asintótico que se puede analizar aquí. Supongamos, para concretar, que cada línea tiene una longitud que está delimitada por una constante "[c]", y supongamos que la canción, cuando se canta en voz alta, corre para "n" palabras en total. Muestra cómo codificar una canción de este tipo utilizando un guión que tiene la longitud f(n), para una función f(n) que crece lo más lentamente posible.\\\\
+\textbf{Respuesta}\\
+\lstinputlisting{Punto7.c}
+Para hallar la complejidad del algoritmo tendremos en cuenta el comportamiento de los ciclos, los cuales se pueden ver como una sumatoria ($\sum_{i=1}^{n}i$) la cual es una progresión aritmética que por medio de la formula de "[n primeros numeros naturales]" podemos verla como ($\frac{n*(n+1)}{2}$).
+Teniendo en cuenta el total de palabras (w), tendriamos ($\frac{n*(n+1)}{2} <= w$) para hacer mas facil el calculo del limite, $\frac{n^2}{2}<= \frac{n*(n+1)}{2} <= w$\\
+ $\frac{n^2}{2}<= w$\\
+ $n^2<= 2*w$\\
+ $n<= \sqrt{2*w}$\\
+ por lo que la complejidad es de $O\sqrt{n}$
+\subsection{Ejercicio 13:Inversions(Erickson, Capítulo 1).}
+Una inversión en la matriz A [1...n] es un par de índices (i, j) tales que i <j y A [i]> A [j]. El número de inversiones en una matriz de n elementos está entre 0 (si la matriz está ordenada) y $\binom{n}{2}$ (si la matriz está ordenada hacia atrás). Describa y analice un algoritmo para calcular el número de inversiones en una matriz de n elementos en O(n*log(n)) tiempo. [Sugerencia: modificar mergesort.]\\\\
+\textbf{Respuesta}\\
+En la funcion del merge, podemos poner un contador(i) que nos permita recorrer la matriz izquierda y otro contador(j) para recorrer la sub-matriz derecha. Cuando se da el proceso de combinacion en el merge, si A[i] es mayor que A[j], entonces hay (len(arreglo)//2 - i) inversiones. Esto es debido a que los subarreglos de la  izquierda y la derecha están ordenados.
+\subsection{Ejercicios 4a, 4b y 13: Demostraciones por inducción (Erickson, Apéndice I.1)}
+\textbf{Ejercicio 4a y 4b}
+Recuerde la definición recursiva estándar de los números de fibonacci: $F_{0} = 0$, $F_{1} = 1$, y $F_{n} = F_{n-1} + F_{n-2}$ para todos $n> = 2$. Demuestre las siguientes identidades para todos los enteros no negativos n y m.\\\\
+(a)$\sum_{i=0}^{n}F_{i} = F_{n+2}-1$\\\\
+\textbf{Respuesta}\\
+Caso base: Probamos para n=0, por el lado izquierdo tenemos que $F_{0} = 0$ y por el lado derecho es $F_{2} = 0$, los 2 lados son iguales  por lo tanto es verdadero y se cumple para n=0.\\
+hipotesis inductiva: $\sum_{i=0}^{k}F_{i} = F_{k+2}-1$\\
+$... = F_{k+2+1}- 1$\\
+$... = F_{k+3} - 1$\\
+Paso inductivo: Tenemos un $k \in \mathbb{N}$ y suponemos que $k = n$ es verdad, luego:\\
+$\sum_{i=0}^{k+1}F_{i} = \sum_{i=0}^{k}F_{i}+F_{k+1}$\\
+$ ... = F_{k+2}-1 + F_{k+1}$ (Por hipotesis inductiva con n=k)\\
+$ ... = F_{k+3}-1$ (Por la recurrencia de $F_{n}$)\\
+Esto se cumple para  n= k + 1 por lo que podemos concluir que mediante el principio de induccion, se cumple para todos los n tal que $n \in \mathbb{N}$.\\
+\cite{illinois}\\\\\\
+(b)$F_{n}^2 - F_{n+1}F_{n-1} = (-1)^{n+1}$\\\\
+\textbf{Respuesta}\\
+Caso base: Probamos para n=1, por el lado izquierdo tenemos que $F_{1}^2-F_{2}F_{0} = 1$ y por el lado derecho es $(-1)^{1+1} = 1$, los 2 lados son iguales  por lo tanto es verdadero y se cumple para n=1.\\
+Tenemos un $k \in \mathbb{N}$ y suponemos que $k = n$ es verdad, luego:\\
+$(-1)^{k+2}$\\\\
+\textbf{Ejercicio 13}\\
+El hipercubo d-dimensional es el gráfico definido a continuación. Hay 2d vértices, cada uno etiquetado con una cadena diferente de d bits. dos vértices están unidos por un borde si y solo si sus etiquetas difieren exactamente en un bit.\\
+Recuerde que un ciclo hamiltoniano es una caminata cerrada que visita cada vértice en una gráfica exactamente una vez. Probar que para cada entero d >=, el hipercubo d-dimensional tiene un ciclo hamiltoniano\\\\
+\textbf{Respuesta}\\
+
+\subsection{Citación de bibliografía}
+
+% =====================
+\begin{thebibliography}{15}
+
+\bibitem{liori}
+  liori,
+  \emph{How to calculate n log n = c}.
+  https://stackoverflow.com/questions/3847327/how-to-calculate-n-log-n-c.
+
+\bibitem{pdiniz}
+  pdiniz,
+  \emph{Algorithms Design – Chapter 2, Exercise 6}.
+  https://itsiastic.wordpress.com/2013/07/19/algorithms-design-chapter-2-exercise-6/.
+\bibitem{illinois}
+  illinois,
+  \emph{Practice Problems—Solutions}.
+  https://faculty.math.illinois.edu/~hildebr/347.summer14/induction2sol.pdf
+
+\end{thebibliography}
+
+% =====================
+
+\end{document}

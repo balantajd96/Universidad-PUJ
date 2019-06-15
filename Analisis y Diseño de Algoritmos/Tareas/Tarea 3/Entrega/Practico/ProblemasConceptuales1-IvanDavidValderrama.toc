@@ -1,0 +1,5 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Problemas conceptuales}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Problema 16-1 (a-c):Greedy Coin Change(Cormen et al., p\IeC {\'a}gina 446).}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Ejercicio 4.3:Trucking Company(Kleinberg and Tardos, p\IeC {\'a}gina 189).}{4}{subsection.1.2}
+\contentsline {section}{Referencias}{6}{section*.2}

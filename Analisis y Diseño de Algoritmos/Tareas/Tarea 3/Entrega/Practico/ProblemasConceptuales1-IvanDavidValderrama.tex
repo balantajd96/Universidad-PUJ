@@ -1,0 +1,226 @@
+%Tarea1
+
+% --- Clase de archivo ---
+% Con este comando se define que tipo de documento vamos a hacer
+% en este caso un articulo, en una hoja a4 y con tamanio de fuente 11pt.
+\documentclass[a4paper,12pt]{article}
+% los tamanios mas utilizados son 10,11 y 12 pt y representan un tamanio de referencia, o sea que al cambiar a 12 pt todos los textos van a aumentar proporcionalmente, al estilo homotecia.
+
+
+% A partir de aqui se definiran ciertos paquetes o funciones a ser utilizadas
+% dentro del documento.
+
+
+% --- codificacion de archivo ---
+% El paquete inputenc sirve para que el compilador pueda interpretar los acentos en espaniol de forma estandar, dependiendo del sistema operativo hay que darle una configuracion diferente:
+\usepackage[utf8]{inputenc}
+% ----------------------------------
+
+
+% --- idioma ---
+% El paquete babel sirve para separar correctamente las palabras en muchos idiomas, aquií­ esta configurado con espaniol (spanish). Tambien sirve para que el Ií­ndic etenga tií­tulo "Indice" en lugar de "Contents".
+\usepackage[spanish]{babel} 
+% --------------
+
+
+% --- Fuentes ---
+% El paquete fontenc sirve para controlar las fuentes que utiliza el documento
+\usepackage[T1]{fontenc}
+% Si dejamos comentado el paquete de abajo utilizaremos la fuente por defecto
+% si se quita el comentario se usa sans. Se puede usar times, y otras opciones que se dejan comentadas. 
+%\usepackage{sans}
+%\usepackage{fbb}
+%\usepackage{bera}
+%\usepackage{sans}
+%\usepackage{times}
+%\usepackage{libertine} 
+
+
+\usepackage{dirtytalk} % Paquete para facilitar la notación de citas con el comando \say{}
+
+
+
+% --- Gráficos ---
+% El paquete graphicx sirve para controlar figuras con \includegraphics.
+\usepackage{graphicx}
+% Esta linea indica el lugar (path) en el cual se encuentra la carpeta donde colocamos imágenes, para ahorrar colocarlo en cada
+% llamado de una imagen en el documento.
+\graphicspath{{./figuras/}}
+% Estos paquetes permiten colocar varias figuras en el entorno "figure" como subfiguras (cualquiera de los dos).
+\usepackage{float}
+\usepackage{subfig} 
+
+
+% --- Lenguaje matemático ---
+% fuentes para escribir sí­mbolos
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+
+
+% --- Tablas ---
+% Paquetes para el manejo de tablas, creación de filas y columnas unidas.
+\usepackage{multirow} 
+\usepackage{multicol} 
+% Control de color en tablas muy versátil.
+\usepackage[table]{xcolor}
+
+
+% --- Hipervínculos ---
+% paquete para marcar los hiperví­nculos en i­ndice y referencias
+\usepackage{hyperref}
+% Para citar referencias  
+\usepackage{cite} 
+\hypersetup{colorlinks, urlcolor=cyan, citecolor=green, linkcolor=blue} % Pinta con color las referencias
+\usepackage[hypcap]{caption} % Las imágenes tienen hiperreferencia y se ven completas y no solo la leyenda. 
+% Para hacer hiperreferencias a páginas web
+\usepackage{url} 
+
+
+\usepackage{booktabs} 
+
+% --- Numeración ---
+% Paquete que cambia como se representa la numeración de las imágenes, ecuaciones y tablas
+\usepackage{chngcntr}
+% Ahora se nombran por sección reiniciando el conteo en cada sección
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+
+
+% Para agregar al índice las refencias
+\usepackage[nottoc,notlot,notlof]{tocbibind} 
+
+
+
+% Aqui comienzan los datos del trabajo. El comando \date{\today} asigna la fecha en que se compila como la fecha del trabajo, tambien se puede escibe directamente, ej. \date{5 de setiembre de 2012}.
+
+\title{Tarea 3 Problemas conceptuales} 
+\author{%
+  Iván David Valderrama Corredor\\ %
+  Ingeniería de Sistemas y Ciencias de la Computación\\ %
+  Pontificia Universidad Javeriana, Cali}
+\date{\today}
+% ------------------------
+
+%\pagestyle{empty}
+% ====================================
+
+
+%El paquete colortbl sirve para darle color a las tablas
+\usepackage{colortbl}
+
+% Este paquete se utiliza para generar texto de relleno.
+\usepackage{blindtext}
+
+% este paquete determina que el texto tenga como fuente normal: times, consultar el eva de latex para mas opciones.
+%\usepackage{times}
+
+
+% ===== Encabezado =====
+% esta es una posible configuración para el encabezado. 
+%Si se comentan estas dos lineas no habrá encabezado y la numeración de página aparecerá abajo de cada hoja. En la página donde se llame a \maketitle no se coloca encabezado.
+\pagestyle{myheadings}
+\markright{}
+% ======================
+
+
+%% ===== Ajuste layout pagina =====
+% define el ancho del texto en la hoja
+\setlength{\textwidth}{155mm}
+% define el alto del texto en la hoja
+\setlength{\textheight}{210mm}
+% los márgenes pueden ser editador con
+\oddsidemargin=-.25cm
+%% ================================
+
+% --- commandos definidos a gusto del usuario ---
+\newcommand{\ds}{\displaystyle}
+\def\x{{\bf x}}
+
+\newcommand{\subfigureautorefname}{\figureautorefname}
+
+% -----------------
+
+% =====================================================
+% =====================================================
+\usepackage{listings}
+
+
+
+% =====================================================
+% ========  Aca comienza el cuerpo del texto ==========
+%
+\begin{document}
+	
+% Se renuevan comandos ya existentes de LaTeX como se desee, en este caso del nombre de tablas y figuras.	
+\renewcommand{\tablename}{\bfseries Tabla} % Cambia nombre de tablas
+\renewcommand{\figurename}{\bfseries Figura} % Cambia nombre de figuras 
+%\newcommand{\subfigureautorefname}{\figureautorefname} % Para que al referenciar una subfigura aparezca "Figura"	
+% Se refiere a las tablas y figuras con el comando \autoref{label} para que aparezca referenciado automáticamente el nombre de lo referenciado (Tabla o Figura) continuado por el número de la misma.	
+%
+% El comando \verb+maketitle+ sirve para escribir la cabecera con los datos del trabajo (título, autor y fecha).
+\maketitle
+
+% índice
+\tableofcontents
+
+% para separar la carátula del texto introducimos un salto de pagina
+\newpage
+
+% definimos una sección con el comando section
+
+\section{Problemas conceptuales}
+
+\subsection{Problema 16-1 (a-c):Greedy Coin Change(Cormen et al., página 446).}
+Considere el problema de "Making Change" para n centavos, utilizando el menor número de monedas. Supongamos que el valor de cada moneda es un número entero.\\\\
+A) Describe un algoritmo greedy para hacer cambios que consistan en monedas de un cuarto de dolar (25 centavos), monedas de diez centavos, monedas de cinco centavos y monedas de un centavo. Demuestre que su algoritmo produce una solución óptima.\\\\
+\textbf{Respuesta}\\\\
+Una estrategia para resolver el problema de Making Change por medio de un algoritmo greedy, seria empezar a contar las monedas de mayor valor hasta las monedas de menor valor, llegando al cambio deseado.\\
+En este caso tenemos monedas de cuarto(25 centavos) por lo que seria x(monto a cambiar) // 25. nos daria las monedas actuales y el sobrante = x-m(monedasNoAcumuladas)*25\\
+siguiendo:\\
+sobrante // 10 ; sobrante = x-m*10 ; monedasAcumuladas += monedasNoAcumuladas\\
+sobrante // 5 ; sobrante = x-m*5 ; monedasAcumuladas += monedasNoAcumuladas\\
+sobrante // 1 ; monedasAcumuladas += monedasNoAcumuladas.\\
+La demostracion seria la siguiente:\\
+primero, para un x=0 la cantidad de monedas devueltas serian 0, para un x > 0 se tendria una cantidad de monedas c tal que en cada caso se encuentre la menor cantidad de monedas que completen x.\\
+si x esta entre [1-5) c equivale a 1. Lo que nos daria un optimo local.\\
+si x esta entre [5-10) c equivale a 5. Debido a que si juntamos 5 centavos la podemos remplazar por una moneda de 5 centavos.\\
+si x esta entre [10-25) c equivale a 10. Debido a que si juntamos 2 monedas de  5 centavos la podemos remplazar por una moneda de 10 centavos o si tenemos 5 monedas de 1 centavo y 1 moneda de 5 centavos, las podemos reemplazar por una de 10 centavos.\\
+si x esta entre [25-n) c equivale a 25. Debido a que si tenemos 5 monedas de un centavo, 2 monedas de cinco centavos y 1 moneda de 10 centavos, las podemos reemplazar por una moneda de 25 centavos. dando como resultado una moneda mas optima.\\
+Por lo que podemos confirmar que la estrategia de pagar con las monedas de mayor precio, nos permite entregar la minima cantidad de monedas de cambio.\\
+\cite{CLRS}\\\\\\\\
+B) Supongamos que las monedas disponibles están en las denominaciones que son potencias de c, es decir, las denominaciones son c0, c1, ..., ck para algunos enteros c > 1 y k> = 1. Demuestre que el algoritmo greedy siempre produce una solución óptima.\\\\
+\textbf{Respuesta}\\\\
+El razonamiento en este problema es muy similar al del anterior problema, consideremos 2 tipos de monedas, los centavos y monedas que equivalen a cˆ, podremos emplear 1 -c centavos, debido a que cualquier cantidad mayor a c centavos, seria remplazada por almenos 1 moneda de cˆ. Debido a esto, esta operacion reducira el numero de monedas en 1-c es decir, cuando el resto es mayor que c, utilizara tantas monedas cˆ que necesite antes de emplear los  c centavos. Lo mismo ocurre para monedas mas grandes.\\
+\cite{CLRS}\\\\\\\\
+C) Ofrezca un conjunto de denominaciones de monedas para las cuales el algoritmo greedy no produce una solución óptima. Su conjunto debe incluir un centavo para que haya una solución para cada valor de n.\\\\
+\textbf{Respuesta}\\\\
+Un conjunto de denominacion podria ser:
+[1,10,25] donde el valor de cambio seria 30, la solucion producida por el algoritmo de greedy daria como resultado (25,1,1,1,1,1) con un total de 6 monedas, pero un resoltado no greedy nos daria (10,10,10) con un total de 3 monedas. Lo que nos da una solucion mas optima que la del algoritmo greedy.\\\\\\
+D) Proporcione un algoritmo en tiempo de O(nk), que realice cambios para cualquier conjunto de diferentes denominaciones de monedas, suponiendo que una de las monedas es un centavo.\\\\
+\textbf{Respuesta}\\\\
+\lstinputlisting{Punto1.py}
+-Complejidad temporal: $\theta(nk)$
+\subsection{Ejercicio 4.3:Trucking Company(Kleinberg and Tardos, página 189).}
+Usted está consultando para una compañía de camiones que realiza una gran cantidad de paquetes comerciales entre Nueva York y Boston. El volumen es lo suficientemente alto como para que tengan que enviar varios camiones cada día entre las dos ubicaciones. Los camiones tienen un límite fijo $W$ en la cantidad máxima de peso que pueden llevar. Las cajas llegan a la estación de Nueva York una por una, y cada paquete $i$ tiene un peso $w_i$. La estación de camiones es bastante pequeña, por lo que, como máximo, un camión puede estar en la estación en cualquier momento. La política de la compañía requiere que las cajas se envíen en el orden en que llegan; De lo contrario, un cliente podría molestarse. En este momento, la compañía está utilizando un algoritmo greedy simple para empacar: empacan las cajas en el orden en que llegan, y siempre que la siguiente no encaja, envían el camión en su camino. Pero se preguntan si podrían estar utilizando demasiados camiones y quieren saber su opinión sobre si la situación puede mejorar. Así es como están pensando. Tal vez uno podría disminuir la cantidad de camiones que se necesitan al enviar a veces un camión que está menos lleno, y de esta manera permitir que los siguientes camiones estén mejor embalados. Demostrar que, para un conjunto dado de cajas con pesos específicos, el algoritmo greedy actualmente en uso, en realidad minimiza la cantidad de camiones que se necesitan.\\\
+\textbf{Respuesta}\\\\
+Teorema:\\
+Sea A un conjunto de paquetes ordenados en orden de llegada, y 'a' $\in$ A un paquete cuyo tiempo de llegada es minimo entre todos los demas paquetes en A. Entonces 'a' hace parte de una solucion optima.\\\\
+Demostracion:\\
+Sea B $\subseteq$ A una solucion optima al problema de Trucking Company. Notamos que B $\ne \emptyset$ porque A $\ne \emptyset$.
+Sea 'b' $\in$ B un paquete cuyo tiempo de llegada es minimo entre todos los demas paquetes en B, procedemos por casos:\\
+Caso (1) a $=$ b: 'a' hace parte de una solucion optima.\\
+Caso (2) a $\ne$ b: Considere el conjunto $B' = (B \setminus \{b\}) \cup \{a\}$ Notamos que |B| = |B'|. Tambien notamos que ningun paquete en $B \setminus \{b\}$ tiene conflicto con 'a' dado que el tiempo de llegada no es menor que el de 'a'. Entonces B' es una solucion optima.
+\clearpage
+% =====================
+\begin{thebibliography}{15}
+
+\bibitem{CLRS}
+  CLRS Solutions,
+  \emph{16-1 Coin changing}.\\
+  https://walkccc.github.io/CLRS/Chap16/Problems/16-1/
+
+\end{thebibliography}
+
+% =====================
+
+\end{document}

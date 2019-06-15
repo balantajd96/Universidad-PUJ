@@ -1,0 +1,199 @@
+%Tarea1
+
+% --- Clase de archivo ---
+% Con este comando se define que tipo de documento vamos a hacer
+% en este caso un articulo, en una hoja a4 y con tamanio de fuente 11pt.
+\documentclass[a4paper,12pt]{article}
+% los tamanios mas utilizados son 10,11 y 12 pt y representan un tamanio de referencia, o sea que al cambiar a 12 pt todos los textos van a aumentar proporcionalmente, al estilo homotecia.
+
+
+% A partir de aqui se definiran ciertos paquetes o funciones a ser utilizadas
+% dentro del documento.
+
+
+% --- codificacion de archivo ---
+% El paquete inputenc sirve para que el compilador pueda interpretar los acentos en espaniol de forma estandar, dependiendo del sistema operativo hay que darle una configuracion diferente:
+\usepackage[utf8]{inputenc}
+% ----------------------------------
+
+
+% --- idioma ---
+% El paquete babel sirve para separar correctamente las palabras en muchos idiomas, aquií­ esta configurado con espaniol (spanish). Tambien sirve para que el Ií­ndic etenga tií­tulo "Indice" en lugar de "Contents".
+\usepackage[spanish]{babel} 
+% --------------
+
+
+% --- Fuentes ---
+% El paquete fontenc sirve para controlar las fuentes que utiliza el documento
+\usepackage[T1]{fontenc}
+% Si dejamos comentado el paquete de abajo utilizaremos la fuente por defecto
+% si se quita el comentario se usa sans. Se puede usar times, y otras opciones que se dejan comentadas. 
+%\usepackage{sans}
+%\usepackage{fbb}
+%\usepackage{bera}
+%\usepackage{sans}
+%\usepackage{times}
+%\usepackage{libertine} 
+
+
+\usepackage{dirtytalk} % Paquete para facilitar la notación de citas con el comando \say{}
+
+
+
+% --- Gráficos ---
+% El paquete graphicx sirve para controlar figuras con \includegraphics.
+\usepackage{graphicx}
+% Esta linea indica el lugar (path) en el cual se encuentra la carpeta donde colocamos imágenes, para ahorrar colocarlo en cada
+% llamado de una imagen en el documento.
+\graphicspath{{./figuras/}}
+% Estos paquetes permiten colocar varias figuras en el entorno "figure" como subfiguras (cualquiera de los dos).
+\usepackage{float}
+\usepackage{subfig} 
+
+
+% --- Lenguaje matemático ---
+% fuentes para escribir sí­mbolos
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+
+
+% --- Tablas ---
+% Paquetes para el manejo de tablas, creación de filas y columnas unidas.
+\usepackage{multirow} 
+\usepackage{multicol} 
+% Control de color en tablas muy versátil.
+\usepackage[table]{xcolor}
+
+
+% --- Hipervínculos ---
+% paquete para marcar los hiperví­nculos en i­ndice y referencias
+\usepackage{hyperref}
+% Para citar referencias  
+\usepackage{cite} 
+\hypersetup{colorlinks, urlcolor=cyan, citecolor=green, linkcolor=blue} % Pinta con color las referencias
+\usepackage[hypcap]{caption} % Las imágenes tienen hiperreferencia y se ven completas y no solo la leyenda. 
+% Para hacer hiperreferencias a páginas web
+\usepackage{url} 
+
+
+\usepackage{booktabs} 
+
+% --- Numeración ---
+% Paquete que cambia como se representa la numeración de las imágenes, ecuaciones y tablas
+\usepackage{chngcntr}
+% Ahora se nombran por sección reiniciando el conteo en cada sección
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+
+
+% Para agregar al índice las refencias
+\usepackage[nottoc,notlot,notlof]{tocbibind} 
+
+
+
+% Aqui comienzan los datos del trabajo. El comando \date{\today} asigna la fecha en que se compila como la fecha del trabajo, tambien se puede escibe directamente, ej. \date{5 de setiembre de 2012}.
+
+\title{Tarea 6 Problemas conceptuales} 
+\author{%
+  Iván David Valderrama Corredor\\ %
+  Ingeniería de Sistemas y Ciencias de la Computación\\ %
+  Pontificia Universidad Javeriana, Cali}
+\date{\today}
+% ------------------------
+
+%\pagestyle{empty}
+% ====================================
+
+
+%El paquete colortbl sirve para darle color a las tablas
+\usepackage{colortbl}
+
+% Este paquete se utiliza para generar texto de relleno.
+\usepackage{blindtext}
+
+% este paquete determina que el texto tenga como fuente normal: times, consultar el eva de latex para mas opciones.
+%\usepackage{times}
+
+
+% ===== Encabezado =====
+% esta es una posible configuración para el encabezado. 
+%Si se comentan estas dos lineas no habrá encabezado y la numeración de página aparecerá abajo de cada hoja. En la página donde se llame a \maketitle no se coloca encabezado.
+\pagestyle{myheadings}
+\markright{}
+% ======================
+
+
+%% ===== Ajuste layout pagina =====
+% define el ancho del texto en la hoja
+\setlength{\textwidth}{155mm}
+% define el alto del texto en la hoja
+\setlength{\textheight}{210mm}
+% los márgenes pueden ser editador con
+\oddsidemargin=-.25cm
+%% ================================
+
+% --- commandos definidos a gusto del usuario ---
+\newcommand{\ds}{\displaystyle}
+\def\x{{\bf x}}
+
+\newcommand{\subfigureautorefname}{\figureautorefname}
+
+% -----------------
+
+% =====================================================
+% =====================================================
+\usepackage{listings}
+
+
+
+% =====================================================
+% ========  Aca comienza el cuerpo del texto ==========
+%
+\begin{document}
+	
+% Se renuevan comandos ya existentes de LaTeX como se desee, en este caso del nombre de tablas y figuras.	
+\renewcommand{\tablename}{\bfseries Tabla} % Cambia nombre de tablas
+\renewcommand{\figurename}{\bfseries Figura} % Cambia nombre de figuras 
+%\newcommand{\subfigureautorefname}{\figureautorefname} % Para que al referenciar una subfigura aparezca "Figura"	
+% Se refiere a las tablas y figuras con el comando \autoref{label} para que aparezca referenciado automáticamente el nombre de lo referenciado (Tabla o Figura) continuado por el número de la misma.	
+%
+% El comando \verb+maketitle+ sirve para escribir la cabecera con los datos del trabajo (título, autor y fecha).
+\maketitle
+
+% índice
+\tableofcontents
+
+% para separar la carátula del texto introducimos un salto de pagina
+\newpage
+
+% definimos una sección con el comando section
+
+\section{Problemas conceptuales}
+
+\subsection{Problema 34-2:Bonnie and Clyde(Cormen et al., página 1102)}
+Bonnie y Clyde acaban de robar un banco. Tienen una bolsa de dinero y quieren dividirla. Para cada uno de los siguientes escenarios, proporcione un algoritmo de tiempo polinómico o pruebe que el problema es NP-completo. La entrada en cada caso es una lista de los artículos en la bolsa, junto con el valor de cada uno.\\\\
+(a)La bolsa contiene n monedas, pero solo 2 denominaciones diferentes: algunas monedas valen x dólares y otras valen y dólares. Bonnie y Clyde desean dividir el dinero exactamente en partes iguales.\\
+(b)La bolsa contiene monedas, con un número arbitrario de diferentes denominaciones, pero cada denominación es un numero entero no negativo potencia de 2, es decir, las posibles denominaciones son 1 dollar, 2 dollars, 4 dollars, etc. Bonnie y Clyde desean proporcionar el dinero exactamente de manera equitativa.\\
+(c)Hay n cheques, que están, en una coincidencia asombrosa, a nombre de "Bonnie o Clyde". Desean dividir los cheques para que cada uno obtenga exactamente la misma cantidad de dinero.\\
+(d)La bolsa contiene cheques como en la parte (c), pero esta vez Bonnie y Clyde están dispuestos a aceptar una división en la cual la diferencia no supere los 100 dólares.\\\\
+\textbf{Respuesta}\\\\
+(a)Si tenemos dos denominaciones de monedas tal que $n_x$ valen 'x' dolares y otras $n_y$ monedas que valen 'y' dolares, dividiriamos cada tipo de denominacion en 2 partes ($n_x/2$ y $n_y/2$) y verificamos cual division genera la misma cantidad de monedas para ambos.\\
+Esto tendria un costo de O($n^2$) el cual sigue siendo polinomial.
+\cite{1}\\\\
+(b)Primero verificamos si el modulo 2 de la suma de todas las cantidades de denominaciones es igual a 0.\\
+Despues,podriamos adaptar el problema de making change, debido a que la estrategia seria muy similar, empezar de derecha a izquierda probando desde la mayor denominacion, debido a que cuando ya tengamos previmanete las divisiones de los grupos de mayor denominacion, podemos ajustar el valor actual con los nuevos grupos de menor denominacion hasta que nos den la misma cantidad en los 2 grupos.\\\\
+(c)Existe una cantidad n de cheques por lo que hay un valor k aleatorio...
+
+% =====================
+\begin{thebibliography}{15}
+
+\bibitem{1}
+  Northeastern University,
+  \emph{Sample Solution to Problem Set 6}.\\
+  http://www.ccis.northeastern.edu/home/rraj/Courses/7800/F14/ProblemSets/ss6.pdf
+  
+\end{thebibliography}
+
+% =====================
+
+\end{document}

@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Problemas conceptuales}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Ejercicio 3.5:Binary Trees(Kleinberg y Tardos, p\IeC {\'a}gina 108).}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Ejercicio 3.7:Wireless Networks(Kleinberg y Tardos, p\IeC {\'a}gina 108).}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Ejercicio 4.2:Minimum Spanning Trees(Kleinberg y Tardos, p\IeC {\'a}gina 189).}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Ejercicio 4.5:Quiet Country Roads(Kleinberg y Tardos, p\IeC {\'a}gina 191).}{5}{subsection.1.4}
+\contentsline {section}{Referencias}{7}{section*.2}

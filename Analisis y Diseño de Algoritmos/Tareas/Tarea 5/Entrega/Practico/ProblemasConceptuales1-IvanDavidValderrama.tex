@@ -1,0 +1,249 @@
+%Tarea1
+
+% --- Clase de archivo ---
+% Con este comando se define que tipo de documento vamos a hacer
+% en este caso un articulo, en una hoja a4 y con tamanio de fuente 11pt.
+\documentclass[a4paper,12pt]{article}
+% los tamanios mas utilizados son 10,11 y 12 pt y representan un tamanio de referencia, o sea que al cambiar a 12 pt todos los textos van a aumentar proporcionalmente, al estilo homotecia.
+
+
+% A partir de aqui se definiran ciertos paquetes o funciones a ser utilizadas
+% dentro del documento.
+
+
+% --- codificacion de archivo ---
+% El paquete inputenc sirve para que el compilador pueda interpretar los acentos en espaniol de forma estandar, dependiendo del sistema operativo hay que darle una configuracion diferente:
+\usepackage[utf8]{inputenc}
+% ----------------------------------
+
+
+% --- idioma ---
+% El paquete babel sirve para separar correctamente las palabras en muchos idiomas, aquií­ esta configurado con espaniol (spanish). Tambien sirve para que el Ií­ndic etenga tií­tulo "Indice" en lugar de "Contents".
+\usepackage[spanish]{babel} 
+% --------------
+
+
+% --- Fuentes ---
+% El paquete fontenc sirve para controlar las fuentes que utiliza el documento
+\usepackage[T1]{fontenc}
+% Si dejamos comentado el paquete de abajo utilizaremos la fuente por defecto
+% si se quita el comentario se usa sans. Se puede usar times, y otras opciones que se dejan comentadas. 
+%\usepackage{sans}
+%\usepackage{fbb}
+%\usepackage{bera}
+%\usepackage{sans}
+%\usepackage{times}
+%\usepackage{libertine} 
+
+
+\usepackage{dirtytalk} % Paquete para facilitar la notación de citas con el comando \say{}
+
+
+
+% --- Gráficos ---
+% El paquete graphicx sirve para controlar figuras con \includegraphics.
+\usepackage{graphicx}
+% Esta linea indica el lugar (path) en el cual se encuentra la carpeta donde colocamos imágenes, para ahorrar colocarlo en cada
+% llamado de una imagen en el documento.
+\graphicspath{{./figuras/}}
+% Estos paquetes permiten colocar varias figuras en el entorno "figure" como subfiguras (cualquiera de los dos).
+\usepackage{float}
+\usepackage{subfig} 
+
+
+% --- Lenguaje matemático ---
+% fuentes para escribir sí­mbolos
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+
+
+% --- Tablas ---
+% Paquetes para el manejo de tablas, creación de filas y columnas unidas.
+\usepackage{multirow} 
+\usepackage{multicol} 
+% Control de color en tablas muy versátil.
+\usepackage[table]{xcolor}
+
+
+% --- Hipervínculos ---
+% paquete para marcar los hiperví­nculos en i­ndice y referencias
+\usepackage{hyperref}
+% Para citar referencias  
+\usepackage{cite} 
+\hypersetup{colorlinks, urlcolor=cyan, citecolor=green, linkcolor=blue} % Pinta con color las referencias
+\usepackage[hypcap]{caption} % Las imágenes tienen hiperreferencia y se ven completas y no solo la leyenda. 
+% Para hacer hiperreferencias a páginas web
+\usepackage{url} 
+
+
+\usepackage{booktabs} 
+
+% --- Numeración ---
+% Paquete que cambia como se representa la numeración de las imágenes, ecuaciones y tablas
+\usepackage{chngcntr}
+% Ahora se nombran por sección reiniciando el conteo en cada sección
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+
+
+% Para agregar al índice las refencias
+\usepackage[nottoc,notlot,notlof]{tocbibind} 
+
+
+
+% Aqui comienzan los datos del trabajo. El comando \date{\today} asigna la fecha en que se compila como la fecha del trabajo, tambien se puede escibe directamente, ej. \date{5 de setiembre de 2012}.
+
+\title{Tarea 5 Problemas conceptuales} 
+\author{%
+  Iván David Valderrama Corredor\\ %
+  Ingeniería de Sistemas y Ciencias de la Computación\\ %
+  Pontificia Universidad Javeriana, Cali}
+\date{\today}
+% ------------------------
+
+%\pagestyle{empty}
+% ====================================
+
+
+%El paquete colortbl sirve para darle color a las tablas
+\usepackage{colortbl}
+
+% Este paquete se utiliza para generar texto de relleno.
+\usepackage{blindtext}
+
+% este paquete determina que el texto tenga como fuente normal: times, consultar el eva de latex para mas opciones.
+%\usepackage{times}
+
+
+% ===== Encabezado =====
+% esta es una posible configuración para el encabezado. 
+%Si se comentan estas dos lineas no habrá encabezado y la numeración de página aparecerá abajo de cada hoja. En la página donde se llame a \maketitle no se coloca encabezado.
+\pagestyle{myheadings}
+\markright{}
+% ======================
+
+
+%% ===== Ajuste layout pagina =====
+% define el ancho del texto en la hoja
+\setlength{\textwidth}{155mm}
+% define el alto del texto en la hoja
+\setlength{\textheight}{210mm}
+% los márgenes pueden ser editador con
+\oddsidemargin=-.25cm
+%% ================================
+
+% --- commandos definidos a gusto del usuario ---
+\newcommand{\ds}{\displaystyle}
+\def\x{{\bf x}}
+
+\newcommand{\subfigureautorefname}{\figureautorefname}
+
+% -----------------
+
+% =====================================================
+% =====================================================
+\usepackage{listings}
+
+
+
+% =====================================================
+% ========  Aca comienza el cuerpo del texto ==========
+%
+\begin{document}
+	
+% Se renuevan comandos ya existentes de LaTeX como se desee, en este caso del nombre de tablas y figuras.	
+\renewcommand{\tablename}{\bfseries Tabla} % Cambia nombre de tablas
+\renewcommand{\figurename}{\bfseries Figura} % Cambia nombre de figuras 
+%\newcommand{\subfigureautorefname}{\figureautorefname} % Para que al referenciar una subfigura aparezca "Figura"	
+% Se refiere a las tablas y figuras con el comando \autoref{label} para que aparezca referenciado automáticamente el nombre de lo referenciado (Tabla o Figura) continuado por el número de la misma.	
+%
+% El comando \verb+maketitle+ sirve para escribir la cabecera con los datos del trabajo (título, autor y fecha).
+\maketitle
+
+% índice
+\tableofcontents
+
+% para separar la carátula del texto introducimos un salto de pagina
+\newpage
+
+% definimos una sección con el comando section
+
+\section{Problemas conceptuales}
+
+\subsection{Famous alphametic[A.Levitin: Introduction to the Design and Analysis of Algorithms. 3rd Edition, 2012.]}
+Un rompecabezas en el que los dígitos de una expresión matemática correcta, como una suma, se reemplazan por letras, se denomina criptaritmo. Si, además, las palabras del rompecabezas tienen sentido, se dice que son analfaméticas. El alfamético más conocido, Henry E. Dudeney (1857–1930), publicó el alfamético más conocido:\\
+--- S E N D\\
++ M O R E\\
+---------------\\
+M O N E Y\\\\
+Se suponen dos condiciones: primero, la correspondencia entre las letras y los dígitos decimales es de uno a uno, es decir, cada letra representa solo un dígito y las diferentes letras representan dígitos diferentes. Segundo, el dígito cero no aparece como el dígito más a la izquierda en ninguno de los números. Para resolver un medio alfamético se debe encontrar qué dígito representa cada letra. Tenga en cuenta que la singularidad de una solución no puede asumirse y debe ser verificada por el solucionador.\\\\
+(a) Especifique el problema dado y diseñe un algoritmo para resolver criptaritmos mediante una búsqueda exhaustiva. Supongamos que un criptaritmo dado es una suma de dos palabras.\\
+(b) Resuelva el rompecabezas de Dudeney de la forma en que se esperaba resolver cuando se publicó por primera vez en 1924.\\\\\\
+\textbf{Respuesta}\\\\
+a)\\
+Especificacion del problema:\\\\
+Entrada: 3 cadenas de texto, Las cuales son St1(0..n-1)Primer cadena a sumar, St2(0..n-1)Segunda cadena a sumar y RSt(0..n) Cadena resultante de la suma\\\\
+Salida: Un diccionario con las llaves de los caracteres de las cadenas y valores enteros de cada respectivo caracter.\\\\\\\\
+1)Se crea un diccionario L\\
+2)Se compara la longitud de St1 y RSt, si son distintos sabemos que el primer caracter de RSt es un carri y por lo tanto su valor es de 1, por lo de a medida de que recorramos, se obvia esta posicion en RSt y se añade el caracter con valor de 1 al diccionario.\\
+3)Se recorren las cadenas de izquierda de derecha de manera concecutiva y se añaden al diccionario con valores del 0 al 9 para las cadenas St1 y St2, la primera fila analizada salta el valor 0.Para la cadena RSt se añade la suma de los valores St1 y St2 de la misma fila. A medida de que se avanza por filas se compara si el caracter ya tiene un valor en el diccionario, de ser asi, se compara si el valor es igual al del diccionario.\\\\
+--- |S| E N D\\
++ |M| O R E\\
+---------------\\
+M |O| N E Y\\
+1\\\\
+4)Si se logran verificar todos los caracteres de izquierda a derecha de arriba a bajo.
+Se retorna el diccionario con todos los caracteres y sus respectivos valores.
+En caso contrario se prueban con los valores +1, 9+1=0 y si la primera fila tiene valores que sean = 0, se suma una unidad hasta que no exista un valor 0 en la primera fila.\\\\
+b)\\
+--- S E N D\\
++ M O R E\\
+---------------\\
+M O N E Y\\\\
+Iniciamos dando el valor a M de 1,debido a que m recibe 1 del carri.\\
+Por lo que tenemos lo siguiente:\\
+--- S E N D\\
++ 1 O R E\\
+---------------\\
+1 O N E Y\\\\
+Siguiendo este orden de ideas, podemos decir que S tendria el valor de 9 o 8 dependiendo si hay o no carri y por lo tanto O tendia el valor de 0 o 1.\\
+Si S fuera 8, implicaria que O seria igual a 0 y E igual a 9. Lo que es contradictorio pues N daria como resultado 0 y ya sabiamos que O era igual a 0\\
+Por lo tanto S es igual a 9 y O es 0.\\
+---9 E N D\\
++ 1 0 R E\\
+---------------\\
+1 0 N E Y\\\\
+E+0+1=N sabemos que E+1=N debido a que si no tuviera carri, E=N y eso no podria ser.\\
+En la siguiente fila tenemos N+R=E+10, es +10 debido a que sabemos que en la fila anterior existe un carri.\\
+N+R=E+10\\
+(E+1)+R=E+10\\
+R=9, pero nos genera una contradiccion.\\
+si empleamos el carri:\\
+N+R+1=E+10\\
+R=8, por lo que tenemos N+8+1=E+10.\\
+N+9=E+10, con los numeros que nos quedan sabemos que N=6 y E=5 cumplen la igualdad.\\
+---9 5 6 D\\
++ 1 0 8 5\\
+---------------\\
+1 0 6 5 Y\\\\
+Por ultimo, podemos hallar facilmente que los numeros que cumplen la siguiente igualdad D+6=Y son D=7 y Y=2, teniendo en cuenta que la fila anterior llevaba carri.\\
+Dando el siguiente resultado:\\
+---9 5 6 7\\
++ 1 0 8 5\\
+---------------\\
+1 0 6 5 2\\\\
+\cite{R}\\\\
+\clearpage
+% =====================
+\begin{thebibliography}{15}
+
+\bibitem{R}
+  Matemelga,
+  \emph{SendMoreMoney}.\\
+  https://docs.google.com/file/d/0B4I7c-bUZjVdYi03YVRoWDlSTTg/view?pli=1
+  
+\end{thebibliography}
+
+% =====================
+
+\end{document}

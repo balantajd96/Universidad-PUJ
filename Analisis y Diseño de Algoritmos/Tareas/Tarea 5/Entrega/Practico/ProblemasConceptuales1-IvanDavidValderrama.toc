@@ -1,0 +1,4 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Problemas conceptuales}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Famous alphametic[A.Levitin: Introduction to the Design and Analysis of Algorithms. 3rd Edition, 2012.]}{2}{subsection.1.1}
+\contentsline {section}{Referencias}{5}{section*.2}
