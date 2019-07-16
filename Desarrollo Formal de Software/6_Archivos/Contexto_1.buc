@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1535644424618" org.eventb.texttools.text_representation="context Contexto_1&#10;&#10;sets USRS // Los usuarios&#10;     ARCH // Los archivos&#10;     PERM&#10;&#10;constants lect esct ejec borr&#10;&#10;axioms&#10;  @ax1 partition(PERM, {lect},{esct},{ejec},{borr})&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_39DSEKxsEeiUDoNOpRQlQA" org.eventb.core.comment="Los usuarios" org.eventb.core.identifier="USRS"/>
+<org.eventb.core.carrierSet name="_39D5IKxsEeiUDoNOpRQlQA" org.eventb.core.comment="Los archivos" org.eventb.core.identifier="ARCH"/>
+<org.eventb.core.carrierSet name="_39D5IaxsEeiUDoNOpRQlQA" org.eventb.core.identifier="PERM"/>
+<org.eventb.core.constant name="_39D5IqxsEeiUDoNOpRQlQA" org.eventb.core.identifier="lect"/>
+<org.eventb.core.constant name="_39EgMKxsEeiUDoNOpRQlQA" org.eventb.core.identifier="esct"/>
+<org.eventb.core.constant name="_39EgMaxsEeiUDoNOpRQlQA" org.eventb.core.identifier="ejec"/>
+<org.eventb.core.constant name="_39EgMqxsEeiUDoNOpRQlQA" org.eventb.core.identifier="borr"/>
+<org.eventb.core.axiom name="_39FHQKxsEeiUDoNOpRQlQA" org.eventb.core.label="ax1" org.eventb.core.predicate="partition(PERM, {lect},{esct},{ejec},{borr})"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_39FHQKxsEeiUDoNOpRQlQA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="ARCH" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_39D5IKxsEeiUDoNOpRQlQA" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.scCarrierSet name="PERM" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_39D5IaxsEeiUDoNOpRQlQA" org.eventb.core.type="ℙ(PERM)"/>
+<org.eventb.core.scCarrierSet name="USRS" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_39DSEKxsEeiUDoNOpRQlQA" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.scConstant name="borr" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_39EgMqxsEeiUDoNOpRQlQA" org.eventb.core.type="PERM"/>
+<org.eventb.core.scConstant name="ejec" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_39EgMaxsEeiUDoNOpRQlQA" org.eventb.core.type="PERM"/>
+<org.eventb.core.scConstant name="esct" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_39EgMKxsEeiUDoNOpRQlQA" org.eventb.core.type="PERM"/>
+<org.eventb.core.scConstant name="lect" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_39D5IqxsEeiUDoNOpRQlQA" org.eventb.core.type="PERM"/>
+</org.eventb.core.scContextFile>

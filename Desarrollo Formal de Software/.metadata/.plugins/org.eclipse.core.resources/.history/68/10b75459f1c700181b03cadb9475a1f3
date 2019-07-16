@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Bandera" org.eventb.core.type="ℙ(Bandera)"/>
+<org.eventb.core.poIdentifier name="Arreglo" org.eventb.core.type="ℙ(ℤ×Bandera)"/>
+<org.eventb.core.poIdentifier name="amarillo" org.eventb.core.type="Bandera"/>
+<org.eventb.core.poIdentifier name="azul" org.eventb.core.type="Bandera"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="rojo" org.eventb.core.type="Bandera"/>
+<org.eventb.core.poPredicate name="amarillp" org.eventb.core.predicate="partition(Bandera,{amarillo},{azul},{rojo})" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_VWeeYbH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poPredicate name="amarillq" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_aEZR0bXkEeiKSMKmkUGGZg"/>
+<org.eventb.core.poPredicate name="amarillr" org.eventb.core.predicate="Arreglo∈1 ‥ n → Bandera" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_grgIsLXkEeiKSMKmkUGGZg"/>
+<org.eventb.core.poPredicate name="amarills" org.eventb.core.predicate="ran(Arreglo)=Bandera" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_ky5CMLzyEeiS3uz2Bc1XZg"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ArregloR" org.eventb.core.type="ℙ(ℤ×Bandera)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContextq">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="ArregloR'∈1 ‥ n → Bandera" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_gU-zULH4Eeimr84T2lvYhw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ArregloR'∈1 ‥ n → Bandera" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#INITIALISATION\/inv\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContextq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1 ‥ n → Bandera≠(∅ ⦂ ℙ(ℙ(ℤ×Bandera)))" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_gU-zULH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_gU-zULH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContextq"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContextq" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ArregloR'" org.eventb.core.type="ℙ(ℤ×Bandera)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextq" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTContextq" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextr" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∃f⦂ℙ(ℤ×ℤ)·f∈1 ‥ n ⤖ 1 ‥ n∧ArregloR=f;Arreglo" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdEiELH4Eeimr84T2lvYhw|org.eventb.core.guard#_rdFJILH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∃x⦂ℤ,y⦂ℤ·x∈1 ‥ n∧y∈x+1 ‥ n∧x&lt;y⇒ArregloR[1 ‥ x]={amarillo}∧ArregloR[x+1 ‥ y]={azul}∧ArregloR[y+1 ‥ n]={rojo}" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdEiELH4Eeimr84T2lvYhw|org.eventb.core.guard#_LWFN0LXlEeiKSMKmkUGGZg"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="siga/inv/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContexts">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="ArregloR'∈1 ‥ n → Bandera" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw|org.eventb.core.action#_rdFwMLH4Eeimr84T2lvYhw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ArregloR'∈1 ‥ n → Bandera" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#siga\/inv\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="siga/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContexts"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1 ‥ n → Bandera≠(∅ ⦂ ℙ(ℙ(ℤ×Bandera)))" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw|org.eventb.core.action#_rdFwMLH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw|org.eventb.core.action#_rdFwMLH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContexts"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContexts" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ArregloR'" org.eventb.core.type="ℙ(ℤ×Bandera)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContexts" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTContexts" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/9.12.Bandera2/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ArregloR∈1 ‥ n → Bandera" org.eventb.core.source="/9.12.Bandera2/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

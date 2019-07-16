@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1535130021542" org.eventb.texttools.text_representation="machine Refinamiento_3 refines Refinamiento_2  sees Contexto_2&#10;&#10;variables parq recorrido direc horaB reloj&#10;&#10;invariants&#10;  @inv3,1 reloj ∈ ℕ&#10;  @inv3,2 horaB ∈ BUSES ⤔ ℕ&#10;  @inv3,3 dom(recorrido) ⊆ dom(horaB)&#10;  @inv3,4 dom(parq) ⊆  dom(horaB)&#10;  @inv3,5 ∀b · b ∈ dom(horaB) ⇒ horaB(b) &lt; reloj&#10;  @inv3·6 ∀b1,b2 · b1 ∈ dom(parq) ∧ b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b1) ∧ rutaB(b1) = rutaB(b2) ∧ direc(b1) = direc(b2)  ⇒ parq(b1) ∈ recorrido [{b2}]&#10;  @inv3·7 ∀b1,b2 · b1 ∈ dom(horaB) ∧ b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b1) ∧ rutaB(b1) = rutaB(b2) ∧ direc(b1) = direc(b2)  ⇒ recorrido[{b1}] ⊆ recorrido[{b2}] // dados dos buses con la misma ruta y en la misma direccion, tales que b2 salio ants que b1 entonces las estaciones recorridas ya por b1 estan contenidas en las recorridas por b2&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;    then&#10;      @act3,1 horaB ≔ ∅&#10;      @act3,2 reloj ≔ 0&#10;  end&#10;&#10;  event despachar&#10;    any b&#10;    where&#10;      @grd3,1 b ∈ BUSES ∖dom(horaB)&#10;    then&#10;      @act3,1 horaB(b) ≔ reloj&#10;      @act3,2 reloj ≔  reloj +1&#10;  end&#10;&#10;  event llegar1 extends llegar1&#10;    where&#10;      @grd3,1 b ∈ dom(horaB)&#10;      @grd3,2 ∀b2 · b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b) ∧ rutaB(b) = rutaB(b2) ∧ direc(b2) = ida  ⇒  e ∈ recorrido [{b2}]&#10;  end&#10;&#10;  event llegar2 extends llegar2&#10;    where&#10;      @grd3,1 b ∈ dom(horaB)&#10;      @grd3,2 ∀b2 · b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b) ∧ rutaB(b) = rutaB(b2) ∧ direc(b2) = regreso  ⇒  e ∈ recorrido [{b2}]&#10;  end&#10;&#10;  event terminar extends terminar&#10;    where&#10;      @grd3,1 ∀b2 · b2 ∈ dom(horaB) ∧ rutaB(b) = rutaB(b2) ∧ direc(b) ≠ direc(b2) ⇒ recorrido[{b2}] = ∅ ∧  b2 ∉ dom(parq)&#10;  end&#10;&#10;&#10;  event salir extends salir&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Refinamiento_2"/>
+<org.eventb.core.seesContext name="_LuYgUKFxEeinFt5Dz70U-w" org.eventb.core.target="Contexto_2"/>
+<org.eventb.core.variable name="_hcpNYJ_NEeibN8yuBAXqgA" org.eventb.core.identifier="parq"/>
+<org.eventb.core.variable name="_M__9gJ_iEeibN8yuBAXqgA" org.eventb.core.identifier="recorrido"/>
+<org.eventb.core.variable name="_cKLkYKFxEeinFt5Dz70U-w" org.eventb.core.identifier="direc"/>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgB" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_QyKHgKboEeicmuJgZJD4jw" org.eventb.core.assignment="horaB ≔ ∅" org.eventb.core.label="act3,1"/>
+<org.eventb.core.action name="_QyKHgaboEeicmuJgZJD4jw" org.eventb.core.assignment="reloj ≔ 0" org.eventb.core.label="act3,2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgC" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="despachar">
+<org.eventb.core.parameter name="_QyKukKboEeicmuJgZJD4jw" org.eventb.core.identifier="b"/>
+<org.eventb.core.guard name="_QyKukaboEeicmuJgZJD4jw" org.eventb.core.label="grd3,1" org.eventb.core.predicate="b ∈ BUSES ∖dom(horaB)"/>
+<org.eventb.core.action name="_QyLVoKboEeicmuJgZJD4jw" org.eventb.core.assignment="horaB(b) ≔ reloj" org.eventb.core.label="act3,1"/>
+<org.eventb.core.action name="_QyLVoaboEeicmuJgZJD4jw" org.eventb.core.assignment="reloj ≔  reloj +1" org.eventb.core.label="act3,2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgD" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="llegar1">
+<org.eventb.core.refinesEvent name="_XYAU4Ke-Eei0CeBTD9Qmmw" org.eventb.core.target="llegar1"/>
+<org.eventb.core.guard name="_K_aEwKbzEeicmuJgZJD4jw" org.eventb.core.label="grd3,1" org.eventb.core.predicate="b ∈ dom(horaB)"/>
+<org.eventb.core.guard name="_K_ar0KbzEeicmuJgZJD4jw" org.eventb.core.label="grd3,2" org.eventb.core.predicate="∀b2 · b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b) ∧ rutaB(b) = rutaB(b2) ∧ direc(b2) = ida  ⇒  e ∈ recorrido [{b2}]"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgE" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="llegar2">
+<org.eventb.core.refinesEvent name="_XYBjAKe-Eei0CeBTD9Qmmw" org.eventb.core.target="llegar2"/>
+<org.eventb.core.guard name="_KJrEsKb1EeicmuJgZJD4jw" org.eventb.core.label="grd3,1" org.eventb.core.predicate="b ∈ dom(horaB)"/>
+<org.eventb.core.guard name="_KJrEsab1EeicmuJgZJD4jw" org.eventb.core.label="grd3,2" org.eventb.core.predicate="∀b2 · b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b) ∧ rutaB(b) = rutaB(b2) ∧ direc(b2) = regreso  ⇒  e ∈ recorrido [{b2}]"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgF" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="terminar">
+<org.eventb.core.refinesEvent name="_pJmuQKe-Eei0CeBTD9Qmmw" org.eventb.core.target="terminar"/>
+<org.eventb.core.guard name="_kOcb0ae-Eei0CeBTD9Qmmw" org.eventb.core.label="grd3,1" org.eventb.core.predicate="∀b2 · b2 ∈ dom(horaB) ∧ rutaB(b) = rutaB(b2) ∧ direc(b) ≠ direc(b2) ⇒ recorrido[{b2}] = ∅ ∧  b2 ∉ dom(parq)"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_tvQlcKbnEeicmuJgZJD4jw" org.eventb.core.identifier="horaB"/>
+<org.eventb.core.variable name="_tvQlcabnEeicmuJgZJD4jw" org.eventb.core.identifier="reloj"/>
+<org.eventb.core.invariant name="_tvRMgKbnEeicmuJgZJD4jw" org.eventb.core.label="inv3,1" org.eventb.core.predicate="reloj ∈ ℕ"/>
+<org.eventb.core.invariant name="_tvRMgabnEeicmuJgZJD4jw" org.eventb.core.label="inv3,2" org.eventb.core.predicate="horaB ∈ BUSES ⤔ ℕ"/>
+<org.eventb.core.invariant name="_tvRzkKbnEeicmuJgZJD4jw" org.eventb.core.label="inv3,3" org.eventb.core.predicate="dom(recorrido) ⊆ dom(horaB)"/>
+<org.eventb.core.invariant name="_tvSaoKbnEeicmuJgZJD4jw" org.eventb.core.label="inv3,4" org.eventb.core.predicate="dom(parq) ⊆  dom(horaB)"/>
+<org.eventb.core.invariant name="_tvSaoabnEeicmuJgZJD4jw" org.eventb.core.label="inv3,5" org.eventb.core.predicate="∀b · b ∈ dom(horaB) ⇒ horaB(b) &lt; reloj"/>
+<org.eventb.core.invariant name="_tvTBsKbnEeicmuJgZJD4jw" org.eventb.core.label="inv3·6" org.eventb.core.predicate="∀b1,b2 · b1 ∈ dom(parq) ∧ b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b1) ∧ rutaB(b1) = rutaB(b2) ∧ direc(b1) = direc(b2)  ⇒ parq(b1) ∈ recorrido [{b2}]"/>
+<org.eventb.core.invariant name="_RNBoIKb0EeicmuJgZJD4jw" org.eventb.core.comment="dados dos buses con la misma ruta y en la misma direccion, tales que b2 salio ants que b1 entonces las estaciones recorridas ya por b1 estan contenidas en las recorridas por b2" org.eventb.core.label="inv3·7" org.eventb.core.predicate="∀b1,b2 · b1 ∈ dom(horaB) ∧ b2 ∈ dom(horaB) ∧ horaB(b2) &lt; horaB(b1) ∧ rutaB(b1) = rutaB(b2) ∧ direc(b1) = direc(b2)  ⇒ recorrido[{b1}] ⊆ recorrido[{b2}]"/>
+<org.eventb.core.event name="_L7L20Ke_Eei0CeBTD9Qmmw" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="salir">
+<org.eventb.core.refinesEvent name="_L7Md4Ke_Eei0CeBTD9Qmmw" org.eventb.core.target="salir"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1536193517418" org.eventb.texttools.text_representation="machine fact_prog refines fact_spec  sees ctx_pre&#10;&#10;variables z&#10;     x&#10;invariants&#10;@inv1.1 x ∈ 0‥n&#10;@inv1.2 fact(x) ∗ z = fact(n)&#10;variant&#10;   x&#10;events&#10;  event INITIALISATION&#10;  then&#10;  @act1.1 x ≔ n&#10;  @act1.2 z ≔ 1&#10;  end&#10;&#10;  event fin refines fin&#10;  when&#10;  @grd1.1 x = 0&#10;  end&#10;&#10;  convergent event siga refines siga&#10;  when&#10;  @grd1.1 x ≠ 0&#10;  then&#10;  @act1.1 x ≔ x  − 1&#10;  @act1.2 z ≔ z ∗ x&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="ref1_spec"/>
+<org.eventb.core.seesContext name="_gp7gILFqEeiBneomkn1R9w" org.eventb.core.target="ctx_pre"/>
+<org.eventb.core.variable name="_VHGWILFqEeiBneomkn1R9w" org.eventb.core.identifier="z"/>
+<org.eventb.core.event name="_gp7gILFqEeiBneomkn1R9x" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_BncqELFrEeiBneomkn1R9w" org.eventb.core.assignment="x ≔ n" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_BncqEbFrEeiBneomkn1R9w" org.eventb.core.assignment="z ≔ 1" org.eventb.core.label="act1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gp7gILFqEeiBneomkn1R9y" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fin"/>
+<org.eventb.core.guard name="_VKImkLFrEeiBneomkn1R9w" org.eventb.core.label="grd1,1" org.eventb.core.predicate="x = 0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gp7gILFqEeiBneomkn1R9z" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="siga">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_VKJNoLFrEeiBneomkn1R9w" org.eventb.core.label="grd1,1" org.eventb.core.predicate="x ≠ 0"/>
+<org.eventb.core.action name="_VKJNobFrEeiBneomkn1R9w" org.eventb.core.assignment="x ≔ x  − 1" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_VKJNorFrEeiBneomkn1R9w" org.eventb.core.assignment="z ≔ z ∗ x" org.eventb.core.label="act1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_BndRILFrEeiBneomkn1R9w" org.eventb.core.identifier="x"/>
+<org.eventb.core.invariant name="_BndRIbFrEeiBneomkn1R9w" org.eventb.core.label="inv1,1" org.eventb.core.predicate="x ∈ 0‥n"/>
+<org.eventb.core.invariant name="_BndRIrFrEeiBneomkn1R9w" org.eventb.core.label="inv1,2" org.eventb.core.predicate="fact(x) ∗ z = fact(n)"/>
+<org.eventb.core.variant name="_VKJ0sLFrEeiBneomkn1R9w" org.eventb.core.expression="x"/>
+</org.eventb.core.machineFile>

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="CANASTAS" org.eventb.core.type="ℙ(CANASTAS)"/>
+<org.eventb.core.poIdentifier name="ESTADO" org.eventb.core.type="ℙ(ESTADO)"/>
+<org.eventb.core.poIdentifier name="PERSONAS" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="cc" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+<org.eventb.core.poIdentifier name="detenida" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.poIdentifier name="girando" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="detenidb" org.eventb.core.predicate="partition(ESTADO,{detenida},{girando})" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adRZFV5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poPredicate name="detenidc" org.eventb.core.predicate="finite(CANASTAS)" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIF5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poPredicate name="detenidd" org.eventb.core.predicate="k∈ℕ1" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIV5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poPredicate name="detenide" org.eventb.core.predicate="cc∈CANASTAS → 1 ‥ k" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIl5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poIdentifier name="maxg" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="detenidf" org.eventb.core.predicate="maxg∈ℕ1" org.eventb.core.source="/5_RuedaChicago/ctx2.buc|org.eventb.core.contextFile#ctx2|org.eventb.core.axiom#_dx0sgV5kEeak2qFaoVBa1A"/>
+<org.eventb.core.poIdentifier name="ordenC" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+<org.eventb.core.poPredicate name="detenidg" org.eventb.core.predicate="ordenC∈CANASTAS ⤖ 0 ‥ card(CANASTAS) − 1" org.eventb.core.source="/5_RuedaChicago/ctx3.buc|org.eventb.core.contextFile#ctx3|org.eventb.core.axiom#_1dTqIWPlEeaYhKm1lBpdyA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="abajo" org.eventb.core.type="CANASTAS"/>
+<org.eventb.core.poIdentifier name="er" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.poIdentifier name="giros" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+<org.eventb.core.poIdentifier name="pasaron" org.eventb.core.type="ℙ(CANASTAS)"/>
+<org.eventb.core.poIdentifier name="pesp" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="pmc" org.eventb.core.type="ℙ(PERSONAS×CANASTAS)"/>
+<org.eventb.core.poIdentifier name="pr" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="ult" org.eventb.core.type="CANASTAS"/>
+<org.eventb.core.poPredicate name="pasaroo" org.eventb.core.predicate="pr⊆PERSONAS" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsYKYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasarop" org.eventb.core.predicate="finite(pr)" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsYaYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasaroq" org.eventb.core.predicate="pesp⊆PERSONAS" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsYqYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasaror" org.eventb.core.predicate="pr∩pesp=(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsY6YrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasaros" org.eventb.core.predicate="pmc∈pr → CANASTAS" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsZKYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasarot" org.eventb.core.predicate="er∈ESTADO" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsZaYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasarou" org.eventb.core.predicate="pr=(∅ ⦂ ℙ(PERSONAS))⇒er=detenida" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsZqYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasarov" org.eventb.core.predicate="abajo∈CANASTAS" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xudsZ6YrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasarow" org.eventb.core.predicate="∀c⦂CANASTAS·c∈ran(pmc)⇒card(pmc∼[{c}])≤cc(c)" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.invariant#_xueTcKYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasarox" org.eventb.core.predicate="giros∈CANASTAS → 0 ‥ maxg" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.invariant#_4CBfuaYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasaroy" org.eventb.core.predicate="pasaron⊆CANASTAS" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.invariant#_4CBfuqYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasaroz" org.eventb.core.predicate="er=detenida⇒giros(abajo)=maxg" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.invariant#_4CBfu6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="pasaro{" org.eventb.core.predicate="pasaron≠(∅ ⦂ ℙ(CANASTAS))∧er=detenida⇒abajo∈pasaron" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.invariant#_4CBfvKYsEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv2,4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron≠(∅ ⦂ ℙ(CANASTAS))∧er=detenida⇒ordenC[pasaron]≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈ordenC[pasaron]⇒b≤x)∧min(ordenC[pasaron])∈dom(ordenC∼)∧ordenC∼∈ℤ ⇸ CANASTAS" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv2·5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron∧c2∈pasaron⇒c1∈dom(giros)∧giros∈CANASTAS ⇸ ℤ∧c2∈dom(giros)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv2·6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·(c1∈pasaron∧c2∈CANASTAS ∖ pasaron⇒c1∈dom(giros)∧giros∈CANASTAS ⇸ ℤ)∧(c1∈pasaron∧c2∈CANASTAS ∖ pasaron∧giros(c1)&lt;maxg⇒c2∈dom(giros))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx;"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv2,7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(pasaron≠(∅ ⦂ ℙ(CANASTAS))⇒ult∈dom(giros)∧giros∈CANASTAS ⇸ ℤ)∧(pasaron≠(∅ ⦂ ℙ(CANASTAS))∧giros(ult)&lt;maxg∧CANASTAS ∖ pasaron≠(∅ ⦂ ℙ(CANASTAS))⇒ult∈dom(ordenC)∧ordenC∈CANASTAS ⇸ ℤ)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx="/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv2,8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx&gt;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·(c1∈pasaron∧c2∈CANASTAS ∖ pasaron⇒c1∈dom(giros)∧giros∈CANASTAS ⇸ ℤ)∧(c1∈pasaron∧c2∈CANASTAS ∖ pasaron∧giros(c1)=maxg⇒c2∈dom(giros))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx&gt;"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv2,9/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(pasaron≠(∅ ⦂ ℙ(CANASTAS))⇒ult∈dom(giros)∧giros∈CANASTAS ⇸ ℤ)∧(pasaron≠(∅ ⦂ ℙ(CANASTAS))∧giros(ult)=maxg⇒ult∈dom(ordenC)∧ordenC∈CANASTAS ⇸ ℤ)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx?"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2,2/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))⇒ult'∈(∅ ⦂ ℙ(CANASTAS))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2,3/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="abajo'∈CANASTAS" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#'|org.eventb.core.action#_xudFU6YrEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="abajo'=ult'∧detenida=detenida∧(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))⇒(∅ ⦂ ℙ(CANASTAS))={ult'}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2,4/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="abajo'∈CANASTAS" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#'|org.eventb.core.action#_xudFU6YrEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))∧detenida=detenida⇒abajo'=ordenC∼(min(ordenC[∅ ⦂ ℙ(CANASTAS)]))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2,4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2·5/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈(∅ ⦂ ℙ(CANASTAS))∧c2∈(∅ ⦂ ℙ(CANASTAS))⇒(CANASTAS × {maxg})(c1)=(CANASTAS × {maxg})(c2)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2·5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx;|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2·6/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈(∅ ⦂ ℙ(CANASTAS))∧c2∈CANASTAS ∖ (∅ ⦂ ℙ(CANASTAS))∧(CANASTAS × {maxg})(c1)&lt;maxg⇒(CANASTAS × {maxg})(c2)+1=(CANASTAS × {maxg})(c1)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2·6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx=|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2,7/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))∧(CANASTAS × {maxg})(ult')&lt;maxg∧CANASTAS ∖ (∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))⇒ordenC[∅ ⦂ ℙ(CANASTAS)]=0 ‥ ordenC(ult')" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2,7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx&gt;|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2,8/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈(∅ ⦂ ℙ(CANASTAS))∧c2∈CANASTAS ∖ (∅ ⦂ ℙ(CANASTAS))∧(CANASTAS × {maxg})(c1)=maxg⇒(CANASTAS × {maxg})(c2)=0" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2,8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx?|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2,9/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaroo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))∧(CANASTAS × {maxg})(ult')=maxg⇒(∃j⦂ℤ·j∈0 ‥ ordenC(ult')∧ordenC[∅ ⦂ ℙ(CANASTAS)]=j ‥ ordenC(ult'))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0R"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#INITIALISATION\/inv2,9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasaroo" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ult'" org.eventb.core.type="CANASTAS"/>
+<org.eventb.core.poIdentifier name="pmc'" org.eventb.core.type="ℙ(PERSONAS×CANASTAS)"/>
+<org.eventb.core.poIdentifier name="pesp'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="pasaron'" org.eventb.core.type="ℙ(CANASTAS)"/>
+<org.eventb.core.poIdentifier name="giros'" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+<org.eventb.core.poIdentifier name="er'" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.poIdentifier name="abajo'" org.eventb.core.type="CANASTAS"/>
+<org.eventb.core.poIdentifier name="pr'" org.eventb.core.type="ℙ(PERSONAS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasaroo" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasaroo" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasarop" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="pesp'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="PERSONAS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasarop" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasarop" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="p∈PERSONAS" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTcaYrEei9LrMP3-OL0Q|org.eventb.core.guard#_xueTc6YrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∉pr" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTcaYrEei9LrMP3-OL0Q|org.eventb.core.guard#_xueTdKYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∉pesp" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTcaYrEei9LrMP3-OL0Q|org.eventb.core.guard#_xueTdaYrEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasaroq" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="pmc'" org.eventb.core.type="ℙ(PERSONAS×CANASTAS)"/>
+<org.eventb.core.poIdentifier name="pesp'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="pr'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="gp" org.eventb.core.type="ℙ(PERSONAS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasaroq" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasaroq" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="gp⊆pesp" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTd6YrEei9LrMP3-OL0Q|org.eventb.core.guard#_xue6gaYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(gp)" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTd6YrEei9LrMP3-OL0Q|org.eventb.core.guard#_xue6gqYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="gp≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTd6YrEei9LrMP3-OL0Q|org.eventb.core.guard#_xue6g6YrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card(gp)≤cc(abajo)" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTd6YrEei9LrMP3-OL0Q|org.eventb.core.guard#_xue6hKYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="abajo∉ran(pmc)" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTd6YrEei9LrMP3-OL0Q|org.eventb.core.guard#_xue6haYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="er=detenida" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xueTd6YrEei9LrMP3-OL0Q|org.eventb.core.guard#_xue6hqYrEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasaror" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="pmc'" org.eventb.core.type="ℙ(PERSONAS×CANASTAS)"/>
+<org.eventb.core.poIdentifier name="pr'" org.eventb.core.type="ℙ(PERSONAS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasaror" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasaror" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="er=detenida" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xufhkaYrEei9LrMP3-OL0Q|org.eventb.core.guard#_xufhkqYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pmc∼[{abajo}]≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xufhkaYrEei9LrMP3-OL0Q|org.eventb.core.guard#_xufhk6YrEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="girar/inv2,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron ∖ {abajo}≠(∅ ⦂ ℙ(CANASTAS))⇒ult∈pasaron ∖ {abajo}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="girar/inv2,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="abajo=ult∧girando=detenida∧pasaron ∖ {abajo}≠(∅ ⦂ ℙ(CANASTAS))⇒pasaron ∖ {abajo}={ult}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="girar/inv2,4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron ∖ {abajo}≠(∅ ⦂ ℙ(CANASTAS))∧girando=detenida⇒abajo=ordenC∼(min(ordenC[pasaron ∖ {abajo}]))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2,4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="girar/inv2·5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron ∖ {abajo}∧c2∈pasaron ∖ {abajo}⇒(giros{abajo ↦ 0})(c1)=(giros{abajo ↦ 0})(c2)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2·5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx;|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="girar/inv2·6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron ∖ {abajo}∧c2∈CANASTAS ∖ (pasaron ∖ {abajo})∧(giros{abajo ↦ 0})(c1)&lt;maxg⇒(giros{abajo ↦ 0})(c2)+1=(giros{abajo ↦ 0})(c1)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2·6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx=|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="girar/inv2,7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron ∖ {abajo}≠(∅ ⦂ ℙ(CANASTAS))∧(giros{abajo ↦ 0})(ult)&lt;maxg∧CANASTAS ∖ (pasaron ∖ {abajo})≠(∅ ⦂ ℙ(CANASTAS))⇒ordenC[pasaron ∖ {abajo}]=0 ‥ ordenC(ult)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2,7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx&gt;|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="girar/inv2,8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron ∖ {abajo}∧c2∈CANASTAS ∖ (pasaron ∖ {abajo})∧(giros{abajo ↦ 0})(c1)=maxg⇒(giros{abajo ↦ 0})(c2)=0" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2,8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx?|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="girar/inv2,9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasaros"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron ∖ {abajo}≠(∅ ⦂ ℙ(CANASTAS))∧(giros{abajo ↦ 0})(ult)=maxg⇒(∃j⦂ℤ·j∈0 ‥ ordenC(ult)∧ordenC[pasaron ∖ {abajo}]=j ‥ ordenC(ult))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0V"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#girar\/inv2,9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasaros" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="pasaron'" org.eventb.core.type="ℙ(CANASTAS)"/>
+<org.eventb.core.poIdentifier name="giros'" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+<org.eventb.core.poIdentifier name="er'" org.eventb.core.type="ESTADO"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasaros" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasaros" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="er=detenida" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xufhlqYrEei9LrMP3-OL0Q|org.eventb.core.guard#_xugIoKYrEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pr≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/5_RuedaChicago/Abstracto2018.bum|org.eventb.core.machineFile#Abstracto2018|org.eventb.core.event#_xufhlqYrEei9LrMP3-OL0Q|org.eventb.core.guard#_xugIoaYrEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="detener/inv2,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarot"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="c=ult∧detenida=detenida∧pasaron≠(∅ ⦂ ℙ(CANASTAS))⇒pasaron={ult}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0W"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0W"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#detener\/inv2,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="detener/inv2,4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarot"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron≠(∅ ⦂ ℙ(CANASTAS))∧detenida=detenida⇒c=ordenC∼(min(ordenC[pasaron]))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0W"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0W"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#detener\/inv2,4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasarot" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="CANASTAS"/>
+<org.eventb.core.poIdentifier name="er'" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.poIdentifier name="abajo'" org.eventb.core.type="CANASTAS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasarot" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasarot" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="c∈pasaron" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0W|org.eventb.core.guard#_4CBfsqYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="giros(c)=maxg" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0W|org.eventb.core.guard#_4CBfs6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="er=girando" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_z7j2EKYrEei9LrMP3-OL0W|org.eventb.core.guard#_4CBftKYsEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="seguir1/inv2,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron∪{c}≠(∅ ⦂ ℙ(CANASTAS))⇒ult∈pasaron∪{c}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir1/inv2,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="abajo=ult∧er=detenida∧pasaron∪{c}≠(∅ ⦂ ℙ(CANASTAS))⇒pasaron∪{c}={ult}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir1/inv2,4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron∪{c}≠(∅ ⦂ ℙ(CANASTAS))∧er=detenida⇒abajo=ordenC∼(min(ordenC[pasaron∪{c}]))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2,4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir1/inv2·5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron∪{c}∧c2∈pasaron∪{c}⇒(giros{c ↦ giros(c)+1})(c1)=(giros{c ↦ giros(c)+1})(c2)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2·5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx;|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir1/inv2·6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron∪{c}∧c2∈CANASTAS ∖ (pasaron∪{c})∧(giros{c ↦ giros(c)+1})(c1)&lt;maxg⇒(giros{c ↦ giros(c)+1})(c2)+1=(giros{c ↦ giros(c)+1})(c1)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2·6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx=|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir1/inv2,7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron∪{c}≠(∅ ⦂ ℙ(CANASTAS))∧(giros{c ↦ giros(c)+1})(ult)&lt;maxg∧CANASTAS ∖ (pasaron∪{c})≠(∅ ⦂ ℙ(CANASTAS))⇒ordenC[pasaron∪{c}]=0 ‥ ordenC(ult)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2,7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx&gt;|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir1/inv2,8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron∪{c}∧c2∈CANASTAS ∖ (pasaron∪{c})∧(giros{c ↦ giros(c)+1})(c1)=maxg⇒(giros{c ↦ giros(c)+1})(c2)=0" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2,8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx?|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir1/inv2,9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pasaron∪{c}≠(∅ ⦂ ℙ(CANASTAS))∧(giros{c ↦ giros(c)+1})(ult)=maxg⇒(∃j⦂ℤ·j∈0 ‥ ordenC(ult)∧ordenC[pasaron∪{c}]=j ‥ ordenC(ult))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0X"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir1\/inv2,9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasarou" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="CANASTAS"/>
+<org.eventb.core.poIdentifier name="pasaron'" org.eventb.core.type="ℙ(CANASTAS)"/>
+<org.eventb.core.poIdentifier name="giros'" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasarou" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasarou" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="er=girando" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q|org.eventb.core.guard#_4CCGwqYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c∈CANASTAS ∖ pasaron" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q|org.eventb.core.guard#_4CCGw6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="giros(c)&lt;maxg" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGwKYsEei9LrMP3-OL0Q|org.eventb.core.guard#_4CCGxKYsEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="seguir2/inv2,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))⇒ult∈(∅ ⦂ ℙ(CANASTAS))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir2/inv2,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="abajo=ult∧er=detenida∧(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))⇒(∅ ⦂ ℙ(CANASTAS))={ult}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir2/inv2,4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))∧er=detenida⇒abajo=ordenC∼(min(ordenC[∅ ⦂ ℙ(CANASTAS)]))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2,4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir2/inv2·5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈(∅ ⦂ ℙ(CANASTAS))∧c2∈(∅ ⦂ ℙ(CANASTAS))⇒giros(c1)=giros(c2)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2·5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx;|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir2/inv2·6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈(∅ ⦂ ℙ(CANASTAS))∧c2∈CANASTAS ∖ (∅ ⦂ ℙ(CANASTAS))∧giros(c1)&lt;maxg⇒giros(c2)+1=giros(c1)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2·6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx=|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir2/inv2,7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))∧giros(ult)&lt;maxg∧CANASTAS ∖ (∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))⇒ordenC[∅ ⦂ ℙ(CANASTAS)]=0 ‥ ordenC(ult)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2,7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx&gt;|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir2/inv2,8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈(∅ ⦂ ℙ(CANASTAS))∧c2∈CANASTAS ∖ (∅ ⦂ ℙ(CANASTAS))∧giros(c1)=maxg⇒giros(c2)=0" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2,8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx?|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="seguir2/inv2,9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTALLHYPpasarov"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CANASTAS))≠(∅ ⦂ ℙ(CANASTAS))∧giros(ult)=maxg⇒(∃j⦂ℤ·j∈0 ‥ ordenC(ult)∧ordenC[∅ ⦂ ℙ(CANASTAS)]=j ‥ ordenC(ult))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.event#_xudFWaYrEei9LrMP3-OL0Y"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poSequent#seguir2\/inv2,9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTpasarov" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="pasaron'" org.eventb.core.type="ℙ(CANASTAS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPpasarov" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#EVTIDENTpasarov" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="er=girando" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q|org.eventb.core.guard#_4CCGyKYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pasaron=CANASTAS" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q|org.eventb.core.guard#_4CCGyaYsEei9LrMP3-OL0Q"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀d⦂CANASTAS·d∈pasaron⇒giros(d)&lt;maxg" org.eventb.core.source="/5_RuedaChicago/Ref1_giros.bum|org.eventb.core.machineFile#Ref1_giros|org.eventb.core.event#_4CCGx6YsEei9LrMP3-OL0Q|org.eventb.core.guard#_4CCGyqYsEei9LrMP3-OL0Q"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx9" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ult∈CANASTAS" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_Lnb0Max8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pasaron≠(∅ ⦂ ℙ(CANASTAS))⇒ult∈pasaron" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LncbQKx8EeiUDoNOpRQlQA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="abajo=ult∧er=detenida∧pasaron≠(∅ ⦂ ℙ(CANASTAS))⇒pasaron={ult}" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_oiRL0Kx8EeiUDoNOpRQlQA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx:" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx9" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="pasaron≠(∅ ⦂ ℙ(CANASTAS))∧er=detenida⇒abajo=ordenC∼(min(ordenC[pasaron]))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFWXULBMEeib8cJ7wHgGCw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx;" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx:" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron∧c2∈pasaron⇒giros(c1)=giros(c2)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFW-YLBMEeib8cJ7wHgGCw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx=" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx;" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron∧c2∈CANASTAS ∖ pasaron∧giros(c1)&lt;maxg⇒giros(c2)+1=giros(c1)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcLBMEeib8cJ7wHgGCw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx&gt;" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx=" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="pasaron≠(∅ ⦂ ℙ(CANASTAS))∧giros(ult)&lt;maxg∧CANASTAS ∖ pasaron≠(∅ ⦂ ℙ(CANASTAS))⇒ordenC[pasaron]=0 ‥ ordenC(ult)" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFXlcbBMEeib8cJ7wHgGCw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx?" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx&gt;" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="∀c1⦂CANASTAS,c2⦂CANASTAS·c1∈pasaron∧c2∈CANASTAS ∖ pasaron∧giros(c1)=maxg⇒giros(c2)=0" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYMgLBMEeib8cJ7wHgGCw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/5_RuedaChicago/Ref2_giros0.bpo|org.eventb.core.poFile#Ref2_giros0|org.eventb.core.poPredicateSet#HYPctx?" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="pasaron≠(∅ ⦂ ℙ(CANASTAS))∧giros(ult)=maxg⇒(∃j⦂ℤ·j∈0 ‥ ordenC(ult)∧ordenC[pasaron]=j ‥ ordenC(ult))" org.eventb.core.source="/5_RuedaChicago/Ref2_giros0.bum|org.eventb.core.machineFile#Ref2_giros0|org.eventb.core.invariant#_LFYzkLBMEeib8cJ7wHgGCw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gy-0bFpEeiBneomkn1R9w" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="ax2" org.eventb.core.predicate="fact∈ℕ → ℕ" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4LFpEeiBneomkn1R9w" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="ax3" org.eventb.core.predicate="fact(0)=1" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4bFpEeiBneomkn1R9w" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="ax4" org.eventb.core.predicate="∀x⦂ℤ·x∈ℕ⇒fact(x+1)=(x+1)∗fact(x)" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4rFpEeiBneomkn1R9w" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="fact" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.constant#_9Gy-0LFpEeiBneomkn1R9w" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.scConstant name="n" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.constant#_9GyXwLFpEeiBneomkn1R9w" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>

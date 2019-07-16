@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1536070184107" org.eventb.texttools.text_representation="machine Ref2_giros0 refines Ref1_giros  sees ctx3&#10;&#10;variables pr // Personas en la rueda&#10;          pesp // personas en espera&#10;          pmc // personas y las canastas en que montan&#10;          er // estado de la rueda&#10;          abajo // la canasta que esta abajo&#10;          giros // giros que ha dado cada canasta&#10;          pasaron // canastas ya contadas en el giro actual&#10;          ult// ultimo en pasar el giro&#10;invariants&#10;  @inv2.1 ult∈ CANASTAS&#10;  @inv2.2 pasaron ≠ ∅ ⇒ ult ∈ pasaron&#10;  @inv2.3 abajo = ult ∧ er = detenida ∧ pasaron ≠ ∅ ⇒ pasaron = {ult}&#10;  @inv2.4 pasaron ≠ ∅  ∧ er=detenida ⇒ abajo = ordenC∼(min(ordenC[pasaron]))&#10;  @inv2·5 ∀c1,c2· c1 ∈ pasaron ∧ c2 ∈ pasaron ⇒ giros(c1) = giros(c2)&#10;  @inv2·6 ∀c1,c2· c1 ∈ pasaron ∧ c2 ∈ CANASTAS∖pasaron ∧ giros(c1)&lt; maxg ⇒ giros(c2) + 1 = giros(c1)&#10;  @inv2.7 pasaron ≠ ∅ ∧ giros(ult) &lt; maxg ∧ CANASTAS∖pasaron ≠ ∅ ⇒ ordenC[pasaron] = 0‥ordenC(ult)&#10;  @inv2.8 ∀c1,c2· c1 ∈ pasaron ∧ c2 ∈ CANASTAS∖pasaron ∧ giros(c1) = maxg ⇒ giros(c2) = 0&#10;  @inv2.9 pasaron ≠ ∅ ∧ giros(ult) = maxg ⇒ (∃j· j ∈ 0‥ordenC(ult) ∧ ordenC[pasaron] = j‥ordenC(ult))&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  end&#10;&#10;  event llega_per extends llega_per&#10;  end&#10;&#10;  event suben_per extends suben_per&#10;  end&#10;&#10;  event bajan_per extends bajan_per&#10;  end&#10;&#10;  event girar extends girar&#10;  end&#10;&#10;  event detener extends detener&#10;  end&#10;&#10;  event seguir1 // siguiente canasta&#10;  extends seguir1&#10;  end&#10;&#10;  event seguir2 // siguiente vuelta de canastas&#10;  extends seguir2&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Ref1_giros"/>
+<org.eventb.core.seesContext name="_ZggSQKx7EeiUDoNOpRQlQA" org.eventb.core.target="ctx3"/>
+<org.eventb.core.variable name="_xudFVaYrEei9LrMP3-OL0Q" org.eventb.core.comment="Personas en la rueda" org.eventb.core.identifier="pr"/>
+<org.eventb.core.variable name="_xudFVqYrEei9LrMP3-OL0Q" org.eventb.core.comment="personas en espera" org.eventb.core.identifier="pesp"/>
+<org.eventb.core.variable name="_xudFV6YrEei9LrMP3-OL0Q" org.eventb.core.comment="personas y las canastas en que montan" org.eventb.core.identifier="pmc"/>
+<org.eventb.core.variable name="_xudFWKYrEei9LrMP3-OL0Q" org.eventb.core.comment="estado de la rueda" org.eventb.core.identifier="er"/>
+<org.eventb.core.variable name="_xudFWaYrEei9LrMP3-OL0Q" org.eventb.core.comment="la canasta que esta abajo" org.eventb.core.identifier="abajo"/>
+<org.eventb.core.variable name="_4CBft6YsEei9LrMP3-OL0Q" org.eventb.core.comment="giros que ha dado cada canasta" org.eventb.core.identifier="giros"/>
+<org.eventb.core.variable name="_4CBfuKYsEei9LrMP3-OL0Q" org.eventb.core.comment="canastas ya contadas en el giro actual" org.eventb.core.identifier="pasaron"/>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0R" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0S" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="llega_per">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="llega_per"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0T" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="suben_per">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="suben_per"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0U" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="bajan_per">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="bajan_per"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0V" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="girar">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="girar"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0W" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="detener">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="detener"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0X" org.eventb.core.comment="siguiente canasta" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="seguir1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="seguir1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xudFWaYrEei9LrMP3-OL0Y" org.eventb.core.comment="siguiente vuelta de canastas" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="seguir2">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="seguir2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_Lnb0MKx8EeiUDoNOpRQlQA" org.eventb.core.comment="ultimo en pasar el giro" org.eventb.core.identifier="ult"/>
+<org.eventb.core.invariant name="_Lnb0Max8EeiUDoNOpRQlQA" org.eventb.core.label="inv2,1" org.eventb.core.predicate="ult∈ CANASTAS"/>
+<org.eventb.core.invariant name="_LncbQKx8EeiUDoNOpRQlQA" org.eventb.core.label="inv2,2" org.eventb.core.predicate="pasaron ≠ ∅ ⇒ ult ∈ pasaron"/>
+<org.eventb.core.invariant name="_oiRL0Kx8EeiUDoNOpRQlQA" org.eventb.core.label="inv2,3" org.eventb.core.predicate="abajo = ult ∧ er = detenida ∧ pasaron ≠ ∅ ⇒ pasaron = {ult}"/>
+<org.eventb.core.invariant name="_LFWXULBMEeib8cJ7wHgGCw" org.eventb.core.label="inv2,4" org.eventb.core.predicate="pasaron ≠ ∅  ∧ er=detenida ⇒ abajo = ordenC∼(min(ordenC[pasaron]))"/>
+<org.eventb.core.invariant name="_LFW-YLBMEeib8cJ7wHgGCw" org.eventb.core.label="inv2·5" org.eventb.core.predicate="∀c1,c2· c1 ∈ pasaron ∧ c2 ∈ pasaron ⇒ giros(c1) = giros(c2)"/>
+<org.eventb.core.invariant name="_LFXlcLBMEeib8cJ7wHgGCw" org.eventb.core.label="inv2·6" org.eventb.core.predicate="∀c1,c2· c1 ∈ pasaron ∧ c2 ∈ CANASTAS∖pasaron ∧ giros(c1)&lt; maxg ⇒ giros(c2) + 1 = giros(c1)"/>
+<org.eventb.core.invariant name="_LFXlcbBMEeib8cJ7wHgGCw" org.eventb.core.label="inv2,7" org.eventb.core.predicate="pasaron ≠ ∅ ∧ giros(ult) &lt; maxg ∧ CANASTAS∖pasaron ≠ ∅ ⇒ ordenC[pasaron] = 0‥ordenC(ult)"/>
+<org.eventb.core.invariant name="_LFYMgLBMEeib8cJ7wHgGCw" org.eventb.core.label="inv2,8" org.eventb.core.predicate="∀c1,c2· c1 ∈ pasaron ∧ c2 ∈ CANASTAS∖pasaron ∧ giros(c1) = maxg ⇒ giros(c2) = 0"/>
+<org.eventb.core.invariant name="_LFYzkLBMEeib8cJ7wHgGCw" org.eventb.core.label="inv2,9" org.eventb.core.predicate="pasaron ≠ ∅ ∧ giros(ult) = maxg ⇒ (∃j· j ∈ 0‥ordenC(ult) ∧ ordenC[pasaron] = j‥ordenC(ult))"/>
+</org.eventb.core.machineFile>

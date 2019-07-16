@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1536687430234" org.eventb.texttools.text_representation="context Context&#10;constants n S x&#10;axioms&#10;  @ax1 n ∈ ℕ1&#10;  @ax2 S ∈ 1‥n ↣ ℕ&#10;  @ax1 x ∈ ℕ&#10;end&#10;" version="3">
+<org.eventb.core.constant name="_T5s34LXpEeiKSMKmkUGGZg" org.eventb.core.identifier="n"/>
+<org.eventb.core.constant name="_T5s34bXpEeiKSMKmkUGGZg" org.eventb.core.identifier="S"/>
+<org.eventb.core.constant name="_T5s34rXpEeiKSMKmkUGGZg" org.eventb.core.identifier="x"/>
+<org.eventb.core.axiom name="_T5s347XpEeiKSMKmkUGGZg" org.eventb.core.label="ax1" org.eventb.core.predicate="n ∈ ℕ1"/>
+<org.eventb.core.axiom name="_T5s35LXpEeiKSMKmkUGGZg" org.eventb.core.label="ax2" org.eventb.core.predicate="S ∈ 1‥n ↣ ℕ"/>
+<org.eventb.core.axiom name="_T5te8LXpEeiKSMKmkUGGZg" org.eventb.core.label="ax1" org.eventb.core.predicate="x ∈ ℕ"/>
+</org.eventb.core.contextFile>

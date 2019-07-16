@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1536860528391" org.eventb.texttools.text_representation="machine Refinamiento refines Abstracto  sees Contexto&#10;&#10;variables r i j&#10;&#10;invariants&#10;  @inv1,1 i ∈ dom(B)&#10;  @inv1,2 j ∈ dom(A)&#10;  @inv1,3 j ≤ card(dom(A))&#10;&#10;variant n1−j&#10;&#10;events&#10;  event INITIALISATION&#10;  then&#10;      @act1,1 r ≔  0&#10;      @act1,2 i ≔ 1&#10;      @act1,3 j ≔  1&#10;  end&#10;&#10;  event fin refines fin&#10;  where&#10;      @grd1,1 r=i−(j−1)&#10;  end&#10;&#10;  convergent event siga1 refines siga&#10;    where&#10;      @grd1,1 B(i)=A(j)&#10;      @grd1,2 j &lt; card(dom(A))&#10;    then&#10;      @act1,1 j ≔ j+1&#10;  end&#10;&#10;  convergent event siga2 refines siga&#10;    where&#10;      @grd1,1 B(i)≠A(j) ∨   j = card(dom(A))&#10;    then&#10;      @act1,1 j≔1&#10;      @act1,2 i≔ i+1&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Abstracto"/>
+<org.eventb.core.seesContext name="_pDtgELYAEei5UvyFzIgSTw" org.eventb.core.target="Contexto"/>
+<org.eventb.core.variable name="_1Y230bYAEei5UvyFzIgSTw" org.eventb.core.identifier="r"/>
+<org.eventb.core.event name="_pDtgELYAEei5UvyFzIgSTx" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_gYkYcLZOEei6sODqI5w9dw" org.eventb.core.assignment="r ≔  0" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_gYk_gLZOEei6sODqI5w9dw" org.eventb.core.assignment="i ≔ 1" org.eventb.core.label="act1,2"/>
+<org.eventb.core.action name="_gYsUQLZOEei6sODqI5w9dw" org.eventb.core.assignment="j ≔  1" org.eventb.core.label="act1,3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pDtgELYAEei5UvyFzIgSTy" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fin"/>
+<org.eventb.core.guard name="_gYtiYLZOEei6sODqI5w9dw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="r=i−(j−1)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_pDtgELYAEei5UvyFzIgSTz" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="siga1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_oC4t4LZQEei6sODqI5w9dw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="B(i)=A(j)"/>
+<org.eventb.core.guard name="_oC4t4bZQEei6sODqI5w9dw" org.eventb.core.label="grd1,2" org.eventb.core.predicate="j &lt; card(dom(A))"/>
+<org.eventb.core.action name="_oC5U8LZQEei6sODqI5w9dw" org.eventb.core.assignment="j ≔ j+1" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="_gYuJcLZOEei6sODqI5w9dw" org.eventb.core.label="inv1,1" org.eventb.core.predicate="i ∈ dom(B)"/>
+<org.eventb.core.invariant name="_gYuwgLZOEei6sODqI5w9dw" org.eventb.core.label="inv1,2" org.eventb.core.predicate="j ∈ dom(A)"/>
+<org.eventb.core.variable name="_wSqdoLZOEei6sODqI5w9dw" org.eventb.core.identifier="i"/>
+<org.eventb.core.variable name="_wSqdobZOEei6sODqI5w9dw" org.eventb.core.identifier="j"/>
+<org.eventb.core.event name="_oC6jELZQEei6sODqI5w9dw" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="siga2">
+<org.eventb.core.refinesEvent name="_oC6jEbZQEei6sODqI5w9dw" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_QyCysLZSEei6sODqI5w9dw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="B(i)≠A(j) ∨   j = card(dom(A))"/>
+<org.eventb.core.action name="_oC7xMLZQEei6sODqI5w9dw" org.eventb.core.assignment="j≔1" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_OBPOkLd8EeigyeGqngpZtw" org.eventb.core.assignment="i≔ i+1" org.eventb.core.label="act1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.variant name="_I8GKILZSEei6sODqI5w9dw" org.eventb.core.expression="n1−j"/>
+<org.eventb.core.invariant name="_QyDZwLZSEei6sODqI5w9dw" org.eventb.core.label="inv1,3" org.eventb.core.predicate="j ≤ card(dom(A))"/>
+</org.eventb.core.machineFile>

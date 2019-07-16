@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1536254896672" org.eventb.texttools.text_representation="context Contexto&#10;constants n sum&#10;axioms&#10;  @ax1 n ∈ ℕ&#10;  @ax2 sum ∈ ℕ   → ℕ&#10;  @ax3 sum(0) = 0&#10;  @ax4 ∀x· x ∈ ℕ ⇒ sum(x+1) = (x+1)+ sum(x)&#10;end&#10;" version="3">
+<org.eventb.core.constant name="_VWd3ULH4Eeimr84T2lvYhw" org.eventb.core.identifier="n"/>
+<org.eventb.core.constant name="_VWeeYLH4Eeimr84T2lvYhw" org.eventb.core.identifier="sum"/>
+<org.eventb.core.axiom name="_VWeeYbH4Eeimr84T2lvYhw" org.eventb.core.label="ax1" org.eventb.core.predicate="n ∈ ℕ"/>
+<org.eventb.core.axiom name="_VWeeYrH4Eeimr84T2lvYhw" org.eventb.core.label="ax2" org.eventb.core.predicate="sum ∈ ℕ   → ℕ"/>
+<org.eventb.core.axiom name="_VWhhsLH4Eeimr84T2lvYhw" org.eventb.core.label="ax3" org.eventb.core.predicate="sum(0) = 0"/>
+<org.eventb.core.axiom name="_VWiIwLH4Eeimr84T2lvYhw" org.eventb.core.label="ax4" org.eventb.core.predicate="∀x· x ∈ ℕ ⇒ sum(x+1) = (x+1)+ sum(x)"/>
+</org.eventb.core.contextFile>

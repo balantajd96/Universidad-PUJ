@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportWizard">
+		<list key="P2ImportExportPage.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\IvanV\Desktop\rodin3.p2f"/>
+		</list>
+	</section>
+	<section name="ImportFromInstallationWizard">
+		<list key="P2ImportExportPage.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\IvanV\Desktop\Rodin3"/>
+			<item value="C:\Users\IvanV\Downloads\rodin3-2"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1534256121508" org.eventb.texttools.text_representation="context Contexto_1&#10;sets&#10;USUARIOS&#10;ACTIVIDADES&#10;CUARTOS&#10;constants&#10;actCuarto&#10;axioms&#10;@ax1 actCuarto ∈  ACTIVIDADES → CUARTOS&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_erIkgJ_MEeibN8yuBAXqgA" org.eventb.core.identifier="USUARIOS"/>
+<org.eventb.core.carrierSet name="_erJLkJ_MEeibN8yuBAXqgA" org.eventb.core.identifier="ACTIVIDADES"/>
+<org.eventb.core.carrierSet name="_erJLkZ_MEeibN8yuBAXqgA" org.eventb.core.identifier="CUARTOS"/>
+<org.eventb.core.constant name="_erJyoJ_MEeibN8yuBAXqgA" org.eventb.core.identifier="actCuarto"/>
+<org.eventb.core.axiom name="_erJyoZ_MEeibN8yuBAXqgA" org.eventb.core.label="ax1" org.eventb.core.predicate="actCuarto ∈  ACTIVIDADES → CUARTOS"/>
+</org.eventb.core.contextFile>

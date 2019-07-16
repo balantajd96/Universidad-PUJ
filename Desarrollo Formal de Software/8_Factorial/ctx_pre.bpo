@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="fact" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="ax3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#HYP("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(fact)∧fact∈ℤ ⇸ ℤ" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4bFpEeiBneomkn1R9w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4bFpEeiBneomkn1R9w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#HYP("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="ax4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#HYP)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂ℤ·x∈ℕ⇒x+1∈dom(fact)∧fact∈ℤ ⇸ ℤ∧x∈dom(fact)" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4rFpEeiBneomkn1R9w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4rFpEeiBneomkn1R9w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#HYP)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYP(" org.eventb.core.parentSet="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gy-0bFpEeiBneomkn1R9w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="fact∈ℕ → ℕ" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4LFpEeiBneomkn1R9w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYP)" org.eventb.core.parentSet="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#HYP(" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="fact(0)=1" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4bFpEeiBneomkn1R9w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/8_Factorial/ctx_pre.bpo|org.eventb.core.poFile#ctx_pre|org.eventb.core.poPredicateSet#HYP)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀x⦂ℤ·x∈ℕ⇒fact(x+1)=(x+1)∗fact(x)" org.eventb.core.source="/8_Factorial/ctx_pre.buc|org.eventb.core.contextFile#ctx_pre|org.eventb.core.axiom#_9Gzl4rFpEeiBneomkn1R9w"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

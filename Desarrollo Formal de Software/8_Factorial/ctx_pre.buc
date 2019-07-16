@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1536198519469" org.eventb.texttools.text_representation="context ctx_pre&#10;constants&#10;  n&#10;  fact&#10;axioms&#10;@ax1 n ∈ ℕ&#10;@ax2 fact ∈ ℕ   → ℕ&#10;@ax3 fact(0) = 1&#10;@ax4 ∀x· x ∈ ℕ ⇒ fact(x+1) = (x+1)∗ fact(x)&#10;end&#10;" version="3">
+<org.eventb.core.constant name="_9GyXwLFpEeiBneomkn1R9w" org.eventb.core.identifier="n"/>
+<org.eventb.core.constant name="_9Gy-0LFpEeiBneomkn1R9w" org.eventb.core.identifier="fact"/>
+<org.eventb.core.axiom name="_9Gy-0bFpEeiBneomkn1R9w" org.eventb.core.label="ax1" org.eventb.core.predicate="n ∈ ℕ"/>
+<org.eventb.core.axiom name="_9Gzl4LFpEeiBneomkn1R9w" org.eventb.core.label="ax2" org.eventb.core.predicate="fact ∈ ℕ   → ℕ"/>
+<org.eventb.core.axiom name="_9Gzl4bFpEeiBneomkn1R9w" org.eventb.core.label="ax3" org.eventb.core.predicate="fact(0) = 1"/>
+<org.eventb.core.axiom name="_9Gzl4rFpEeiBneomkn1R9w" org.eventb.core.label="ax4" org.eventb.core.predicate="∀x· x ∈ ℕ ⇒ fact(x+1) = (x+1)∗ fact(x)"/>
+</org.eventb.core.contextFile>

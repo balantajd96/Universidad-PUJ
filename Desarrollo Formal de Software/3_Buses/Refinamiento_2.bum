@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1535129973318" org.eventb.texttools.text_representation="machine Refinamiento_2 refines Refinamiento_1  sees Contexto_2&#10;&#10;variables parq recorrido&#10;direc&#10;invariants&#10;@inv2.1 direc ∈ BUSES → DIR&#10;@inv2.2 dom(recorrido) ⊆ dom(direc)//uno no puede tener un bus sin direccion&#10;@inv2.3 ∀b,er,enr · b ∈ dom(recorrido) ∧ direc(b) = ida ∧ enr ∈  dom(rutaB(b))∖ (recorrido[{b}]) ∧ er ∈ recorrido[{b}] ∧  rutaB(b)(enr) ≠ 0 ⇒ rutaB(b)(enr) &gt; rutaB(b)(er)//si el bus va de ida, las estaciones recorren de manera acendente //es un bus que ya arranco, tiene diraccion/enr es una estacion que no ha recorrido/er es una estacion que si recprrio/quitamos el 0 porque el 0 son las estaciones que no recorre, entonces el numero asignado a esa ruta tiene que ser mas grande que la que no esta asignado a ese numero.&#10;@inv2.4 ∀b · b ∈ dom(parq) ∧ direc(b) = ida ⇒ (rutaB(b)(parq(b)) = min(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0})))&#10;@inv2.5 ∀b,er,enr · b ∈ dom(recorrido) ∧ direc(b) = regreso ∧ enr ∈  dom(rutaB(b))∖ (recorrido[{b}]) ∧ er ∈ recorrido[{b}] ∧  rutaB(b)(enr) ≠ 0 ⇒ rutaB(b)(enr) &lt; rutaB(b)(er)&#10;@inv2.6 ∀b · b ∈ dom(parq) ∧ direc(b) = regreso ⇒ (rutaB(b)(parq(b)) = max(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0})))&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;  @act2.1 direc ≔  BUSES × {ida}&#10;  end&#10;&#10;  event llegar1 extends llegar&#10;  when&#10;  @grd2.0 b ∈ dom(direc)&#10;  @grd2.1 direc(b) = ida&#10;  @grd2.2 rutaB(b)(e) = min(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0}))&#10;  end&#10;&#10;  event llegar2 extends llegar&#10;  when&#10;  @grd2.0 b ∈ dom(direc)&#10;  @grd2.1 direc(b) = regreso&#10;  @grd2.2 rutaB(b)(e) = max(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0}))&#10;  end&#10;&#10;  event terminar extends terminar&#10;  any d&#10;  where&#10;  @grd2.1 d ∈ DIR∖{direc(b)}&#10;  then&#10;  @act2.1 direc(b) ≔ d&#10;  end&#10;&#10;  event salir extends salir&#10;  end&#10;&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Refinamiento_1"/>
+<org.eventb.core.seesContext name="_LuYgUKFxEeinFt5Dz70U-w" org.eventb.core.target="Contexto_2"/>
+<org.eventb.core.variable name="_hcpNYJ_NEeibN8yuBAXqgA" org.eventb.core.identifier="parq"/>
+<org.eventb.core.variable name="_M__9gJ_iEeibN8yuBAXqgA" org.eventb.core.identifier="recorrido"/>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgB" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_gU4esKF7EeinFt5Dz70U-w" org.eventb.core.assignment="direc ≔  BUSES × {ida}" org.eventb.core.label="act2,1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgC" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="llegar1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="llegar"/>
+<org.eventb.core.guard name="_YWfPUKF8EeinFt5Dz70U-w" org.eventb.core.label="grd2,0" org.eventb.core.predicate="b ∈ dom(direc)"/>
+<org.eventb.core.guard name="_YWgdcKF8EeinFt5Dz70U-w" org.eventb.core.label="grd2,1" org.eventb.core.predicate="direc(b) = ida"/>
+<org.eventb.core.guard name="_YWhEgKF8EeinFt5Dz70U-w" org.eventb.core.label="grd2,2" org.eventb.core.predicate="rutaB(b)(e) = min(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0}))"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgD" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="llegar2">
+<org.eventb.core.refinesEvent name="_YWeBMKF8EeinFt5Dz70U-w" org.eventb.core.target="llegar"/>
+<org.eventb.core.guard name="_jGOvgaF8EeinFt5Dz70U-w" org.eventb.core.label="grd2,0" org.eventb.core.predicate="b ∈ dom(direc)"/>
+<org.eventb.core.guard name="_otsuUKF8EeinFt5Dz70U-w" org.eventb.core.label="grd2,1" org.eventb.core.predicate="direc(b) = regreso"/>
+<org.eventb.core.guard name="_ottVYKF8EeinFt5Dz70U-w" org.eventb.core.label="grd2,2" org.eventb.core.predicate="rutaB(b)(e) = max(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0}))"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgE" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="terminar">
+<org.eventb.core.refinesEvent name="_MjozYKe-Eei0CeBTD9Qmmw" org.eventb.core.target="terminar"/>
+<org.eventb.core.parameter name="_jGOvgKF8EeinFt5Dz70U-w" org.eventb.core.identifier="d"/>
+<org.eventb.core.guard name="_otvKkKF8EeinFt5Dz70U-w" org.eventb.core.label="grd2,1" org.eventb.core.predicate="d ∈ DIR∖{direc(b)}"/>
+<org.eventb.core.action name="_jGPWkKF8EeinFt5Dz70U-w" org.eventb.core.assignment="direc(b) ≔ d" org.eventb.core.label="act2,1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_cKLkYKFxEeinFt5Dz70U-w" org.eventb.core.identifier="direc"/>
+<org.eventb.core.invariant name="_cKLkYaFxEeinFt5Dz70U-w" org.eventb.core.label="inv2,1" org.eventb.core.predicate="direc ∈ BUSES → DIR"/>
+<org.eventb.core.invariant name="_hKYLAKF1EeinFt5Dz70U-w" org.eventb.core.comment="uno no puede tener un bus sin direccion" org.eventb.core.label="inv2,2" org.eventb.core.predicate="dom(recorrido) ⊆ dom(direc)"/>
+<org.eventb.core.invariant name="_Cyc7kKF7EeinFt5Dz70U-w" org.eventb.core.comment="si el bus va de ida, las estaciones recorren de manera acendente //es un bus que ya arranco, tiene diraccion/enr es una estacion que no ha recorrido/er es una estacion que si recprrio/quitamos el 0 porque el 0 son las estaciones que no recorre, entonces el numero asignado a esa ruta tiene que ser mas grande que la que no esta asignado a ese numero." org.eventb.core.label="inv2,3" org.eventb.core.predicate="∀b,er,enr · b ∈ dom(recorrido) ∧ direc(b) = ida ∧ enr ∈  dom(rutaB(b))∖ (recorrido[{b}]) ∧ er ∈ recorrido[{b}] ∧  rutaB(b)(enr) ≠ 0 ⇒ rutaB(b)(enr) &gt; rutaB(b)(er)"/>
+<org.eventb.core.invariant name="_gU8JEKF7EeinFt5Dz70U-w" org.eventb.core.label="inv2,4" org.eventb.core.predicate="∀b · b ∈ dom(parq) ∧ direc(b) = ida ⇒ (rutaB(b)(parq(b)) = min(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0})))"/>
+<org.eventb.core.invariant name="_wfazoKF7EeinFt5Dz70U-w" org.eventb.core.label="inv2,5" org.eventb.core.predicate="∀b,er,enr · b ∈ dom(recorrido) ∧ direc(b) = regreso ∧ enr ∈  dom(rutaB(b))∖ (recorrido[{b}]) ∧ er ∈ recorrido[{b}] ∧  rutaB(b)(enr) ≠ 0 ⇒ rutaB(b)(enr) &lt; rutaB(b)(er)"/>
+<org.eventb.core.invariant name="_Gk19MKF9EeinFt5Dz70U-w" org.eventb.core.label="inv2,6" org.eventb.core.predicate="∀b · b ∈ dom(parq) ∧ direc(b) = regreso ⇒ (rutaB(b)(parq(b)) = max(ran((recorrido[{b}]) ⩤ rutaB(b) ⩥ {0})))"/>
+<org.eventb.core.event name="_EvTe8Ke_Eei0CeBTD9Qmmw" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="salir">
+<org.eventb.core.refinesEvent name="_EvTe8ae_Eei0CeBTD9Qmmw" org.eventb.core.target="salir"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

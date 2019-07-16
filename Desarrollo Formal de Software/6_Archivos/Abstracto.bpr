@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ARCH×ℙ(USRS×PERM)))∈(∅ ⦂ ℙ(ARCH)) → ((∅ ⦂ ℙ(USRS)) ↔ PERM)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀a⦂ℙ(USRS×PERM)·a∈ran(∅ ⦂ ℙ(ARCH×ℙ(USRS×PERM)))⇒(∃u⦂USRS·u∈dom(a)∧a[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="nuevo/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p1,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬esct=borr"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="archivos⊆ARCH"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈USRS ∖ usuarios"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬lect=borr"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬ejec=borr"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=esct"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬lect=ejec"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬esct=ejec"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="usuarios⊆USRS"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="fsist∈archivos → (usuarios∪{u} ↔ PERM)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="fsist∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="crear/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10,p11,p12,p13"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p1,p2,p7,p8,p9,p10,p11,p12,p13,p14">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="gente" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="a∈ARCH ∖ archivos"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬esct=borr"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="archivos⊆ARCH"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="gente⊆usuarios"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬lect=borr"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬ejec=borr"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀a⦂ℙ(USRS×PERM)·a∈ran(fsist)⇒(∃u⦂USRS·u∈dom(a)∧a[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬lect=esct"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬lect=ejec"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬esct=ejec"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬gente=(∅ ⦂ ℙ(USRS))"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="usuarios⊆USRS"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="fsist{a ↦ gente × PERM}∈archivos∪{a} → (usuarios ↔ PERM)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="gente≠(∅ ⦂ ℙ(USRS))"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="fsist∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="crear/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="a0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ARCH,PERM,USRS" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees a0)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p7">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC4" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p3,p7,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="gente" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬gente=(∅ ⦂ ℙ(USRS))"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="a0∈ran(fsist{a ↦ gente × PERM})⇒(∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM)">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="archivos⊆ARCH">
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀a0⦂ℙ(USRS×PERM)·a0∈ran(fsist{a ↦ gente × PERM})⇒(∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="usuarios⊆USRS">
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="gente≠(∅ ⦂ ℙ(USRS))"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="a0∈ran(fsist{a ↦ gente × PERM})">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀a⦂ℙ(USRS×PERM)·a∈ran(fsist)⇒(∃u⦂USRS·u∈dom(a)∧a[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="otorgar/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p15">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="archivos⊆ARCH"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="a∈dom(fsist)∧fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="a∈archivos"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="usuarios⊆USRS"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="p∈PERM">
+<org.eventb.core.prIdent name="p" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="archivos"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="otorgar/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10,p11,p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p9,p10,p11,p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p2,p7,p3,p1,p9,p10,p11,p12,p13,p14,p15,p16">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="p" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬u ↦ p∈fsist(a)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬esct=borr"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="archivos⊆ARCH"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="fsist{a ↦ fsist(a)∪{u ↦ p}}∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬lect=borr"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬ejec=borr"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀a⦂ℙ(USRS×PERM)·a∈ran(fsist)⇒(∃u⦂USRS·u∈dom(a)∧a[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬lect=esct"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="a∈archivos"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="u ↦ p∉fsist(a)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬lect=ejec"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬esct=ejec"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈usuarios"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="usuarios⊆USRS"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="p∈PERM"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="fsist∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="otorgar/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="a0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8" org.eventb.core.prSets="ARCH,PERM,USRS" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees a0)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p14">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p3,p1,p5,p6"/>
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p9,p1,p2,p14,p3,p4,p5,p6,p7">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R30000"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="p" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬u ↦ p∈fsist(a)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="archivos⊆ARCH"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀a⦂ℙ(USRS×PERM)·a∈ran(fsist)⇒(∃u⦂USRS·u∈dom(a)∧a[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="a∈archivos"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="u ↦ p∉fsist(a)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈usuarios"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="usuarios⊆USRS"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="a0∈ran(fsist{a ↦ fsist(a)∪{u ↦ p}})">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀a0⦂ℙ(USRS×PERM)·a0∈ran(fsist{a ↦ fsist(a)∪{u ↦ p}})⇒(∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="a0∈ran(fsist{a ↦ fsist(a)∪{u ↦ p}})⇒(∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM)">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="p∈PERM"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="fsist∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="otorgar/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬u ↦ p∈fsist(a)">
+<org.eventb.core.prIdent name="p" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="a∈dom(fsist)∧fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="u ↦ p∉fsist(a)">
+<org.eventb.core.prIdent name="p" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="quitar/grd1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="archivos⊆ARCH"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="a∈dom(fsist)∧fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="a∈archivos"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="usuarios⊆USRS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="archivos"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="quitar/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="a∈dom(fsist)∧fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="quitar/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="a∈dom(fsist)∧fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬prs=(∅ ⦂ ℙ(PERM))">
+<org.eventb.core.prIdent name="prs" org.eventb.core.type="ℙ(PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="prs≠(∅ ⦂ ℙ(PERM))">
+<org.eventb.core.prIdent name="prs" org.eventb.core.type="ℙ(PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="quitar/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="ARCH,PERM,USRS" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15,p16,p17,p18"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15,p16,p17,p18"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Z3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1,p3,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="Z3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="prs" org.eventb.core.type="ℙ(PERM)"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="archivos⊆ARCH"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="prs⊆(fsist(a))[{u}]"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="(fsist(a))[{u}]=PERM⇒(∃x⦂USRS·x∈dom(fsist(a))∧(fsist(a))[{x}]=PERM∧¬x=u)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="(fsist(a))[{u}]=PERM⇒(∃x⦂USRS·x∈dom(fsist(a))∧(fsist(a))[{x}]=PERM∧x≠u)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="a∈archivos"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬prs=(∅ ⦂ ℙ(PERM))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="usuarios⊆USRS"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈dom(fsist(a))"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="prs≠(∅ ⦂ ℙ(PERM))"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="fsist{a ↦ fsist(a) ∖ ({u} × prs)}∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="fsist∈archivos → (usuarios ↔ PERM)"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="quitar/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="a0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="ARCH,PERM,USRS" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees a0)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p10">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC4" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p1,p3,p6,p10">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC4"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prIdent name="prs" org.eventb.core.type="ℙ(PERM)"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="archivos⊆ARCH">
+<org.eventb.core.prIdent name="archivos" org.eventb.core.type="ℙ(ARCH)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬prs=(∅ ⦂ ℙ(PERM))"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(fsist(a))[{u}]=PERM⇒(∃x⦂USRS·x∈dom(fsist(a))∧(fsist(a))[{x}]=PERM∧¬x=u)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="usuarios⊆USRS">
+<org.eventb.core.prIdent name="usuarios" org.eventb.core.type="ℙ(USRS)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈dom(fsist(a))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="prs≠(∅ ⦂ ℙ(PERM))"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀a0⦂ℙ(USRS×PERM)·a0∈ran(fsist{a ↦ fsist(a) ∖ ({u} × prs)})⇒(∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="(fsist(a))[{u}]=PERM⇒(∃x⦂USRS·x∈dom(fsist(a))∧(fsist(a))[{x}]=PERM∧x≠u)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀a⦂ℙ(USRS×PERM)·a∈ran(fsist)⇒(∃u⦂USRS·u∈dom(a)∧a[{u}]=PERM)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="a0∈ran(fsist{a ↦ fsist(a) ∖ ({u} × prs)})⇒(∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM)">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="∃u⦂USRS·u∈dom(a0)∧a0[{u}]=PERM">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="a0∈ran(fsist{a ↦ fsist(a) ∖ ({u} × prs)})">
+<org.eventb.core.prIdent name="a0" org.eventb.core.type="ℙ(USRS×PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="quitar/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ARCH,PERM,USRS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(PERM,{lect},{esct},{ejec},{borr}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ARCH"/>
+<org.eventb.core.prIdent name="fsist" org.eventb.core.type="ℙ(ARCH×ℙ(USRS×PERM))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬esct=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="PERM={lect,esct,ejec,borr}">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬lect=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="(fsist(a))[{u}]=PERM⇒(∃x⦂USRS·x∈dom(fsist(a))∧(fsist(a))[{x}]=PERM∧¬x=u)">
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬ejec=borr">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="a∈dom(fsist)"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="(fsist(a))[{u}]=PERM⇒(∃x⦂USRS·x∈dom(fsist(a))∧(fsist(a))[{x}]=PERM∧x≠u)">
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USRS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="a∈dom(fsist)∧fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬lect=esct">
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})">
+<org.eventb.core.prIdent name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬lect=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬esct=ejec">
+<org.eventb.core.prIdent name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.prIdent name="esct" org.eventb.core.type="PERM"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="fsist∈ARCH ⇸ ℙ(USRS × PERM)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬prs=(∅ ⦂ ℙ(PERM))">
+<org.eventb.core.prIdent name="prs" org.eventb.core.type="ℙ(PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="prs≠(∅ ⦂ ℙ(PERM))">
+<org.eventb.core.prIdent name="prs" org.eventb.core.type="ℙ(PERM)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1537893504608" org.eventb.texttools.text_representation="machine Abstracto sees Contexto&#10;&#10;variables ArregloR&#10;&#10;invariants&#10;  @inv ArregloR ∈    1‥n→  Bandera&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 ArregloR :∈ 1‥n→  Bandera&#10;  end&#10;&#10;  event fin&#10;    where&#10;      @grd1 ∃f· f ∈1‥n ⤖ 1‥n ∧ ArregloR = f ; Arreglo&#10;      @grd2 ∃x,y · x ∈ 1‥n ∧ y ∈ x+1‥n ∧ x &lt; y ⇒ (ArregloR[1‥x]={amarillo} ∧  ArregloR[x+1‥y]={azul} ∧  ArregloR[y+1‥n]={rojo})&#10;     end&#10;&#10;  anticipated event siga&#10;    then&#10;      @act1 ArregloR :∈  1‥n→  Bandera&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_8eMWMLH3Eeimr84T2lvYhw" org.eventb.core.target="Contexto"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_gU-zULH4Eeimr84T2lvYhw" org.eventb.core.assignment="ArregloR :∈ 1‥n→  Bandera" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_gU-zUbH4Eeimr84T2lvYhw" org.eventb.core.identifier="ArregloR"/>
+<org.eventb.core.invariant name="_gU-zUrH4Eeimr84T2lvYhw" org.eventb.core.label="inv" org.eventb.core.predicate="ArregloR ∈    1‥n→  Bandera"/>
+<org.eventb.core.event name="_rdEiELH4Eeimr84T2lvYhw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.guard name="_rdFJILH4Eeimr84T2lvYhw" org.eventb.core.label="grd1" org.eventb.core.predicate="∃f· f ∈1‥n ⤖ 1‥n ∧ ArregloR = f ; Arreglo"/>
+<org.eventb.core.guard name="_LWFN0LXlEeiKSMKmkUGGZg" org.eventb.core.label="grd2" org.eventb.core.predicate="∃x,y · x ∈ 1‥n ∧ y ∈ x+1‥n ∧ x &lt; y ⇒ (ArregloR[1‥x]={amarillo} ∧  ArregloR[x+1‥y]={azul} ∧  ArregloR[y+1‥n]={rojo})"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_rdFJIbH4Eeimr84T2lvYhw" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="siga">
+<org.eventb.core.action name="_rdFwMLH4Eeimr84T2lvYhw" org.eventb.core.assignment="ArregloR :∈  1‥n→  Bandera" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

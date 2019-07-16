@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="partition(Bandera,{amarillo},{azul},{rojo})" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_VWeeYbH4Eeimr84T2lvYhw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="ax2" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_aEZR0bXkEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="ax3" org.eventb.core.predicate="Arreglo∈1 ‥ n → Bandera" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_grgIsLXkEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="ax4" org.eventb.core.predicate="ran(Arreglo)=Bandera" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_ky5CMLzyEeiS3uz2Bc1XZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="Arreglo" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_VWd3ULH4Eeimr84T2lvYhw" org.eventb.core.type="ℙ(ℤ×Bandera)"/>
+<org.eventb.core.scCarrierSet name="Bandera" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.carrierSet#_Bi6Q8LzzEeiS3uz2Bc1XZg" org.eventb.core.type="ℙ(Bandera)"/>
+<org.eventb.core.scConstant name="amarillo" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_ubNkgLXlEeiKSMKmkUGGZg" org.eventb.core.type="Bandera"/>
+<org.eventb.core.scConstant name="azul" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_z1eQkLzyEeiS3uz2Bc1XZg" org.eventb.core.type="Bandera"/>
+<org.eventb.core.scConstant name="n" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_aEZR0LXkEeiKSMKmkUGGZg" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant name="rojo" org.eventb.core.source="/9.12.Bandera2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_z1eQkbzyEeiS3uz2Bc1XZg" org.eventb.core.type="Bandera"/>
+</org.eventb.core.scContextFile>

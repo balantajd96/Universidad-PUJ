@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/3_Buses/Contexto_1.bcc|org.eventb.core.scContextFile#Contexto_1" org.eventb.core.source="/3_Buses/Contexto_2.buc|org.eventb.core.contextFile#Contexto_2|org.eventb.core.extendsContext#'"/>
+<org.eventb.core.scInternalContext name="Contexto_1">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="rutas⊆ESTS → ℕ" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9cuMp_NEeibN8yuBAXqgA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="ax2" org.eventb.core.predicate="rutas≠(∅ ⦂ ℙ(ℙ(ESTS×ℤ)))" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9dVQJ_NEeibN8yuBAXqgA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="ax3" org.eventb.core.predicate="∀r⦂ℙ(ESTS×ℤ)·r∈rutas⇒finite(r)" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9dVQZ_NEeibN8yuBAXqgA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="ax4" org.eventb.core.predicate="∀r⦂ℙ(ESTS×ℤ)·r∈rutas⇒card(r ⩥ {0})&gt;1" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9d8UJ_NEeibN8yuBAXqgA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="ax5" org.eventb.core.predicate="∀r⦂ℙ(ESTS×ℤ)·r∈rutas⇒r ⩥ {0}∈ESTS ⤔ ℕ1" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9d8UZ_NEeibN8yuBAXqgA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="," org.eventb.core.label="ax6" org.eventb.core.predicate="rutaB∈BUSES → rutas" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9ejYJ_NEeibN8yuBAXqgA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="BUSES" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_O9cHIJ_NEeibN8yuBAXqgA" org.eventb.core.type="ℙ(BUSES)"/>
+<org.eventb.core.scCarrierSet name="ESTS" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_O9cHIZ_NEeibN8yuBAXqgA" org.eventb.core.type="ℙ(ESTS)"/>
+<org.eventb.core.scConstant name="rutaB" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_O9cuMZ_NEeibN8yuBAXqgA" org.eventb.core.type="ℙ(BUSES×ℙ(ESTS×ℤ))"/>
+<org.eventb.core.scConstant name="rutas" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_O9cuMJ_NEeibN8yuBAXqgA" org.eventb.core.type="ℙ(ℙ(ESTS×ℤ))"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scAxiom name="Contexto_2" org.eventb.core.label="ax2,1" org.eventb.core.predicate="partition(DIR,{ida},{regreso})" org.eventb.core.source="/3_Buses/Contexto_2.buc|org.eventb.core.contextFile#Contexto_2|org.eventb.core.axiom#_NZiQAaFwEeinFt5Dz70U-w" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="DIR" org.eventb.core.source="/3_Buses/Contexto_2.buc|org.eventb.core.contextFile#Contexto_2|org.eventb.core.carrierSet#_NZho8KFwEeinFt5Dz70U-w" org.eventb.core.type="ℙ(DIR)"/>
+<org.eventb.core.scConstant name="ida" org.eventb.core.source="/3_Buses/Contexto_2.buc|org.eventb.core.contextFile#Contexto_2|org.eventb.core.constant#_NZho8aFwEeinFt5Dz70U-w" org.eventb.core.type="DIR"/>
+<org.eventb.core.scConstant name="regreso" org.eventb.core.source="/3_Buses/Contexto_2.buc|org.eventb.core.contextFile#Contexto_2|org.eventb.core.constant#_NZiQAKFwEeinFt5Dz70U-w" org.eventb.core.type="DIR"/>
+</org.eventb.core.scContextFile>

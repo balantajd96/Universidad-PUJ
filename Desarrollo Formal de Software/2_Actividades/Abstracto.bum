@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1534256293004" org.eventb.texttools.text_representation="machine Abstracto sees Contexto_1&#10;variables&#10;autorizacion&#10;sitio&#10;invariants&#10;@inv0 autorizacion ∈ USUARIOS ↔ ACTIVIDADES&#10;@inv1 sitio ∈  USUARIOS ⇸ CUARTOS&#10;@inv2 ∀u,c· (u↦c) ∈ sitio ⇒ actCuarto∼[{c}] ⊆ autorizacion[{u}]&#10;events&#10;  event INITIALISATION&#10;  then&#10;  @act0 autorizacion ≔ ∅&#10;  @act1 sitio ≔ ∅&#10;  end&#10;&#10;  event autorizar&#10;  any u a&#10;  where&#10;  @grd0 u ∈ USUARIOS&#10;  @grd1 a ∈  ACTIVIDADES&#10;  @grd3 u↦a ∉ autorizacion&#10;  then&#10;  @act0 autorizacion ≔ autorizacion ∪ {u↦a}&#10;  end&#10;&#10;  event entrar&#10;  any u c&#10;  where&#10;  @grd0 u ∈ USUARIOS&#10;  @grd1 c ∈ CUARTOS&#10;  @grd3 actCuarto∼[{c}] ⊆ autorizacion[{u}]&#10;  then&#10;  @act0 sitio(u) ≔ c&#10;  end&#10;&#10;  event desautorizar&#10;  any u a&#10;  where&#10;  @grd0 u ∈ USUARIOS&#10;  @grd1 a ∈ ACTIVIDADES&#10;  @grd3 u↦a ∈ autorizacion&#10;  @grd4 a ∉ actCuarto∼[sitio[{u}]]&#10;  then&#10;  @act0 autorizacion ≔  autorizacion ∖ {u↦a}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_qH6J0J_MEeibN8yuBAXqgA" org.eventb.core.target="Contexto_1"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_uC28cJ_MEeibN8yuBAXqgA" org.eventb.core.assignment="autorizacion ≔ ∅" org.eventb.core.label="act0"/>
+<org.eventb.core.action name="_uC3jgJ_MEeibN8yuBAXqgA" org.eventb.core.assignment="sitio ≔ ∅" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_nJpo8J_MEeibN8yuBAXqgA" org.eventb.core.identifier="autorizacion"/>
+<org.eventb.core.variable name="_nJpo8Z_MEeibN8yuBAXqgA" org.eventb.core.identifier="sitio"/>
+<org.eventb.core.invariant name="_nJpo8p_MEeibN8yuBAXqgA" org.eventb.core.label="inv0" org.eventb.core.predicate="autorizacion ∈ USUARIOS ↔ ACTIVIDADES"/>
+<org.eventb.core.invariant name="_nJqQAJ_MEeibN8yuBAXqgA" org.eventb.core.label="inv1" org.eventb.core.predicate="sitio ∈  USUARIOS ⇸ CUARTOS"/>
+<org.eventb.core.invariant name="_nJqQAZ_MEeibN8yuBAXqgA" org.eventb.core.label="inv2" org.eventb.core.predicate="∀u,c· (u↦c) ∈ sitio ⇒ actCuarto∼[{c}] ⊆ autorizacion[{u}]"/>
+<org.eventb.core.event name="_wix7gJ_MEeibN8yuBAXqgA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="autorizar">
+<org.eventb.core.parameter name="_wix7gZ_MEeibN8yuBAXqgA" org.eventb.core.identifier="u"/>
+<org.eventb.core.parameter name="_wiyikJ_MEeibN8yuBAXqgA" org.eventb.core.identifier="a"/>
+<org.eventb.core.guard name="_wiyikZ_MEeibN8yuBAXqgA" org.eventb.core.label="grd0" org.eventb.core.predicate="u ∈ USUARIOS"/>
+<org.eventb.core.guard name="_wiyikp_MEeibN8yuBAXqgA" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈  ACTIVIDADES"/>
+<org.eventb.core.guard name="_wizJoJ_MEeibN8yuBAXqgA" org.eventb.core.label="grd3" org.eventb.core.predicate="u↦a ∉ autorizacion"/>
+<org.eventb.core.action name="_wizJoZ_MEeibN8yuBAXqgA" org.eventb.core.assignment="autorizacion ≔ autorizacion ∪ {u↦a}" org.eventb.core.label="act0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_y7W8cJ_MEeibN8yuBAXqgA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="entrar">
+<org.eventb.core.parameter name="_y7XjgJ_MEeibN8yuBAXqgA" org.eventb.core.identifier="u"/>
+<org.eventb.core.parameter name="_y7XjgZ_MEeibN8yuBAXqgA" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_y7YKkJ_MEeibN8yuBAXqgA" org.eventb.core.label="grd0" org.eventb.core.predicate="u ∈ USUARIOS"/>
+<org.eventb.core.guard name="_y7YKkZ_MEeibN8yuBAXqgA" org.eventb.core.label="grd1" org.eventb.core.predicate="c ∈ CUARTOS"/>
+<org.eventb.core.guard name="_y7YxoJ_MEeibN8yuBAXqgA" org.eventb.core.label="grd3" org.eventb.core.predicate="actCuarto∼[{c}] ⊆ autorizacion[{u}]"/>
+<org.eventb.core.action name="_y7YxoZ_MEeibN8yuBAXqgA" org.eventb.core.assignment="sitio(u) ≔ c" org.eventb.core.label="act0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_4OmXsJ_MEeibN8yuBAXqgA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="desautorizar">
+<org.eventb.core.parameter name="_4OmXsZ_MEeibN8yuBAXqgA" org.eventb.core.identifier="u"/>
+<org.eventb.core.parameter name="_4OmXsp_MEeibN8yuBAXqgA" org.eventb.core.identifier="a"/>
+<org.eventb.core.guard name="_4Om-wJ_MEeibN8yuBAXqgA" org.eventb.core.label="grd0" org.eventb.core.predicate="u ∈ USUARIOS"/>
+<org.eventb.core.guard name="_4Om-wZ_MEeibN8yuBAXqgA" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ ACTIVIDADES"/>
+<org.eventb.core.guard name="_4Om-wp_MEeibN8yuBAXqgA" org.eventb.core.label="grd3" org.eventb.core.predicate="u↦a ∈ autorizacion"/>
+<org.eventb.core.guard name="_4Onl0J_MEeibN8yuBAXqgA" org.eventb.core.label="grd4" org.eventb.core.predicate="a ∉ actCuarto∼[sitio[{u}]]"/>
+<org.eventb.core.action name="_4Onl0Z_MEeibN8yuBAXqgA" org.eventb.core.assignment="autorizacion ≔  autorizacion ∖ {u↦a}" org.eventb.core.label="act0"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

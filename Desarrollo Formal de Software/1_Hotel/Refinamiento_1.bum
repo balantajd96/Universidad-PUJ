@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1533522837575" org.eventb.texttools.text_representation="machine Refinamiento_1 refines Abstracto  sees Contexto_1&#10;&#10;variables clientes reservas registrados&#10;&#10;invariants&#10;  @inv1.1 registrados ⊆  PERSONAS&#10;  @inv1.2 finite(registrados)&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;    then&#10;      @act1.1 registrados ≔ ∅&#10;  end&#10;&#10;  event reservar extends reservar&#10;  end&#10;&#10;  event cancelar extends cancelar&#10;  end&#10;&#10;   event registrarse&#10;    any x r&#10;    where&#10;      @grd1 x ⊆  clientes&#10;      @grd2 x ≠ ∅&#10;      @grd3 r ⊆  reservas&#10;      @grd4  x ∩ dom(r) ≠∅&#10;    then&#10;      @act1 registrados ≔ registrados ∪  x&#10;    end&#10;&#10;   event irse extends cancelar&#10;     any r&#10;     where&#10;       @grd4 r ∈ registrados&#10;     then&#10;       @act3 registrados≔ registrados∖{r}&#10;     end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Abstracto"/>
+<org.eventb.core.seesContext name="_i8JVAJjtEeiHAePZcqfe4w" org.eventb.core.target="Contexto_1"/>
+<org.eventb.core.variable name="_i8J8EpjtEeiHAePZcqfe4w" org.eventb.core.identifier="clientes"/>
+<org.eventb.core.variable name="_i8KjIJjtEeiHAePZcqfe4w" org.eventb.core.identifier="reservas"/>
+<org.eventb.core.event name="_i8KjIJjtEeiHAePZcqfe4x" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_Kq8vQJkfEei7Kb6QMzwLTQ" org.eventb.core.assignment="registrados ≔ ∅" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_i8KjIJjtEeiHAePZcqfe4y" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="reservar">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="reservar"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_i8KjIJjtEeiHAePZcqfe4z" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="cancelar">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="cancelar"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_5G1YQJkeEei7Kb6QMzwLTQ" org.eventb.core.identifier="registrados"/>
+<org.eventb.core.invariant name="_8dE7UJkeEei7Kb6QMzwLTQ" org.eventb.core.label="inv1,1" org.eventb.core.predicate="registrados ⊆  PERSONAS"/>
+<org.eventb.core.invariant name="_8dE7UZkeEei7Kb6QMzwLTQ" org.eventb.core.label="inv1,2" org.eventb.core.predicate="finite(registrados)"/>
+<org.eventb.core.event name="_Kq-kcJkfEei7Kb6QMzwLTQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="registrarse">
+<org.eventb.core.parameter name="_Kq-kcZkfEei7Kb6QMzwLTQ" org.eventb.core.identifier="x"/>
+<org.eventb.core.parameter name="_Kq_LgJkfEei7Kb6QMzwLTQ" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="_Kq_LgZkfEei7Kb6QMzwLTQ" org.eventb.core.label="grd1" org.eventb.core.predicate="x ⊆  clientes"/>
+<org.eventb.core.guard name="_Kq_LgpkfEei7Kb6QMzwLTQ" org.eventb.core.label="grd2" org.eventb.core.predicate="x ≠ ∅"/>
+<org.eventb.core.guard name="_Kq_ykJkfEei7Kb6QMzwLTQ" org.eventb.core.label="grd3" org.eventb.core.predicate="r ⊆  reservas"/>
+<org.eventb.core.guard name="_Kq_ykZkfEei7Kb6QMzwLTQ" org.eventb.core.label="grd4" org.eventb.core.predicate="x ∩ dom(r) ≠∅"/>
+<org.eventb.core.action name="_KrAZoJkfEei7Kb6QMzwLTQ" org.eventb.core.assignment="registrados ≔ registrados ∪  x" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_tqcYAJkfEei7Kb6QMzwLTQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="irse">
+<org.eventb.core.refinesEvent name="_tqc_EJkfEei7Kb6QMzwLTQ" org.eventb.core.target="cancelar"/>
+<org.eventb.core.parameter name="_tqc_EZkfEei7Kb6QMzwLTQ" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="_tqdmIJkfEei7Kb6QMzwLTQ" org.eventb.core.label="grd4" org.eventb.core.predicate="r ∈ registrados"/>
+<org.eventb.core.action name="_tqdmIZkfEei7Kb6QMzwLTQ" org.eventb.core.assignment="registrados≔ registrados∖{r}" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

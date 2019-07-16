@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="m" org.eventb.core.type="ℙ(m)"/>
+<org.eventb.core.poIdentifier name="matrizInicial" org.eventb.core.type="ℙ(matrizInicial)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="2"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextp" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextq" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextr" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContexts" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextt" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2"/>
+</org.eventb.core.poFile>

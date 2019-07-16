@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1533514767601" org.eventb.texttools.text_representation="context Contexto_1&#10;&#10;sets PERSONAS&#10;&#10;constants nc // numero de cuartos&#10;          cp // cupo de cada cuarto&#10;&#10;&#10;axioms&#10;  @ax1 nc ∈ ℕ1&#10;  @ax2 cp ∈ ℕ1&#10;  @ax3 finite(PERSONAS)&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_amJ6cJjtEeiHAePZcqfe4w" org.eventb.core.identifier="PERSONAS"/>
+<org.eventb.core.constant name="_amKhgJjtEeiHAePZcqfe4w" org.eventb.core.comment="numero de cuartos" org.eventb.core.identifier="nc"/>
+<org.eventb.core.constant name="_amKhgZjtEeiHAePZcqfe4w" org.eventb.core.comment="cupo de cada cuarto" org.eventb.core.identifier="cp"/>
+<org.eventb.core.axiom name="_amKhgpjtEeiHAePZcqfe4w" org.eventb.core.label="ax1" org.eventb.core.predicate="nc ∈ ℕ1"/>
+<org.eventb.core.axiom name="_amLIkJjtEeiHAePZcqfe4w" org.eventb.core.label="ax2" org.eventb.core.predicate="cp ∈ ℕ1"/>
+<org.eventb.core.axiom name="_YVHo8JkOEeiI8dK0QJfE1g" org.eventb.core.label="ax3" org.eventb.core.predicate="finite(PERSONAS)"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm7" org.eventb.core.predicate="partition(ESTADO,{detenida},{girando})" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adRZFV5EEeaDq93gTU33Nw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(CANASTAS)" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIF5EEeaDq93gTU33Nw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm2" org.eventb.core.predicate="k∈ℕ1" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIV5EEeaDq93gTU33Nw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm5" org.eventb.core.predicate="cc∈CANASTAS → 1 ‥ k" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIl5EEeaDq93gTU33Nw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="CANASTAS" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#_adQyAV5EEeaDq93gTU33Nw" org.eventb.core.type="ℙ(CANASTAS)"/>
+<org.eventb.core.scCarrierSet name="ESTADO" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#_adRZEF5EEeaDq93gTU33Nw" org.eventb.core.type="ℙ(ESTADO)"/>
+<org.eventb.core.scCarrierSet name="PERSONAS" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#_adQyAF5EEeaDq93gTU33Nw" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.scConstant name="cc" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#_adRZEl5EEeaDq93gTU33Nw" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+<org.eventb.core.scConstant name="detenida" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#_adRZE15EEeaDq93gTU33Nw" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.scConstant name="girando" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#_adRZFF5EEeaDq93gTU33Nw" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.scConstant name="k" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#_adRZEV5EEeaDq93gTU33Nw" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>

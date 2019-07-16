@@ -1,0 +1,15 @@
+config/1/args=
+config/1/enabled=true
+config/1/name=CVC3
+config/1/solver=CVC3 (bundled)
+config/2/args=--finite-model-find --fmf-inst-engine
+config/2/enabled=true
+config/2/name=CVC4
+config/2/solver=CVC4 (bundled)
+eclipse.preferences.version=1
+solver/1/kind=CVC3
+solver/1/name=CVC3 (bundled)
+solver/1/path=C\:/rodin/configuration/org.eclipse.osgi/254/0/.cp/os/win32/cvc3.exe
+solver/2/kind=CVC4
+solver/2/name=CVC4 (bundled)
+solver/2/path=C\:/rodin/configuration/org.eclipse.osgi/256/0/.cp/os/win32/cvc4.exe

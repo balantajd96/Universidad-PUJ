@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1536255070102" org.eventb.texttools.text_representation="machine Refinamiento_1 refines Abstracto  sees Contexto&#10;&#10;variables z x&#10;&#10;invariants&#10;  @inv1,1 x ∈ 0‥n&#10;  @inv1,2 z= sum(x)&#10;&#10;variant n−x&#10;events&#10;  event INITIALISATION&#10;  then&#10;      @act1,1 x ≔ 0&#10;      @act1,2 z ≔ 0&#10;  end&#10;&#10;  event fin refines fin&#10;    where&#10;      @grd1,1 x = n&#10;  end&#10;&#10;  convergent event siga refines siga&#10;    where&#10;      @grd1,1 x ≠ n&#10;    then&#10;      @act1,1 x ≔ x + 1&#10;      @act1,2 z ≔ z + x +1&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Abstracto"/>
+<org.eventb.core.seesContext name="_8eMWMLH3Eeimr84T2lvYhw" org.eventb.core.target="Contexto"/>
+<org.eventb.core.variable name="_gU-zUbH4Eeimr84T2lvYhw" org.eventb.core.identifier="z"/>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhx" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_dpg2ILH5Eeimr84T2lvYhw" org.eventb.core.assignment="x ≔ 0" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_dpg2IbH5Eeimr84T2lvYhw" org.eventb.core.assignment="z ≔ 0" org.eventb.core.label="act1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhy" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fin"/>
+<org.eventb.core.guard name="_dphdMLH5Eeimr84T2lvYhw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="x = n"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhz" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="siga">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_dpiEQLH5Eeimr84T2lvYhw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="x ≠ n"/>
+<org.eventb.core.action name="_dpirULH5Eeimr84T2lvYhw" org.eventb.core.assignment="x ≔ x + 1" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_drIxULH6Eeimr84T2lvYhw" org.eventb.core.assignment="z ≔ z + x +1" org.eventb.core.label="act1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_QQ9goLH5Eeimr84T2lvYhw" org.eventb.core.identifier="x"/>
+<org.eventb.core.invariant name="_QQ9gobH5Eeimr84T2lvYhw" org.eventb.core.label="inv1,1" org.eventb.core.predicate="x ∈ 0‥n"/>
+<org.eventb.core.invariant name="_QQ-HsLH5Eeimr84T2lvYhw" org.eventb.core.label="inv1,2" org.eventb.core.predicate="z= sum(x)"/>
+<org.eventb.core.variant name="_QQ-uwLH5Eeimr84T2lvYhw" org.eventb.core.expression="n−x"/>
+</org.eventb.core.machineFile>

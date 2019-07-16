@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="8">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poIdentifier name="m" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="matriz" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×ℤ))"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="matri{" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_VWeeYbH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poPredicate name="matri|" org.eventb.core.predicate="m∈ℕ1" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_aEZR0bXkEeiKSMKmkUGGZg"/>
+<org.eventb.core.poPredicate name="matri}" org.eventb.core.predicate="matriz∈1 ‥ n → (1 ‥ m → ℕ)" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_grgIsLXkEeiKSMKmkUGGZg"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poIdentifier name="Resultado" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPResultadp">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="Resultado'∈ℕ1 → ℕ1" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_gU-zULH4Eeimr84T2lvYhw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Resultado'∈ℕ1 → ℕ1" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#INITIALISATION\/inv\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPResultadp"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ1 → ℕ1≠(∅ ⦂ ℙ(ℙ(ℤ×ℤ)))" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_gU-zULH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_gU-zULH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPResultadp"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTResultadp" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poIdentifier name="Resultado'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPResultadp" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTResultadp" org.eventb.core.poStamp="5"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPResultadq" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8"/>
+<org.eventb.core.poSequent name="siga/inv/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPResultadr">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="Resultado'∈ℕ1 → ℕ1" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw|org.eventb.core.action#_rdFwMLH4Eeimr84T2lvYhw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Resultado'∈ℕ1 → ℕ1" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#siga\/inv\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="siga/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPResultadr"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ1 → ℕ1≠(∅ ⦂ ℙ(ℙ(ℤ×ℤ)))" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw|org.eventb.core.action#_rdFwMLH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw|org.eventb.core.action#_rdFwMLH4Eeimr84T2lvYhw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPResultadr"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTResultadr" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+<org.eventb.core.poIdentifier name="Resultado'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPResultadr" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTResultadr" org.eventb.core.poStamp="6"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Parcial2-IvanDavidValderrama/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Resultado∈ℕ1 → ℕ1" org.eventb.core.source="/Parcial2-IvanDavidValderrama/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

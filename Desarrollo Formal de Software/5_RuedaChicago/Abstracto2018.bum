@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1535649519547" org.eventb.texttools.text_representation="machine Abstracto2018 sees ctx&#10;&#10;variables pr // Personas en la rueda&#10;          pesp // personas en espera&#10;          pmc // personas y las canastas en que montan&#10;          er // estado de la rueda&#10;          abajo // la canasta que esta abajo&#10;&#10;&#10;invariants&#10;  @inv9 pr ⊆ PERSONAS&#10;  @inv1 finite(pr)&#10;  @inv2 pesp ⊆ PERSONAS&#10;  @inv3 pr ∩ pesp = ∅&#10;  @inv4 pmc ∈ pr → CANASTAS&#10;  @inv6 er ∈ ESTADO&#10;  @inv7 pr = ∅ ⇒ er = detenida // si no hay gente, la rueda esta detenida&#10;  @inv8 abajo ∈ CANASTAS&#10;  @inv10 ∀c· c ∈ ran(pmc) ⇒ card(pmc∼[{c}]) ≤ cc(c) // la capacidad de cada canastilla no se ewxcede&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 pr ≔ ∅&#10;      @act2 pesp ≔ ∅&#10;      @act3 pmc ≔ ∅&#10;      @act4 abajo :∈ CANASTAS&#10;      @act5 er ≔ detenida&#10;  end&#10;&#10;  event llega_per&#10;    any p&#10;    where&#10;      @grd1 p ∈ PERSONAS&#10;      @grd2 p ∉ pr&#10;      @grd3 p ∉ pesp&#10;    then&#10;      @act1 pesp ≔ pesp ∪ {p}&#10;  end&#10;&#10;  event suben_per&#10;    any gp // un grupo de personas&#10;&#10;    where&#10;      @grd6 gp ⊆ pesp&#10;      @grd1 finite(gp)&#10;      @grd2 gp ≠ ∅&#10;      @grd3 card(gp) ≤ cc(abajo) // el grupo no es mas grande que el cupo&#10;      @grd4 abajo ∉ ran(pmc)&#10;      @grd5 er = detenida&#10;    then&#10;      @act1 pesp ≔ pesp ∖ gp&#10;      @act2 pr ≔ pr ∪ gp&#10;      @act3 pmc ≔ pmc ∪ (gp × {abajo})&#10;  end&#10;&#10;  event bajan_per&#10;    where&#10;      @grd1 er = detenida&#10;      @grd2 pmc∼[{abajo}] ≠ ∅&#10;    then&#10;      @act1 pr ≔ pr ∖ pmc∼[{abajo}]&#10;      @act2 pmc ≔ pmc ⩥ {abajo}&#10;  end&#10;&#10;  event girar&#10;    where&#10;      @grd1 er = detenida&#10;      @grd2 pr ≠ ∅&#10;    then&#10;      @act1 er ≔ girando&#10;  end&#10;&#10;  event detener&#10;    where&#10;      @grd1 er = girando&#10;    then&#10;      @act1 er ≔ detenida&#10;      @act2 abajo :∈ CANASTAS&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_z7j2EKYrEei9LrMP3-OL0Q" org.eventb.core.target="ctx"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_xudFUKYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pr ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_xudFUaYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pesp ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_xudFUqYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pmc ≔ ∅" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_xudFU6YrEei9LrMP3-OL0Q" org.eventb.core.assignment="abajo :∈ CANASTAS" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="_xudFVKYrEei9LrMP3-OL0Q" org.eventb.core.assignment="er ≔ detenida" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_xudFVaYrEei9LrMP3-OL0Q" org.eventb.core.comment="Personas en la rueda" org.eventb.core.identifier="pr"/>
+<org.eventb.core.variable name="_xudFVqYrEei9LrMP3-OL0Q" org.eventb.core.comment="personas en espera" org.eventb.core.identifier="pesp"/>
+<org.eventb.core.variable name="_xudFV6YrEei9LrMP3-OL0Q" org.eventb.core.comment="personas y las canastas en que montan" org.eventb.core.identifier="pmc"/>
+<org.eventb.core.variable name="_xudFWKYrEei9LrMP3-OL0Q" org.eventb.core.comment="estado de la rueda" org.eventb.core.identifier="er"/>
+<org.eventb.core.variable name="_xudFWaYrEei9LrMP3-OL0Q" org.eventb.core.comment="la canasta que esta abajo" org.eventb.core.identifier="abajo"/>
+<org.eventb.core.invariant name="_xudsYKYrEei9LrMP3-OL0Q" org.eventb.core.label="inv9" org.eventb.core.predicate="pr ⊆ PERSONAS"/>
+<org.eventb.core.invariant name="_xudsYaYrEei9LrMP3-OL0Q" org.eventb.core.label="inv1" org.eventb.core.predicate="finite(pr)"/>
+<org.eventb.core.invariant name="_xudsYqYrEei9LrMP3-OL0Q" org.eventb.core.label="inv2" org.eventb.core.predicate="pesp ⊆ PERSONAS"/>
+<org.eventb.core.invariant name="_xudsY6YrEei9LrMP3-OL0Q" org.eventb.core.label="inv3" org.eventb.core.predicate="pr ∩ pesp = ∅"/>
+<org.eventb.core.invariant name="_xudsZKYrEei9LrMP3-OL0Q" org.eventb.core.label="inv4" org.eventb.core.predicate="pmc ∈ pr → CANASTAS"/>
+<org.eventb.core.invariant name="_xudsZaYrEei9LrMP3-OL0Q" org.eventb.core.label="inv6" org.eventb.core.predicate="er ∈ ESTADO"/>
+<org.eventb.core.invariant name="_xudsZqYrEei9LrMP3-OL0Q" org.eventb.core.comment="si no hay gente, la rueda esta detenida" org.eventb.core.label="inv7" org.eventb.core.predicate="pr = ∅ ⇒ er = detenida"/>
+<org.eventb.core.invariant name="_xudsZ6YrEei9LrMP3-OL0Q" org.eventb.core.label="inv8" org.eventb.core.predicate="abajo ∈ CANASTAS"/>
+<org.eventb.core.invariant name="_xueTcKYrEei9LrMP3-OL0Q" org.eventb.core.comment="la capacidad de cada canastilla no se ewxcede" org.eventb.core.label="inv10" org.eventb.core.predicate="∀c· c ∈ ran(pmc) ⇒ card(pmc∼[{c}]) ≤ cc(c)"/>
+<org.eventb.core.event name="_xueTcaYrEei9LrMP3-OL0Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="llega_per">
+<org.eventb.core.parameter name="_xueTcqYrEei9LrMP3-OL0Q" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="_xueTc6YrEei9LrMP3-OL0Q" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ PERSONAS"/>
+<org.eventb.core.guard name="_xueTdKYrEei9LrMP3-OL0Q" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∉ pr"/>
+<org.eventb.core.guard name="_xueTdaYrEei9LrMP3-OL0Q" org.eventb.core.label="grd3" org.eventb.core.predicate="p ∉ pesp"/>
+<org.eventb.core.action name="_xueTdqYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pesp ≔ pesp ∪ {p}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xueTd6YrEei9LrMP3-OL0Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="suben_per">
+<org.eventb.core.parameter name="_xue6gKYrEei9LrMP3-OL0Q" org.eventb.core.comment="un grupo de personas" org.eventb.core.identifier="gp"/>
+<org.eventb.core.guard name="_xue6gaYrEei9LrMP3-OL0Q" org.eventb.core.label="grd6" org.eventb.core.predicate="gp ⊆ pesp"/>
+<org.eventb.core.guard name="_xue6gqYrEei9LrMP3-OL0Q" org.eventb.core.label="grd1" org.eventb.core.predicate="finite(gp)"/>
+<org.eventb.core.guard name="_xue6g6YrEei9LrMP3-OL0Q" org.eventb.core.label="grd2" org.eventb.core.predicate="gp ≠ ∅"/>
+<org.eventb.core.guard name="_xue6hKYrEei9LrMP3-OL0Q" org.eventb.core.comment="el grupo no es mas grande que el cupo" org.eventb.core.label="grd3" org.eventb.core.predicate="card(gp) ≤ cc(abajo)"/>
+<org.eventb.core.guard name="_xue6haYrEei9LrMP3-OL0Q" org.eventb.core.label="grd4" org.eventb.core.predicate="abajo ∉ ran(pmc)"/>
+<org.eventb.core.guard name="_xue6hqYrEei9LrMP3-OL0Q" org.eventb.core.label="grd5" org.eventb.core.predicate="er = detenida"/>
+<org.eventb.core.action name="_xue6h6YrEei9LrMP3-OL0Q" org.eventb.core.assignment="pesp ≔ pesp ∖ gp" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_xue6iKYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pr ≔ pr ∪ gp" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_xufhkKYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pmc ≔ pmc ∪ (gp × {abajo})" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xufhkaYrEei9LrMP3-OL0Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="bajan_per">
+<org.eventb.core.guard name="_xufhkqYrEei9LrMP3-OL0Q" org.eventb.core.label="grd1" org.eventb.core.predicate="er = detenida"/>
+<org.eventb.core.guard name="_xufhk6YrEei9LrMP3-OL0Q" org.eventb.core.label="grd2" org.eventb.core.predicate="pmc∼[{abajo}] ≠ ∅"/>
+<org.eventb.core.action name="_xufhlKYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pr ≔ pr ∖ pmc∼[{abajo}]" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_xufhlaYrEei9LrMP3-OL0Q" org.eventb.core.assignment="pmc ≔ pmc ⩥ {abajo}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xufhlqYrEei9LrMP3-OL0Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="girar">
+<org.eventb.core.guard name="_xugIoKYrEei9LrMP3-OL0Q" org.eventb.core.label="grd1" org.eventb.core.predicate="er = detenida"/>
+<org.eventb.core.guard name="_xugIoaYrEei9LrMP3-OL0Q" org.eventb.core.label="grd2" org.eventb.core.predicate="pr ≠ ∅"/>
+<org.eventb.core.action name="_xugIoqYrEei9LrMP3-OL0Q" org.eventb.core.assignment="er ≔ girando" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_xugIo6YrEei9LrMP3-OL0Q" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="detener">
+<org.eventb.core.guard name="_xugIpKYrEei9LrMP3-OL0Q" org.eventb.core.label="grd1" org.eventb.core.predicate="er = girando"/>
+<org.eventb.core.action name="_xugIpaYrEei9LrMP3-OL0Q" org.eventb.core.assignment="er ≔ detenida" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_xugIpqYrEei9LrMP3-OL0Q" org.eventb.core.assignment="abajo :∈ CANASTAS" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

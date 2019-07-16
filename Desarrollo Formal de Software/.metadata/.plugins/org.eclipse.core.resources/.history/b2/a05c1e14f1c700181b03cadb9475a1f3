@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/9.10.Partir/Contexto.bcc" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.seesContext#_8eMWMLH3Eeimr84T2lvYhw"/>
+<org.eventb.core.scInternalContext name="Contexto">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/9.10.Partir/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_VWeeYbH4Eeimr84T2lvYhw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="ax2" org.eventb.core.predicate="S∈1 ‥ n ↣ ℕ" org.eventb.core.source="/9.10.Partir/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_aEZR0bXkEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="ax3" org.eventb.core.predicate="x∈ℕ" org.eventb.core.source="/9.10.Partir/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_grgIsLXkEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="S" org.eventb.core.source="/9.10.Partir/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_aEZR0LXkEeiKSMKmkUGGZg" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.scConstant name="n" org.eventb.core.source="/9.10.Partir/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_VWd3ULH4Eeimr84T2lvYhw" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant name="x" org.eventb.core.source="/9.10.Partir/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_ubNkgLXlEeiKSMKmkUGGZg" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="Contextp" org.eventb.core.label="inv" org.eventb.core.predicate="A∈1 ‥ n → ℕ" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_gU-zUrH4Eeimr84T2lvYhw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="A" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.variable#_gU-zUbH4Eeimr84T2lvYhw" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.scEvent name="Contextq" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="A :∈ 1 ‥ n → ℕ" org.eventb.core.label="act1" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_gU-zULH4Eeimr84T2lvYhw"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="Contextr" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdEiELH4Eeimr84T2lvYhw">
+<org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="A∈1 ‥ n ↣ ℕ" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdEiELH4Eeimr84T2lvYhw|org.eventb.core.guard#_rdFJILH4Eeimr84T2lvYhw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scGuard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="ran(A)=ran(S)" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdEiELH4Eeimr84T2lvYhw|org.eventb.core.guard#_LWFN0LXlEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scGuard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="∃k⦂ℤ·k∈1 ‥ n+1∧(∀i⦂ℤ·i∈1 ‥ k − 1⇒A(i)≤x)∧(∀j⦂ℤ·j∈k ‥ n⇒A(j)&gt;x)" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdEiELH4Eeimr84T2lvYhw|org.eventb.core.guard#_B8vqcLXmEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="Contexts" org.eventb.core.accurate="true" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="siga" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="A :∈ 1 ‥ n → ℕ" org.eventb.core.label="act1" org.eventb.core.source="/9.10.Partir/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rdFJIbH4Eeimr84T2lvYhw|org.eventb.core.action#_rdFwMLH4Eeimr84T2lvYhw"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>

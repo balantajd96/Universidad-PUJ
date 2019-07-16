@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="CANASTAS" org.eventb.core.type="ℙ(CANASTAS)"/>
+<org.eventb.core.poIdentifier name="ESTADO" org.eventb.core.type="ℙ(ESTADO)"/>
+<org.eventb.core.poIdentifier name="PERSONAS" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="cc" org.eventb.core.type="ℙ(CANASTAS×ℤ)"/>
+<org.eventb.core.poIdentifier name="detenida" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.poIdentifier name="girando" org.eventb.core.type="ESTADO"/>
+<org.eventb.core.poIdentifier name="k" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="detenidb" org.eventb.core.predicate="partition(ESTADO,{detenida},{girando})" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adRZFV5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poPredicate name="detenidc" org.eventb.core.predicate="finite(CANASTAS)" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIF5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poPredicate name="detenidd" org.eventb.core.predicate="k∈ℕ1" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIV5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poPredicate name="detenide" org.eventb.core.predicate="cc∈CANASTAS → 1 ‥ k" org.eventb.core.source="/5_RuedaChicago/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_adSAIl5EEeaDq93gTU33Nw"/>
+<org.eventb.core.poIdentifier name="maxg" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/5_RuedaChicago/ctx2.bpo|org.eventb.core.poFile#ctx2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="maxg∈ℕ1" org.eventb.core.source="/5_RuedaChicago/ctx2.buc|org.eventb.core.contextFile#ctx2|org.eventb.core.axiom#_dx0sgV5kEeak2qFaoVBa1A"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

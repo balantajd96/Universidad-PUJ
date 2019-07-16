@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="PERSONAS" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="cp" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nc" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/1_Hotel/Contexto_1.bpo|org.eventb.core.poFile#Contexto_1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="nc∈ℕ1" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_amKhgpjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="cp∈ℕ1" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_amLIkJjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="finite(PERSONAS)" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_YVHo8JkOEeiI8dK0QJfE1g"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1534871527103" org.eventb.texttools.text_representation="machine Abstracto sees Contexto_1&#10;variables&#10;parq&#10;invariants&#10;@inv1 parq ∈ BUSES ⤔ ESTS// no pueden estar 2 buses parqueados en la misma estacion&#10;@inv2 ∀b · b ∈ dom(parq) ⇒ rutaB(b)(parq(b))≠0//la estacion en la que esta parqueado ese bus, esa estacion pertenece a la ruta&#10;events&#10;  event INITIALISATION&#10;  then&#10;  @act1 parq ≔ ∅&#10;  end&#10;&#10;  event llegar&#10;  any b e&#10;  where&#10;  @grd1 b ∈ BUSES∖dom(parq)&#10;  @grd2 e ∈ ESTS∖ran(parq)&#10;  @grd3 rutaB(b)(e)≠ 0&#10;  then&#10;  @act1 parq(b) ≔ e&#10;  end&#10;&#10;  event salir&#10;  any b&#10;  where&#10;  @grd1 b ∈  dom(parq)&#10;  then&#10;  @act1 parq ≔ parq ∖ {b↦parq(b)}&#10;  end&#10;end" version="5">
+<org.eventb.core.seesContext name="_YmcowJ_NEeibN8yuBAXqgA" org.eventb.core.target="Contexto_1"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_jlbe0J_NEeibN8yuBAXqgA" org.eventb.core.assignment="parq ≔ ∅" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_hcpNYJ_NEeibN8yuBAXqgA" org.eventb.core.identifier="parq"/>
+<org.eventb.core.invariant name="_hcpNYZ_NEeibN8yuBAXqgA" org.eventb.core.comment="no pueden estar 2 buses parqueados en la misma estacion" org.eventb.core.label="inv1" org.eventb.core.predicate="parq ∈ BUSES ⤔ ESTS"/>
+<org.eventb.core.invariant name="_hcpNYp_NEeibN8yuBAXqgA" org.eventb.core.comment="la estacion en la que esta parqueado ese bus, esa estacion pertenece a la ruta" org.eventb.core.label="inv2" org.eventb.core.predicate="∀b · b ∈ dom(parq) ⇒ rutaB(b)(parq(b))≠0"/>
+<org.eventb.core.event name="_nRXlEJ_NEeibN8yuBAXqgA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="llegar">
+<org.eventb.core.parameter name="_nRXlEZ_NEeibN8yuBAXqgA" org.eventb.core.identifier="b"/>
+<org.eventb.core.parameter name="_nRXlEp_NEeibN8yuBAXqgA" org.eventb.core.identifier="e"/>
+<org.eventb.core.guard name="_nRYMIJ_NEeibN8yuBAXqgA" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈ BUSES∖dom(parq)"/>
+<org.eventb.core.guard name="_nRYMIZ_NEeibN8yuBAXqgA" org.eventb.core.label="grd2" org.eventb.core.predicate="e ∈ ESTS∖ran(parq)"/>
+<org.eventb.core.guard name="_nRYzMJ_NEeibN8yuBAXqgA" org.eventb.core.label="grd3" org.eventb.core.predicate="rutaB(b)(e)≠ 0"/>
+<org.eventb.core.action name="_nRYzMZ_NEeibN8yuBAXqgA" org.eventb.core.assignment="parq(b) ≔ e" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_rCrTgJ_NEeibN8yuBAXqgA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="salir">
+<org.eventb.core.parameter name="_rCrTgZ_NEeibN8yuBAXqgA" org.eventb.core.identifier="b"/>
+<org.eventb.core.guard name="_rCrTgp_NEeibN8yuBAXqgA" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈  dom(parq)"/>
+<org.eventb.core.action name="_rCr6kJ_NEeibN8yuBAXqgA" org.eventb.core.assignment="parq ≔ parq ∖ {b↦parq(b)}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

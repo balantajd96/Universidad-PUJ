@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="A" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="B" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="n1" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="n2" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="n3" org.eventb.core.predicate="n1∈ℕ1" org.eventb.core.source="/9.13.Comparar_Cadenas/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_SlQA4LX-Eei5UvyFzIgSTw"/>
+<org.eventb.core.poPredicate name="n4" org.eventb.core.predicate="n2∈ℕ1" org.eventb.core.source="/9.13.Comparar_Cadenas/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_SlQn8LX-Eei5UvyFzIgSTw"/>
+<org.eventb.core.poPredicate name="n5" org.eventb.core.predicate="A∈1 ‥ n1 → ℕ" org.eventb.core.source="/9.13.Comparar_Cadenas/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_l7EmELX-Eei5UvyFzIgSTw"/>
+<org.eventb.core.poPredicate name="n6" org.eventb.core.predicate="B∈1 ‥ n2 → ℕ" org.eventb.core.source="/9.13.Comparar_Cadenas/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_V3c0oLYCEei5UvyFzIgSTw"/>
+<org.eventb.core.poPredicate name="n7" org.eventb.core.predicate="n2≥n1" org.eventb.core.source="/9.13.Comparar_Cadenas/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_QRQ-sLZDEei6sODqI5w9dw"/>
+<org.eventb.core.poPredicate name="n8" org.eventb.core.predicate="∃x⦂ℤ·x∈1 ‥ n2 − n1∧(∀y⦂ℤ·y∈1 ‥ n1⇒B(x+(y − 1))=A(y))" org.eventb.core.source="/9.13.Comparar_Cadenas/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_VOzoALZJEei6sODqI5w9dw"/>
+<org.eventb.core.poPredicate name="n9" org.eventb.core.predicate="finite(A)∧finite(B)" org.eventb.core.source="/9.13.Comparar_Cadenas/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_miO60LZNEei6sODqI5w9dw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContextq">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="r'∈ℕ" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_1Y230LYAEei5UvyFzIgSTw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="r'∈ℕ" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_1Y3e4LYAEei5UvyFzIgSTw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_1Y3e4LYAEei5UvyFzIgSTw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContextq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_1Y230LYAEei5UvyFzIgSTw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'|org.eventb.core.action#_1Y230LYAEei5UvyFzIgSTw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContextq"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContextq" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="r'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextq" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTContextq" org.eventb.core.poStamp="1"/>
+<org.eventb.core.poSequent name="fin/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀j⦂ℤ·j∈ℕ1⇒finite(dom(A))" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_EfjxMLYBEei5UvyFzIgSTw|org.eventb.core.guard#_EfkYQLYBEei5UvyFzIgSTw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_EfjxMLYBEei5UvyFzIgSTw|org.eventb.core.guard#_EfkYQLYBEei5UvyFzIgSTw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContextr" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∃j⦂ℤ·j∈ℕ1∧j=card(dom(A))" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_EfjxMLYBEei5UvyFzIgSTw|org.eventb.core.guard#_EfkYQLYBEei5UvyFzIgSTw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="siga/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContexts">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="r'∈ℕ" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_Efk_ULYBEei5UvyFzIgSTw|org.eventb.core.action#_Efk_UbYBEei5UvyFzIgSTw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="r'∈ℕ" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_1Y3e4LYAEei5UvyFzIgSTw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_Efk_ULYBEei5UvyFzIgSTw"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_1Y3e4LYAEei5UvyFzIgSTw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#siga\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="siga/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContexts"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ℕ≠(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_Efk_ULYBEei5UvyFzIgSTw|org.eventb.core.action#_Efk_UbYBEei5UvyFzIgSTw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_Efk_ULYBEei5UvyFzIgSTw|org.eventb.core.action#_Efk_UbYBEei5UvyFzIgSTw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPContexts"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContexts" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="r'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContexts" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTContexts" org.eventb.core.poStamp="1"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/9.13.Comparar_Cadenas/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈ℕ" org.eventb.core.source="/9.13.Comparar_Cadenas/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_1Y3e4LYAEei5UvyFzIgSTw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

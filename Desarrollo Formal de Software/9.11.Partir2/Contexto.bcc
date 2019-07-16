@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/9.11.Partir2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_VWeeYbH4Eeimr84T2lvYhw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="ax2" org.eventb.core.predicate="S∈1 ‥ n ↣ ℕ" org.eventb.core.source="/9.11.Partir2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_aEZR0bXkEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="ax3" org.eventb.core.predicate="x∈ℕ" org.eventb.core.source="/9.11.Partir2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.axiom#_grgIsLXkEeiKSMKmkUGGZg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="S" org.eventb.core.source="/9.11.Partir2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_aEZR0LXkEeiKSMKmkUGGZg" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.scConstant name="n" org.eventb.core.source="/9.11.Partir2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_VWd3ULH4Eeimr84T2lvYhw" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant name="x" org.eventb.core.source="/9.11.Partir2/Contexto.buc|org.eventb.core.contextFile#Contexto|org.eventb.core.constant#_ubNkgLXlEeiKSMKmkUGGZg" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>

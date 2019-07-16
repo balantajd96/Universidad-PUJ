@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1538528308055" org.eventb.texttools.text_representation="machine Especificacion sees ctx&#10;&#10;variables result&#10;&#10;invariants&#10;  @inv1 result∈BOOL&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 result:∈BOOL&#10;  end&#10;&#10;  event fin&#10;    where&#10;      @grd1 ∀i, j ·i∈1‥n ∧ j∈1‥m ⇒ (result=TRUE ⇔ j=m) ∨ ( i=n ∧ matrix(i)(j)≠0 )&#10;  end&#10;&#10;  anticipated event siga&#10;    then&#10;      @act1 result:∈BOOL&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_f4OqsLtgEeiOt4GoMJCrVw" org.eventb.core.target="ctx"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_f4OqsbtgEeiOt4GoMJCrVw" org.eventb.core.assignment="result:∈BOOL" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_f4OqsrtgEeiOt4GoMJCrVw" org.eventb.core.identifier="result"/>
+<org.eventb.core.invariant name="_f4Oqs7tgEeiOt4GoMJCrVw" org.eventb.core.label="inv1" org.eventb.core.predicate="result∈BOOL"/>
+<org.eventb.core.event name="_f4UxULtgEeiOt4GoMJCrVw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.guard name="_f4VYYLtgEeiOt4GoMJCrVw" org.eventb.core.label="grd1" org.eventb.core.predicate="∀i, j ·i∈1‥n ∧ j∈1‥m ⇒ (result=TRUE ⇔ j=m) ∨ ( i=n ∧ matrix(i)(j)≠0 )"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_f4V_cbtgEeiOt4GoMJCrVw" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="siga">
+<org.eventb.core.action name="_3HZmYLtoEeiOt4GoMJCrVw" org.eventb.core.assignment="result:∈BOOL" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

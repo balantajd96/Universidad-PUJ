@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1537897671875" org.eventb.texttools.text_representation="machine Refinamiento_1 refines Abstracto  sees Contexto&#10;&#10;variables ArregloR l m k&#10;&#10;invariants&#10;  @inv1,1 ran(ArregloR)= Bandera&#10;  @inv1,2 l ∈ 1‥ n&#10;  @inv1,3 m ∈ l‥n&#10;  @inv1,4 k ∈ m‥n+1&#10;  @inv1,5 l&gt;1⇒ ArregloR[1‥l−1]={amarillo}&#10;  @inv1,6 m&gt;1⇒ ArregloR[l‥m−1]={azul}&#10;  @inv1,7 k≠n+1⇒ ArregloR[k‥n]={rojo}&#10;  @inv1,8 ∃f ·f ∈ 1‥n  ⤖ 1‥n  ∧ ArregloR = f ; Arreglo&#10;&#10;variant k−m&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1,1 l≔1&#10;      @act1,2 m≔1&#10;      @act1,3 k≔ n+1&#10;      @act1,4 ArregloR ≔ Arreglo&#10;  end&#10;&#10;  event fin refines fin&#10;    where&#10;      @grd1,1 k=m&#10;  end&#10;&#10;  convergent event siga1 refines siga&#10;    where&#10;      @grd1,1 k ≠ m&#10;      @grd1,2 ArregloR(m)=amarillo&#10;    then&#10;      @act1,1 ArregloR ≔  ArregloR  {m↦ArregloR(l),l↦ArregloR(m)}&#10;      @act1,2 m ≔ m+1&#10;      @act1,3 l ≔  l+1&#10;  end&#10;&#10;  convergent event siga2 refines siga&#10;    where&#10;      @grd1,1 k ≠ m&#10;      @grd1,2 ArregloR(m)=rojo&#10;    then&#10;      @act1,1 ArregloR ≔  ArregloR  {m↦ArregloR(k),k↦ArregloR(m)}&#10;      @ct|,1 k ≔ k−1&#10;  end&#10;&#10;  convergent event siga3 refines siga&#10;    where&#10;      @grd1,1 k ≠ m&#10;      @grd1,2 ArregloR(m)=azul&#10;    then&#10;      @act1.1 m≔ m+1&#10;  end&#10;end&#10;//f  {m↦f(l),l↦f(m)}" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Abstracto"/>
+<org.eventb.core.seesContext name="_8eMWMLH3Eeimr84T2lvYhw" org.eventb.core.target="Contexto"/>
+<org.eventb.core.variable name="_gU-zUbH4Eeimr84T2lvYhw" org.eventb.core.identifier="ArregloR"/>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhx" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_dpg2ILH5Eeimr84T2lvYhw" org.eventb.core.assignment="l≔1" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_dpg2IbH5Eeimr84T2lvYhw" org.eventb.core.assignment="m≔1" org.eventb.core.label="act1,2"/>
+<org.eventb.core.action name="_dpirULH5Eeimr84T2lvYhw" org.eventb.core.assignment="k≔ n+1" org.eventb.core.label="act1,3"/>
+<org.eventb.core.action name="_drIxULH6Eeimr84T2lvYhw" org.eventb.core.assignment="ArregloR ≔ Arreglo" org.eventb.core.label="act1,4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhy" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fin"/>
+<org.eventb.core.guard name="_dphdMLH5Eeimr84T2lvYhw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="k=m"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhz" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="siga1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_dpiEQLH5Eeimr84T2lvYhw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="k ≠ m"/>
+<org.eventb.core.guard name="_ifE3wLXnEeiKSMKmkUGGZg" org.eventb.core.label="grd1,2" org.eventb.core.predicate="ArregloR(m)=amarillo"/>
+<org.eventb.core.action name="_9eVI8LXmEeiKSMKmkUGGZg" org.eventb.core.assignment="ArregloR ≔  ArregloR  {m↦ArregloR(l),l↦ArregloR(m)}" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_9cSsILXnEeiKSMKmkUGGZg" org.eventb.core.assignment="m ≔ m+1" org.eventb.core.label="act1,2"/>
+<org.eventb.core.action name="_zPkwYL0BEeiS3uz2Bc1XZg" org.eventb.core.assignment="l ≔  l+1" org.eventb.core.label="act1,3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_QQ9goLH5Eeimr84T2lvYhw" org.eventb.core.identifier="l"/>
+<org.eventb.core.invariant name="_QQ9gobH5Eeimr84T2lvYhw" org.eventb.core.label="inv1,1" org.eventb.core.predicate="ran(ArregloR)= Bandera"/>
+<org.eventb.core.invariant name="_QQ-HsLH5Eeimr84T2lvYhw" org.eventb.core.label="inv1,2" org.eventb.core.predicate="l ∈ 1‥ n"/>
+<org.eventb.core.variable name="_9eVwALXmEeiKSMKmkUGGZg" org.eventb.core.identifier="m"/>
+<org.eventb.core.invariant name="_9eWXELXmEeiKSMKmkUGGZg" org.eventb.core.label="inv1,3" org.eventb.core.predicate="m ∈ l‥n"/>
+<org.eventb.core.invariant name="_ifGs8LXnEeiKSMKmkUGGZg" org.eventb.core.label="inv1,4" org.eventb.core.predicate="k ∈ m‥n+1"/>
+<org.eventb.core.event name="_ifHUALXnEeiKSMKmkUGGZg" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="siga2">
+<org.eventb.core.refinesEvent name="_ifHUAbXnEeiKSMKmkUGGZg" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_ifH7ELXnEeiKSMKmkUGGZg" org.eventb.core.label="grd1,1" org.eventb.core.predicate="k ≠ m"/>
+<org.eventb.core.guard name="_ifH7EbXnEeiKSMKmkUGGZg" org.eventb.core.label="grd1,2" org.eventb.core.predicate="ArregloR(m)=rojo"/>
+<org.eventb.core.action name="_8_smoL0BEeiS3uz2Bc1XZg" org.eventb.core.assignment="ArregloR ≔  ArregloR  {m↦ArregloR(k),k↦ArregloR(m)}" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_CxrzYL0CEeiS3uz2Bc1XZg" org.eventb.core.assignment="k ≔ k−1" org.eventb.core.label="ct|,1"/>
+</org.eventb.core.event>
+<org.eventb.core.variant name="_E7sngLXpEeiKSMKmkUGGZg" org.eventb.core.expression="k−m"/>
+<org.eventb.core.invariant name="_-MqzALZREei6sODqI5w9dw" org.eventb.core.label="inv1,5" org.eventb.core.predicate="l&gt;1⇒ ArregloR[1‥l−1]={amarillo}"/>
+<org.eventb.core.variable name="_5enUQLz7EeiS3uz2Bc1XZg" org.eventb.core.identifier="k"/>
+<org.eventb.core.invariant name="_V8axoLz8EeiS3uz2Bc1XZg" org.eventb.core.label="inv1,6" org.eventb.core.predicate="m&gt;1⇒ ArregloR[l‥m−1]={azul}"/>
+<org.eventb.core.invariant name="_V8bYsLz8EeiS3uz2Bc1XZg" org.eventb.core.label="inv1,7" org.eventb.core.predicate="k≠n+1⇒ ArregloR[k‥n]={rojo}"/>
+<org.eventb.core.event name="_4KG4ELz-EeiS3uz2Bc1XZg" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="siga3">
+<org.eventb.core.refinesEvent name="_4KHfILz-EeiS3uz2Bc1XZg" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_4KHfIbz-EeiS3uz2Bc1XZg" org.eventb.core.label="grd1,1" org.eventb.core.predicate="k ≠ m"/>
+<org.eventb.core.guard name="_4KIGMLz-EeiS3uz2Bc1XZg" org.eventb.core.label="grd1,2" org.eventb.core.predicate="ArregloR(m)=azul"/>
+<org.eventb.core.action name="_N7bjIMDgEeibQuu5JDdo4Q" org.eventb.core.assignment="m≔ m+1" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="_hUaxEMDgEeibQuu5JDdo4Q" org.eventb.core.label="inv1,8" org.eventb.core.predicate="∃f ·f ∈ 1‥n  ⤖ 1‥n  ∧ ArregloR = f ; Arreglo"/>
+</org.eventb.core.machineFile>

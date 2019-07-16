@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1538676515474" org.eventb.texttools.text_representation="machine Refinamiento_1 refines Abstracto  sees Contexto&#10;&#10;variables result minFila p q&#10;&#10;invariants&#10;  @inv1,1 p ∈ 1‥m // Columnas&#10;  @inv1,2 q ∈ 1‥n // Filas&#10;  @inv1,3 result ∈ ℕ   // Resultado&#10;  @inv1,4 minFila ∈ ℕ&#10;  @inv1,5 ∀k· k∈1‥m ⇒ matriz(1)(k)=0//En la primera fila, todos son ceros&#10;&#10;variant (n−q)∗ m + m−p&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1,1 result ≔ 0&#10;      @act1,2 minFila ≔ 0&#10;      @act1,3 p ≔ 1&#10;      @act1,4 q ≔ 1&#10;  end&#10;&#10;  event fin refines fin&#10;    where&#10;      @grd1,1 q=n ∧ p=m&#10;  end&#10;&#10;  convergent event sigaColumna refines siga&#10;    where&#10;      @grd1,1 q≠n&#10;      @grd1,2 p≠m&#10;      @grd1,3 matriz(q)(p) &lt; matriz(minFila)(p)&#10;    then&#10;      @act1,1 p ≔ p +1&#10;      @act1,2 minFila ≔  q&#10;  end&#10;&#10;  convergent event sigaFila refines siga&#10;    where&#10;      @grd1,1 q≠n&#10;      @grd1,2 p=m&#10;    then&#10;      @act1,1 q≔ q +1&#10;  end&#10;convergent event maximoFila refines siga&#10;    where&#10;      @grd1,1 matriz(minFila)(p) &gt; matriz(result)(p)&#10;      @grd1,2 p=m&#10;    then&#10;      @act1,1 result ≔ minFila&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Abstracto"/>
+<org.eventb.core.seesContext name="_8eMWMLH3Eeimr84T2lvYhw" org.eventb.core.target="Contexto"/>
+<org.eventb.core.variable name="_gU-zUbH4Eeimr84T2lvYhw" org.eventb.core.identifier="result"/>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhx" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_dpg2ILH5Eeimr84T2lvYhw" org.eventb.core.assignment="result ≔ 0" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_dpg2IbH5Eeimr84T2lvYhw" org.eventb.core.assignment="minFila ≔ 0" org.eventb.core.label="act1,2"/>
+<org.eventb.core.action name="_dpirULH5Eeimr84T2lvYhw" org.eventb.core.assignment="p ≔ 1" org.eventb.core.label="act1,3"/>
+<org.eventb.core.action name="_drIxULH6Eeimr84T2lvYhw" org.eventb.core.assignment="q ≔ 1" org.eventb.core.label="act1,4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhy" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fin"/>
+<org.eventb.core.guard name="_dphdMLH5Eeimr84T2lvYhw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="q=n ∧ p=m"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_gU-zUbH4Eeimr84T2lvYhz" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="sigaColumna">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_dpiEQLH5Eeimr84T2lvYhw" org.eventb.core.label="grd1,1" org.eventb.core.predicate="q≠n"/>
+<org.eventb.core.guard name="_ifE3wLXnEeiKSMKmkUGGZg" org.eventb.core.label="grd1,2" org.eventb.core.predicate="p≠m"/>
+<org.eventb.core.action name="_9eVI8LXmEeiKSMKmkUGGZg" org.eventb.core.assignment="p ≔ p +1" org.eventb.core.label="act1,1"/>
+<org.eventb.core.guard name="_KsTzAMf3EeikNdk8ryZ-Fg" org.eventb.core.label="grd1,3" org.eventb.core.predicate="matriz(q)(p) &lt; matriz(minFila)(p)"/>
+<org.eventb.core.action name="_jHiuoMf-EeikNdk8ryZ-Fg" org.eventb.core.assignment="minFila ≔  q" org.eventb.core.label="act1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_QQ9goLH5Eeimr84T2lvYhw" org.eventb.core.identifier="minFila"/>
+<org.eventb.core.invariant name="_QQ9gobH5Eeimr84T2lvYhw" org.eventb.core.comment="Columnas" org.eventb.core.label="inv1,1" org.eventb.core.predicate="p ∈ 1‥m"/>
+<org.eventb.core.invariant name="_QQ-HsLH5Eeimr84T2lvYhw" org.eventb.core.comment="Filas" org.eventb.core.label="inv1,2" org.eventb.core.predicate="q ∈ 1‥n"/>
+<org.eventb.core.variable name="_9eVwALXmEeiKSMKmkUGGZg" org.eventb.core.identifier="p"/>
+<org.eventb.core.event name="_ifHUALXnEeiKSMKmkUGGZg" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="sigaFila">
+<org.eventb.core.refinesEvent name="_ifHUAbXnEeiKSMKmkUGGZg" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_BJAMkMf-EeikNdk8ryZ-Fg" org.eventb.core.label="grd1,1" org.eventb.core.predicate="q≠n"/>
+<org.eventb.core.action name="_jHjVsMf-EeikNdk8ryZ-Fg" org.eventb.core.assignment="q≔ q +1" org.eventb.core.label="act1,1"/>
+<org.eventb.core.guard name="_M7UHkMf_EeikNdk8ryZ-Fg" org.eventb.core.label="grd1,2" org.eventb.core.predicate="p=m"/>
+</org.eventb.core.event>
+<org.eventb.core.variant name="_E7sngLXpEeiKSMKmkUGGZg" org.eventb.core.expression="(n−q)∗ m + m−p"/>
+<org.eventb.core.invariant name="_ke4KcMf9EeikNdk8ryZ-Fg" org.eventb.core.comment="Resultado" org.eventb.core.label="inv1,3" org.eventb.core.predicate="result ∈ ℕ"/>
+<org.eventb.core.invariant name="_zpOYQMf-EeikNdk8ryZ-Fg" org.eventb.core.label="inv1,4" org.eventb.core.predicate="minFila ∈ ℕ"/>
+<org.eventb.core.variable name="_6J4MYMf_EeikNdk8ryZ-Fg" org.eventb.core.identifier="q"/>
+<org.eventb.core.invariant name="_6J4zcMf_EeikNdk8ryZ-Fg" org.eventb.core.comment="En la primera fila, todos son ceros" org.eventb.core.label="inv1,5" org.eventb.core.predicate="∀k· k∈1‥m ⇒ matriz(1)(k)=0"/>
+<org.eventb.core.event name="_YHugMMgAEeikNdk8ryZ-Fg" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="maximoFila">
+<org.eventb.core.refinesEvent name="_YHvHQMgAEeikNdk8ryZ-Fg" org.eventb.core.target="siga"/>
+<org.eventb.core.guard name="_RvBHIMf_EeikNdk8ryZ-Fg" org.eventb.core.label="grd1,1" org.eventb.core.predicate="matriz(minFila)(p) &gt; matriz(result)(p)"/>
+<org.eventb.core.guard name="_gs5mQMgAEeikNdk8ryZ-Fg" org.eventb.core.label="grd1,2" org.eventb.core.predicate="p=m"/>
+<org.eventb.core.action name="_6J3lUMf_EeikNdk8ryZ-Fg" org.eventb.core.assignment="result ≔ minFila" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1471374910237" org.eventb.texttools.text_representation="context ctx2 extends ctx&#10;constants&#10;maxg    //maximo numero de giros&#10;&#10;axioms&#10;@ax1.1 maxg ∈ ℕ1&#10;&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="ctx"/>
+<org.eventb.core.constant name="_dx0sgF5kEeak2qFaoVBa1A" org.eventb.core.comment="maximo numero de giros" org.eventb.core.identifier="maxg"/>
+<org.eventb.core.axiom name="_dx0sgV5kEeak2qFaoVBa1A" org.eventb.core.label="ax1,1" org.eventb.core.predicate="maxg ∈ ℕ1"/>
+</org.eventb.core.contextFile>

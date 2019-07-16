@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1533526055366" org.eventb.texttools.text_representation="machine Abstracto sees Contexto_1&#10;&#10;variables clientes reservas&#10;&#10;invariants&#10;  @inv1 clientes ⊆  PERSONAS&#10;  @inv2 reservas ∈ clientes → 1‥nc&#10;  @inv3 finite(reservas)&#10;  @inv4 ∀x·x∈1‥nc ⇒  card(reservas∼[{x}]) ≤ cp&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 clientes ≔ ∅&#10;      @act2 reservas ≔ ∅&#10;  end&#10;&#10;  event reservar&#10;    any x c&#10;    where&#10;      @grd1 x ⊆ PERSONAS ∖ clientes&#10;      @grd2 c ∈ 1‥nc&#10;      @grd5 x ≠ ∅&#10;      @grd3 reservas∼[{c}] = ∅&#10;      @grd4 card(x) ≤ cp&#10;      @grd6 x ∩ dom(reservas)= ∅&#10;      @grd7 finite(x)&#10;    then&#10;      @act1 clientes ≔  clientes ∪ x&#10;      @act2 reservas ≔ reservas ∪ (x × {c})&#10;  end&#10;&#10;  event cancelar&#10;    any c&#10;    where&#10;      @grd1 c ∈ 1‥nc&#10;      @grd2 reservas∼[{c}] ≠  ∅&#10;    then&#10;      @act1 clientes ≔  clientes ∖ reservas∼[{c}]&#10;      @act2 reservas ≔ reservas ⩥ {c}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_i8JVAJjtEeiHAePZcqfe4w" org.eventb.core.target="Contexto_1"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_i8J8EJjtEeiHAePZcqfe4w" org.eventb.core.assignment="clientes ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_i8J8EZjtEeiHAePZcqfe4w" org.eventb.core.assignment="reservas ≔ ∅" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_i8J8EpjtEeiHAePZcqfe4w" org.eventb.core.identifier="clientes"/>
+<org.eventb.core.variable name="_i8KjIJjtEeiHAePZcqfe4w" org.eventb.core.identifier="reservas"/>
+<org.eventb.core.invariant name="_i8KjIZjtEeiHAePZcqfe4w" org.eventb.core.label="inv1" org.eventb.core.predicate="clientes ⊆  PERSONAS"/>
+<org.eventb.core.invariant name="_i8KjIpjtEeiHAePZcqfe4w" org.eventb.core.label="inv2" org.eventb.core.predicate="reservas ∈ clientes → 1‥nc"/>
+<org.eventb.core.invariant name="_i8LKMJjtEeiHAePZcqfe4w" org.eventb.core.label="inv3" org.eventb.core.predicate="finite(reservas)"/>
+<org.eventb.core.invariant name="_i8LKMZjtEeiHAePZcqfe4w" org.eventb.core.label="inv4" org.eventb.core.predicate="∀x·x∈1‥nc ⇒  card(reservas∼[{x}]) ≤ cp"/>
+<org.eventb.core.event name="_i8LxQJjtEeiHAePZcqfe4w" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="reservar">
+<org.eventb.core.parameter name="_i8LxQZjtEeiHAePZcqfe4w" org.eventb.core.identifier="x"/>
+<org.eventb.core.parameter name="_i8LxQpjtEeiHAePZcqfe4w" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_i8MYUJjtEeiHAePZcqfe4w" org.eventb.core.label="grd1" org.eventb.core.predicate="x ⊆ PERSONAS ∖ clientes"/>
+<org.eventb.core.guard name="_i8MYUZjtEeiHAePZcqfe4w" org.eventb.core.label="grd2" org.eventb.core.predicate="c ∈ 1‥nc"/>
+<org.eventb.core.guard name="_i8MYUpjtEeiHAePZcqfe4w" org.eventb.core.label="grd5" org.eventb.core.predicate="x ≠ ∅"/>
+<org.eventb.core.guard name="_i8M_YJjtEeiHAePZcqfe4w" org.eventb.core.label="grd3" org.eventb.core.predicate="reservas∼[{c}] = ∅"/>
+<org.eventb.core.guard name="_i8M_YZjtEeiHAePZcqfe4w" org.eventb.core.label="grd4" org.eventb.core.predicate="card(x) ≤ cp"/>
+<org.eventb.core.guard name="_i8NmcJjtEeiHAePZcqfe4w" org.eventb.core.label="grd6" org.eventb.core.predicate="x ∩ dom(reservas)= ∅"/>
+<org.eventb.core.guard name="_i8NmcZjtEeiHAePZcqfe4w" org.eventb.core.label="grd7" org.eventb.core.predicate="finite(x)"/>
+<org.eventb.core.action name="_i8ONgJjtEeiHAePZcqfe4w" org.eventb.core.assignment="clientes ≔  clientes ∪ x" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_i8ONgZjtEeiHAePZcqfe4w" org.eventb.core.assignment="reservas ≔ reservas ∪ (x × {c})" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_i8ONgpjtEeiHAePZcqfe4w" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="cancelar">
+<org.eventb.core.parameter name="_i8O0kJjtEeiHAePZcqfe4w" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_i8O0kZjtEeiHAePZcqfe4w" org.eventb.core.label="grd1" org.eventb.core.predicate="c ∈ 1‥nc"/>
+<org.eventb.core.guard name="_i8O0kpjtEeiHAePZcqfe4w" org.eventb.core.label="grd2" org.eventb.core.predicate="reservas∼[{c}] ≠  ∅"/>
+<org.eventb.core.action name="_i8PboJjtEeiHAePZcqfe4w" org.eventb.core.assignment="clientes ≔  clientes ∖ reservas∼[{c}]" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_i8PboZjtEeiHAePZcqfe4w" org.eventb.core.assignment="reservas ≔ reservas ⩥ {c}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

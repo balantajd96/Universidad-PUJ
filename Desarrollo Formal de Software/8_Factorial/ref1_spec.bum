@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1536253586122" org.eventb.texttools.text_representation="machine ref1_spec sees ctx_pre&#10;&#10;variables z&#10;invariants&#10;  @inv1 z ∈ ℕ&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 z :∈ ℕ&#10;  end&#10;&#10;  event fin&#10;    where&#10;      @grd1 z = fact(n)&#10;  end&#10;  anticipated event siga&#10;    then&#10;      @act1 z :∈ ℕ&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_gp7gILFqEeiBneomkn1R9w" org.eventb.core.target="ctx_pre"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_VHFvELFqEeiBneomkn1R9w" org.eventb.core.assignment="z :∈ ℕ" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_VHGWILFqEeiBneomkn1R9w" org.eventb.core.identifier="z"/>
+<org.eventb.core.invariant name="_VHG9MLFqEeiBneomkn1R9w" org.eventb.core.label="inv1" org.eventb.core.predicate="z ∈ ℕ"/>
+<org.eventb.core.event name="_VHG9MbFqEeiBneomkn1R9w" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.guard name="_VHHkQLFqEeiBneomkn1R9w" org.eventb.core.label="grd1" org.eventb.core.predicate="z = fact(n)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_VHILULFqEeiBneomkn1R9w" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="siga">
+<org.eventb.core.action name="_VHIyYLFqEeiBneomkn1R9w" org.eventb.core.assignment="z :∈ ℕ" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

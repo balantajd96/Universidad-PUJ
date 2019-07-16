@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="S" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/9.10_Ejemplo1/Context.bpo|org.eventb.core.poFile#Context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/9.10_Ejemplo1/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#_T5s347XpEeiKSMKmkUGGZg"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="S∈1 ‥ n ↣ ℕ" org.eventb.core.source="/9.10_Ejemplo1/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#_T5s35LXpEeiKSMKmkUGGZg"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

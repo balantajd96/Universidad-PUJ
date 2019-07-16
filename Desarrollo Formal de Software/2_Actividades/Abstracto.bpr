@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ACTIVIDADES,CUARTOS,USUARIOS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="actCuarto" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="actCuarto∈ACTIVIDADES → CUARTOS"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USUARIOS×CUARTOS))∈USUARIOS ⇸ CUARTOS"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ACTIVIDADES,CUARTOS,USUARIOS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="actCuarto" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀u⦂USUARIOS,c⦂CUARTOS·u ↦ c∈(∅ ⦂ ℙ(USUARIOS×CUARTOS))⇒actCuarto∼[{c}]⊆(∅ ⦂ ℙ(USUARIOS×ACTIVIDADES))[{u}]"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="autorizar/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="c,u0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="ACTIVIDADES,CUARTOS,USUARIOS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees u0,c)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p10">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p2,p3,p4,p5,p10">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ACTIVIDADES"/>
+<org.eventb.core.prIdent name="actCuarto" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+<org.eventb.core.prIdent name="autorizacion" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.prIdent name="sitio" org.eventb.core.type="ℙ(USUARIOS×CUARTOS)"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="autorizacion∈USUARIOS ↔ ACTIVIDADES"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="u∈USUARIOS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="u ↦ a∉autorizacion"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="actCuarto∈ACTIVIDADES → CUARTOS"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="sitio∈USUARIOS ⇸ CUARTOS"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="actCuarto∼[{c}]⊆(autorizacion∪{u ↦ a})[{u0}]">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="a∈ACTIVIDADES"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀u0⦂USUARIOS,c⦂CUARTOS·u0 ↦ c∈sitio⇒actCuarto∼[{c}]⊆(autorizacion∪{u ↦ a})[{u0}]"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀u⦂USUARIOS,c⦂CUARTOS·u ↦ c∈sitio⇒actCuarto∼[{c}]⊆autorizacion[{u}]"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="u0 ↦ c∈sitio⇒actCuarto∼[{c}]⊆(autorizacion∪{u ↦ a})[{u0}]">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬u ↦ a∈autorizacion"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="u0 ↦ c∈sitio">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrar/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="ACTIVIDADES,CUARTOS,USUARIOS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="actCuarto" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+<org.eventb.core.prIdent name="autorizacion" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="sitio" org.eventb.core.type="ℙ(USUARIOS×CUARTOS)"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="autorizacion∈USUARIOS ↔ ACTIVIDADES"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="u∈USUARIOS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="actCuarto∈ACTIVIDADES → CUARTOS"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="sitio∈USUARIOS ⇸ CUARTOS"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀u⦂USUARIOS,c⦂CUARTOS·u ↦ c∈sitio⇒actCuarto∼[{c}]⊆autorizacion[{u}]"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="sitio{u ↦ c}∈USUARIOS ⇸ CUARTOS"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="c∈CUARTOS"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="actCuarto∼[{c}]⊆autorizacion[{u}]"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrar/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="u0,c0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="ACTIVIDADES,CUARTOS,USUARIOS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees u0,c0)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.prIdent name="c0" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p7">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1,p2,p7">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="actCuarto" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+<org.eventb.core.prIdent name="autorizacion" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="sitio" org.eventb.core.type="ℙ(USUARIOS×CUARTOS)"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="autorizacion∈USUARIOS ↔ ACTIVIDADES"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="u∈USUARIOS"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀u0⦂USUARIOS,c0⦂CUARTOS·u0 ↦ c0∈sitio{u ↦ c}⇒actCuarto∼[{c0}]⊆autorizacion[{u0}]"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀u⦂USUARIOS,c⦂CUARTOS·u ↦ c∈sitio⇒actCuarto∼[{c}]⊆autorizacion[{u}]"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="u0 ↦ c0∈sitio{u ↦ c}⇒actCuarto∼[{c0}]⊆autorizacion[{u0}]">
+<org.eventb.core.prIdent name="c0" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="c∈CUARTOS"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="actCuarto∼[{c}]⊆autorizacion[{u}]"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="u0 ↦ c0∈sitio{u ↦ c}">
+<org.eventb.core.prIdent name="c0" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="actCuarto∼[{c0}]⊆autorizacion[{u0}]">
+<org.eventb.core.prIdent name="c0" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="desautorizar/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="c,u0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="ACTIVIDADES,CUARTOS,USUARIOS">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees u0,c)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p9">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="p2,p3,p4,p9">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="a" org.eventb.core.type="ACTIVIDADES"/>
+<org.eventb.core.prIdent name="actCuarto" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+<org.eventb.core.prIdent name="autorizacion" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.prIdent name="sitio" org.eventb.core.type="ℙ(USUARIOS×CUARTOS)"/>
+<org.eventb.core.prIdent name="u" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="autorizacion∈USUARIOS ↔ ACTIVIDADES"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="u∈USUARIOS"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="a∉actCuarto∼[sitio[{u}]]"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬a∈actCuarto∼[sitio[{u}]]"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="u0 ↦ c∈sitio⇒actCuarto∼[{c}]⊆(autorizacion ∖ {u ↦ a})[{u0}]">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="a∈ACTIVIDADES"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="∀u⦂USUARIOS,c⦂CUARTOS·u ↦ c∈sitio⇒actCuarto∼[{c}]⊆autorizacion[{u}]"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="actCuarto∼[{c}]⊆(autorizacion ∖ {u ↦ a})[{u0}]">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="u ↦ a∈autorizacion"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀u0⦂USUARIOS,c⦂CUARTOS·u0 ↦ c∈sitio⇒actCuarto∼[{c}]⊆(autorizacion ∖ {u ↦ a})[{u0}]"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="u0 ↦ c∈sitio">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.prIdent name="u0" org.eventb.core.type="USUARIOS"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1536730613853" org.eventb.texttools.text_representation="context Contexto&#10;constants A B n1 n2&#10;axioms&#10;  @ax1 n1 ∈ ℕ1&#10;  @ax2 n2 ∈ ℕ1&#10;  @ax3 A ∈  1‥n1 →ℕ&#10;  @ax4 B ∈  1‥n2 →ℕ&#10;  @ax5 n2≥n1&#10;  @ax6 ∃x·x ∈ 1‥(n2−n1)∧(∀y·y∈1‥n1⇒B(x+(y−1))=A(y))&#10;  @ax7 finite(A) ∧ finite(B)&#10;&#10;end&#10;" version="3">
+<org.eventb.core.constant name="_SlPZ0LX-Eei5UvyFzIgSTw" org.eventb.core.identifier="A"/>
+<org.eventb.core.constant name="_SlPZ0bX-Eei5UvyFzIgSTw" org.eventb.core.identifier="B"/>
+<org.eventb.core.axiom name="_SlQA4LX-Eei5UvyFzIgSTw" org.eventb.core.label="ax1" org.eventb.core.predicate="n1 ∈ ℕ1"/>
+<org.eventb.core.axiom name="_SlQn8LX-Eei5UvyFzIgSTw" org.eventb.core.label="ax2" org.eventb.core.predicate="n2 ∈ ℕ1"/>
+<org.eventb.core.axiom name="_l7EmELX-Eei5UvyFzIgSTw" org.eventb.core.label="ax3" org.eventb.core.predicate="A ∈  1‥n1 →ℕ"/>
+<org.eventb.core.constant name="_WY2G8LYBEei5UvyFzIgSTw" org.eventb.core.identifier="n1"/>
+<org.eventb.core.constant name="_V3cNkLYCEei5UvyFzIgSTw" org.eventb.core.identifier="n2"/>
+<org.eventb.core.axiom name="_V3c0oLYCEei5UvyFzIgSTw" org.eventb.core.label="ax4" org.eventb.core.predicate="B ∈  1‥n2 →ℕ"/>
+<org.eventb.core.axiom name="_QRQ-sLZDEei6sODqI5w9dw" org.eventb.core.label="ax5" org.eventb.core.predicate="n2≥n1"/>
+<org.eventb.core.axiom name="_VOzoALZJEei6sODqI5w9dw" org.eventb.core.label="ax6" org.eventb.core.predicate="∃x·x ∈ 1‥(n2−n1)∧(∀y·y∈1‥n1⇒B(x+(y−1))=A(y))"/>
+<org.eventb.core.axiom name="_miO60LZNEei6sODqI5w9dw" org.eventb.core.label="ax7" org.eventb.core.predicate="finite(A) ∧ finite(B)"/>
+</org.eventb.core.contextFile>

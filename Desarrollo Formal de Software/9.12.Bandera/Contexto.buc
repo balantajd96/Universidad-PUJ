@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1537461260126" org.eventb.texttools.text_representation="context Contexto&#10;&#10;sets Bandera&#10;&#10;constants Arreglo n amarillo azul rojo&#10;&#10;axioms&#10;  @ax1 partition(Bandera, {amarillo},{azul},{rojo})&#10;  @ax2 n ∈ ℕ1&#10;  @ax3 Arreglo ∈ 1‥n →Bandera&#10;  @ax4 ran(Arreglo) = Bandera&#10;end&#10;" version="3">
+<org.eventb.core.constant name="_VWd3ULH4Eeimr84T2lvYhw" org.eventb.core.identifier="Arreglo"/>
+<org.eventb.core.axiom name="_VWeeYbH4Eeimr84T2lvYhw" org.eventb.core.label="ax1" org.eventb.core.predicate="partition(Bandera, {amarillo},{azul},{rojo})"/>
+<org.eventb.core.constant name="_aEZR0LXkEeiKSMKmkUGGZg" org.eventb.core.identifier="n"/>
+<org.eventb.core.axiom name="_aEZR0bXkEeiKSMKmkUGGZg" org.eventb.core.label="ax2" org.eventb.core.predicate="n ∈ ℕ1"/>
+<org.eventb.core.axiom name="_grgIsLXkEeiKSMKmkUGGZg" org.eventb.core.label="ax3" org.eventb.core.predicate="Arreglo ∈ 1‥n →Bandera"/>
+<org.eventb.core.constant name="_ubNkgLXlEeiKSMKmkUGGZg" org.eventb.core.identifier="amarillo"/>
+<org.eventb.core.axiom name="_ky5CMLzyEeiS3uz2Bc1XZg" org.eventb.core.label="ax4" org.eventb.core.predicate="ran(Arreglo) = Bandera"/>
+<org.eventb.core.constant name="_z1eQkLzyEeiS3uz2Bc1XZg" org.eventb.core.identifier="azul"/>
+<org.eventb.core.constant name="_z1eQkbzyEeiS3uz2Bc1XZg" org.eventb.core.identifier="rojo"/>
+<org.eventb.core.carrierSet name="_Bi6Q8LzzEeiS3uz2Bc1XZg" org.eventb.core.identifier="Bandera"/>
+</org.eventb.core.contextFile>

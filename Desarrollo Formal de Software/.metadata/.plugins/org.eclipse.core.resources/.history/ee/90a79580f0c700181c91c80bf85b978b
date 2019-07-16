@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="PERSONAS" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="cp" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nc" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="PERSONAT" org.eventb.core.predicate="nc∈ℕ1" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_amKhgpjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PERSONAU" org.eventb.core.predicate="cp∈ℕ1" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_amLIkJjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PERSONAV" org.eventb.core.predicate="finite(PERSONAS)" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_YVHo8JkOEeiI8dK0QJfE1g"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="clientes" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="registrados" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="reservas" org.eventb.core.type="ℙ(PERSONAS×ℤ)"/>
+<org.eventb.core.poPredicate name="registradot" org.eventb.core.predicate="clientes⊆PERSONAS" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_i8KjIZjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="registradou" org.eventb.core.predicate="reservas∈clientes → 1 ‥ nc" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_i8KjIpjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="registradov" org.eventb.core.predicate="finite(reservas)" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_i8LKMJjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="registradow" org.eventb.core.predicate="∀x⦂ℤ·x∈1 ‥ nc⇒card(reservas∼[{x}])≤cp" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_i8LKMZjtEeiHAePZcqfe4w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPregistradot"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UZkeEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_i8KjIJjtEeiHAePZcqfe4x"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UZkeEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#INITIALISATION\/inv1,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTregistradot" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="registrados'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="clientes'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="reservas'" org.eventb.core.type="ℙ(PERSONAS×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPregistradot" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTregistradot" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTregistradou" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="clientes'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="reservas'" org.eventb.core.type="ℙ(PERSONAS×ℤ)"/>
+<org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℙ(PERSONAS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPregistradou" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTregistradou" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x⊆PERSONAS ∖ clientes" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8LxQJjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8MYUJjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c∈1 ‥ nc" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8LxQJjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8MYUZjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="x≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8LxQJjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8MYUpjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="reservas∼[{c}]=(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8LxQJjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8M_YJjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="card(x)≤cp" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8LxQJjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8M_YZjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="x∩dom(reservas)=(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8LxQJjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8NmcJjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="finite(x)" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8LxQJjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8NmcZjtEeiHAePZcqfe4w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTregistradov" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="clientes'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="reservas'" org.eventb.core.type="ℙ(PERSONAS×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPregistradov" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTregistradov" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="c∈1 ‥ nc" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8ONgpjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8O0kZjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="reservas∼[{c}]≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8ONgpjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8O0kpjtEeiHAePZcqfe4w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="registrarse/inv1,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPregistradow"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(registrados∪x)" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UZkeEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_Kq-kcJkfEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UZkeEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#registrarse\/inv1,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTregistradow" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="registrados'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℙ(PERSONAS×ℤ)"/>
+<org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℙ(PERSONAS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPregistradow" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTregistradow" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x⊆clientes" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_Kq-kcJkfEei7Kb6QMzwLTQ|org.eventb.core.guard#_Kq_LgZkfEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="x≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_Kq-kcJkfEei7Kb6QMzwLTQ|org.eventb.core.guard#_Kq_LgpkfEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="r⊆reservas" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_Kq-kcJkfEei7Kb6QMzwLTQ|org.eventb.core.guard#_Kq_ykJkfEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="x∩dom(r)≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_Kq-kcJkfEei7Kb6QMzwLTQ|org.eventb.core.guard#_Kq_ykZkfEei7Kb6QMzwLTQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="irse/inv1,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPregistradox"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(registrados ∖ {r})" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UZkeEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8ONgpjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_tqcYAJkfEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UZkeEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#irse\/inv1,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTregistradox" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="registrados'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="clientes'" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="PERSONAS"/>
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="reservas'" org.eventb.core.type="ℙ(PERSONAS×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPregistradox" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTregistradox" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="c∈1 ‥ nc" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8ONgpjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8O0kZjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="reservas∼[{c}]≠(∅ ⦂ ℙ(PERSONAS))" org.eventb.core.source="/1_Hotel/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_i8ONgpjtEeiHAePZcqfe4w|org.eventb.core.guard#_i8O0kpjtEeiHAePZcqfe4w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="r∈registrados" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_tqcYAJkfEei7Kb6QMzwLTQ|org.eventb.core.guard#_tqdmIJkfEei7Kb6QMzwLTQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/1_Hotel/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="registrados⊆PERSONAS" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UJkeEei7Kb6QMzwLTQ"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="finite(registrados)" org.eventb.core.source="/1_Hotel/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_8dE7UZkeEei7Kb6QMzwLTQ"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

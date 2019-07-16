@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1535650513758" org.eventb.texttools.text_representation="context ctx3 extends ctx2&#10;&#10;constants ordenC // corden de canastas&#10;&#10;&#10;axioms&#10;  @ax2,2 ordenC ∈ CANASTAS ⤖ 0‥card(CANASTAS)−1//le asigna las poisciones desde el 0 hasta el numero de canastas -1&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="ctx2"/>
+<org.eventb.core.constant name="_1dTqIGPlEeaYhKm1lBpdyA" org.eventb.core.comment="corden de canastas" org.eventb.core.identifier="ordenC"/>
+<org.eventb.core.axiom name="_1dTqIWPlEeaYhKm1lBpdyA" org.eventb.core.comment="le asigna las poisciones desde el 0 hasta el numero de canastas -1" org.eventb.core.label="ax2,2" org.eventb.core.predicate="ordenC ∈ CANASTAS ⤖ 0‥card(CANASTAS)−1"/>
+</org.eventb.core.contextFile>

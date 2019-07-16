@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="BUSES" org.eventb.core.type="ℙ(BUSES)"/>
+<org.eventb.core.poIdentifier name="ESTS" org.eventb.core.type="ℙ(ESTS)"/>
+<org.eventb.core.poIdentifier name="rutaB" org.eventb.core.type="ℙ(BUSES×ℙ(ESTS×ℤ))"/>
+<org.eventb.core.poIdentifier name="rutas" org.eventb.core.type="ℙ(ℙ(ESTS×ℤ))"/>
+<org.eventb.core.poPredicate name="rutat" org.eventb.core.predicate="rutas⊆ESTS → ℕ" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9cuMp_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="rutau" org.eventb.core.predicate="rutas≠(∅ ⦂ ℙ(ℙ(ESTS×ℤ)))" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9dVQJ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="rutav" org.eventb.core.predicate="∀r⦂ℙ(ESTS×ℤ)·r∈rutas⇒finite(r)" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9dVQZ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="rutaw" org.eventb.core.predicate="∀r⦂ℙ(ESTS×ℤ)·r∈rutas⇒card(r ⩥ {0})&gt;1" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9d8UJ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="rutax" org.eventb.core.predicate="∀r⦂ℙ(ESTS×ℤ)·r∈rutas⇒r ⩥ {0}∈ESTS ⤔ ℕ1" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9d8UZ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="rutay" org.eventb.core.predicate="rutaB∈BUSES → rutas" org.eventb.core.source="/3_Buses/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_O9ejYJ_NEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="parq" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+<org.eventb.core.poIdentifier name="recorrido" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+<org.eventb.core.poPredicate name="recorridp" org.eventb.core.predicate="parq∈BUSES ⤔ ESTS" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_hcpNYZ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="recorridq" org.eventb.core.predicate="∀b⦂BUSES·b∈dom(parq)⇒rutaB(b)(parq(b))≠0" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_hcpNYp_NEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv1,2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#HYPContexto_4"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀b⦂BUSES·b∈BUSES⇒b∈dom(rutaB)∧rutaB∈BUSES ⇸ ℙ(ESTS × ℤ)" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#HYPContexto_4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_7"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀b⦂BUSES·b∈BUSES⇒(∅ ⦂ ℙ(BUSES×ESTS))[{b}]⊆dom(rutaB(b) ⩥ {0})" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgB"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#INITIALISATION\/inv1,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_7"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(BUSES×ESTS))∩(∅ ⦂ ℙ(BUSES×ESTS))=(∅ ⦂ ℙ(BUSES×ESTS))" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgB"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#INITIALISATION\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContexto_7" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="recorrido'" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+<org.eventb.core.poIdentifier name="parq'" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContexto_7" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTContexto_7" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="llegar/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_8"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(parq{b ↦ e})∩recorrido=(∅ ⦂ ℙ(BUSES×ESTS))" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_nRXlEJ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgC"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#llegar\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContexto_8" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUSES"/>
+<org.eventb.core.poIdentifier name="parq'" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+<org.eventb.core.poIdentifier name="e" org.eventb.core.type="ESTS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContexto_8" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTContexto_8" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈BUSES ∖ dom(parq)" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_nRXlEJ_NEeibN8yuBAXqgA|org.eventb.core.guard#_nRYMIJ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="e∈ESTS ∖ ran(parq)" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_nRXlEJ_NEeibN8yuBAXqgA|org.eventb.core.guard#_nRYMIZ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="rutaB(b)(e)≠0" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_nRXlEJ_NEeibN8yuBAXqgA|org.eventb.core.guard#_nRYzMJ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="b ↦ e∉recorrido" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgC|org.eventb.core.guard#_cR75sJ_mEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="salir/inv1,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀b0⦂BUSES·b0∈BUSES⇒(recorrido∪{b ↦ parq(b)})[{b0}]⊆dom(rutaB(b0) ⩥ {0})" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rCrTgJ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgD"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#salir\/inv1,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="salir/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(parq ∖ {b ↦ parq(b)})∩(recorrido∪{b ↦ parq(b)})=(∅ ⦂ ℙ(BUSES×ESTS))" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rCrTgJ_NEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgD"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#salir\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="salir/act1,1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(parq)∧parq∈BUSES ⇸ ESTS" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgD|org.eventb.core.action#_y53v4J_mEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_hcpNYJ_NEeibN8yuBAXqgD|org.eventb.core.action#_y53v4J_mEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_9"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContexto_9" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUSES"/>
+<org.eventb.core.poIdentifier name="recorrido'" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+<org.eventb.core.poIdentifier name="parq'" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContexto_9" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTContexto_9" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈dom(parq)" org.eventb.core.source="/3_Buses/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_rCrTgJ_NEeibN8yuBAXqgA|org.eventb.core.guard#_rCrTgp_NEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="terminar/grd1,2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTHYPContexto_:'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(rutaB)∧rutaB∈BUSES ⇸ ℙ(ESTS × ℤ)" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_jXl4UJ_nEeibN8yuBAXqgA|org.eventb.core.guard#_jXnGcJ_nEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_jXl4UJ_nEeibN8yuBAXqgA|org.eventb.core.guard#_jXnGcJ_nEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTHYPContexto_:'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="terminar/inv1,2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀b0⦂BUSES·b0∈BUSES⇒({b} ⩤ recorrido)[{b0}]⊆dom(rutaB(b0) ⩥ {0})" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_jXl4UJ_nEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#terminar\/inv1,2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="terminar/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTALLHYPContexto_:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="parq∩({b} ⩤ recorrido)=(∅ ⦂ ℙ(BUSES×ESTS))" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_jXl4UJ_nEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poSequent#terminar\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContexto_:" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUSES"/>
+<org.eventb.core.poIdentifier name="recorrido'" org.eventb.core.type="ℙ(BUSES×ESTS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPContexto_:'" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTIDENTContexto_:" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈dom(recorrido) ∖ dom(parq)" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_jXl4UJ_nEeibN8yuBAXqgA|org.eventb.core.guard#_jXmfYZ_nEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContexto_:" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#EVTHYPContexto_:'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="recorrido[{b}]=dom(rutaB(b) ⩥ {0})" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.event#_jXl4UJ_nEeibN8yuBAXqgA|org.eventb.core.guard#_jXnGcJ_nEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPContexto_4" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="recorrido∈BUSES ↔ ESTS" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_NAAkkJ_iEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/3_Buses/Refinamiento_1.bpo|org.eventb.core.poFile#Refinamiento_1|org.eventb.core.poPredicateSet#HYPContexto_4" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∀b⦂BUSES·b∈BUSES⇒recorrido[{b}]⊆dom(rutaB(b) ⩥ {0})" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#_bkLYoJ_iEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="parq∩recorrido=(∅ ⦂ ℙ(BUSES×ESTS))" org.eventb.core.source="/3_Buses/Refinamiento_1.bum|org.eventb.core.machineFile#Refinamiento_1|org.eventb.core.invariant#__0p2MJ_kEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

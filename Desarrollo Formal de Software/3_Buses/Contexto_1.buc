@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1534265127979" org.eventb.texttools.text_representation="context Contexto_1&#10;sets&#10;BUSES&#10;ESTS&#10;constants&#10;rutas&#10;rutaB&#10;axioms&#10;@ax1 rutas ⊆ ESTS → ℕ&#10;@ax2 rutas ≠ ∅&#10;@ax3 ∀r · r ∈ rutas ⇒ finite (r)&#10;@ax4 ∀r · r ∈ rutas ⇒ card (r ⩥ {0}) &gt; 1 //una ruta para ser ruta debe tener almenos 2 estaciones&#10;@ax5 ∀r · r ∈ rutas ⇒ (r ⩥ {0} ) ∈ ESTS ⤔ ℕ1//No hay 2 estaciones que van a la misma imagen&#10;@ax6 rutaB ∈ BUSES → rutas&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_O9cHIJ_NEeibN8yuBAXqgA" org.eventb.core.identifier="BUSES"/>
+<org.eventb.core.carrierSet name="_O9cHIZ_NEeibN8yuBAXqgA" org.eventb.core.identifier="ESTS"/>
+<org.eventb.core.constant name="_O9cuMJ_NEeibN8yuBAXqgA" org.eventb.core.identifier="rutas"/>
+<org.eventb.core.constant name="_O9cuMZ_NEeibN8yuBAXqgA" org.eventb.core.identifier="rutaB"/>
+<org.eventb.core.axiom name="_O9cuMp_NEeibN8yuBAXqgA" org.eventb.core.label="ax1" org.eventb.core.predicate="rutas ⊆ ESTS → ℕ"/>
+<org.eventb.core.axiom name="_O9dVQJ_NEeibN8yuBAXqgA" org.eventb.core.label="ax2" org.eventb.core.predicate="rutas ≠ ∅"/>
+<org.eventb.core.axiom name="_O9dVQZ_NEeibN8yuBAXqgA" org.eventb.core.label="ax3" org.eventb.core.predicate="∀r · r ∈ rutas ⇒ finite (r)"/>
+<org.eventb.core.axiom name="_O9d8UJ_NEeibN8yuBAXqgA" org.eventb.core.comment="una ruta para ser ruta debe tener almenos 2 estaciones" org.eventb.core.label="ax4" org.eventb.core.predicate="∀r · r ∈ rutas ⇒ card (r ⩥ {0}) &gt; 1"/>
+<org.eventb.core.axiom name="_O9d8UZ_NEeibN8yuBAXqgA" org.eventb.core.comment="No hay 2 estaciones que van a la misma imagen" org.eventb.core.label="ax5" org.eventb.core.predicate="∀r · r ∈ rutas ⇒ (r ⩥ {0} ) ∈ ESTS ⤔ ℕ1"/>
+<org.eventb.core.axiom name="_O9ejYJ_NEeibN8yuBAXqgA" org.eventb.core.label="ax6" org.eventb.core.predicate="rutaB ∈ BUSES → rutas"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="nc∈ℕ1" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_amKhgpjtEeiHAePZcqfe4w" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="ax2" org.eventb.core.predicate="cp∈ℕ1" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_amLIkJjtEeiHAePZcqfe4w" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="ax3" org.eventb.core.predicate="finite(PERSONAS)" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_YVHo8JkOEeiI8dK0QJfE1g" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="PERSONAS" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_amJ6cJjtEeiHAePZcqfe4w" org.eventb.core.type="ℙ(PERSONAS)"/>
+<org.eventb.core.scConstant name="cp" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_amKhgZjtEeiHAePZcqfe4w" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant name="nc" org.eventb.core.source="/1_Hotel/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_amKhgJjtEeiHAePZcqfe4w" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1535650316754" org.eventb.texttools.text_representation="machine Ref1_giros refines Abstracto2018  sees ctx2&#10;&#10;variables pr // Personas en la rueda&#10;          pesp // personas en espera&#10;          pmc // personas y las canastas en que montan&#10;          er // estado de la rueda&#10;          abajo // la canasta que esta abajo&#10;          giros // giros que ha dado cada canasta&#10;          pasaron // canastas ya contadas en el giro actual&#10;&#10;&#10;invariants&#10;  @inv1,1 giros ∈ CANASTAS → 0‥maxg&#10;  @inv1,2 pasaron ⊆ CANASTAS&#10;  @inv1,3 er=detenida ⇒ giros(abajo) = maxg&#10;  @inv1,4 pasaron ≠  ∅ ∧ er=detenida ⇒  abajo ∈ pasaron // la canasta &quot;abajo&quot; es una de las que pasa&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;    then&#10;      @ac1,6 giros ≔ CANASTAS  × {maxg}&#10;      @ac1,8 pasaron ≔ ∅&#10;  end&#10;&#10;  event llega_per extends llega_per&#10;  end&#10;&#10;  event suben_per extends suben_per&#10;  end&#10;&#10;  event bajan_per extends bajan_per&#10;  end&#10;&#10;  event girar extends girar&#10;    then&#10;      @ac1,1 giros(abajo) ≔ 0&#10;      @ac1,2 pasaron ≔ pasaron  ∖  {abajo}&#10;  end&#10;&#10;  event detener refines detener&#10;    any c&#10;    where&#10;      @grd1,1 c ∈  pasaron&#10;      @grd1,2 giros(c) = maxg&#10;      @grd1,3 er = girando&#10;    then&#10;      @ac1,1 er ≔ detenida&#10;      @ac1,2 abajo ≔ c&#10;  end&#10;&#10;  event seguir1//siguiente canasta&#10;    any c&#10;    where&#10;      @grd1,1 er = girando&#10;      @grd1,2 c ∈ CANASTAS ∖ pasaron&#10;      @grd1,3 giros(c) &lt; maxg&#10;    then&#10;      @ac1,1 giros(c) ≔ giros(c) + 1&#10;      @ac1,2 pasaron ≔ pasaron ∪ {c}&#10;  end&#10;&#10;  event seguir2//siguiente vuelta de canastas&#10;    where&#10;      @grd1,1 er = girando&#10;      @grd1,2 pasaron = CANASTAS&#10;      @grd1,3 ∀d· d ∈ pasaron ⇒ giros(d) &lt; maxg&#10;    then&#10;      @ac1,2 pasaron ≔ ∅&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Abstracto2018"/>
+<org.eventb.core.seesContext name="_54QBgKYsEei9LrMP3-OL0Q" org.eventb.core.target="ctx2"/>
+<org.eventb.core.variable name="_xudFVaYrEei9LrMP3-OL0Q" org.eventb.core.comment="Personas en la rueda" org.eventb.core.identifier="pr"/>
+<org.eventb.core.variable name="_xudFVqYrEei9LrMP3-OL0Q" org.eventb.core.comment="personas en espera" org.eventb.core.identifier="pesp"/>
+<org.eventb.core.variable name="_xudFV6YrEei9LrMP3-OL0Q" org.eventb.core.comment="personas y las canastas en que montan" org.eventb.core.identifier="pmc"/>
+<org.eventb.core.variable name="_xudFWKYrEei9LrMP3-OL0Q" org.eventb.core.comment="estado de la rueda" org.eventb.core.identifier="er"/>
+<org.eventb.core.variable name="_xudFWaYrEei9LrMP3-OL0Q" org.eventb.core.comment="la canasta que esta abajo" org.eventb.core.identifier="abajo"/>
+<org.eventb.core.event name="_z7j2EKYrEei9LrMP3-OL0R" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_4CA4oKYsEei9LrMP3-OL0Q" org.eventb.core.assignment="giros ≔ CANASTAS  × {maxg}" org.eventb.core.label="ac1,6"/>
+<org.eventb.core.action name="_4CA4oaYsEei9LrMP3-OL0Q" org.eventb.core.assignment="pasaron ≔ ∅" org.eventb.core.label="ac1,8"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_z7j2EKYrEei9LrMP3-OL0S" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="llega_per">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="llega_per"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_z7j2EKYrEei9LrMP3-OL0T" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="suben_per">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="suben_per"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_z7j2EKYrEei9LrMP3-OL0U" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="bajan_per">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="bajan_per"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_z7j2EKYrEei9LrMP3-OL0V" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="girar">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="girar"/>
+<org.eventb.core.action name="_4CA4oqYsEei9LrMP3-OL0Q" org.eventb.core.assignment="giros(abajo) ≔ 0" org.eventb.core.label="ac1,1"/>
+<org.eventb.core.action name="_4CBfsKYsEei9LrMP3-OL0Q" org.eventb.core.assignment="pasaron ≔ pasaron  ∖  {abajo}" org.eventb.core.label="ac1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_z7j2EKYrEei9LrMP3-OL0W" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="detener">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="detener"/>
+<org.eventb.core.parameter name="_4CBfsaYsEei9LrMP3-OL0Q" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_4CBfsqYsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,1" org.eventb.core.predicate="c ∈  pasaron"/>
+<org.eventb.core.guard name="_4CBfs6YsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,2" org.eventb.core.predicate="giros(c) = maxg"/>
+<org.eventb.core.guard name="_4CBftKYsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,3" org.eventb.core.predicate="er = girando"/>
+<org.eventb.core.action name="_4CBftaYsEei9LrMP3-OL0Q" org.eventb.core.assignment="er ≔ detenida" org.eventb.core.label="ac1,1"/>
+<org.eventb.core.action name="_4CBftqYsEei9LrMP3-OL0Q" org.eventb.core.assignment="abajo ≔ c" org.eventb.core.label="ac1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_4CBft6YsEei9LrMP3-OL0Q" org.eventb.core.comment="giros que ha dado cada canasta" org.eventb.core.identifier="giros"/>
+<org.eventb.core.variable name="_4CBfuKYsEei9LrMP3-OL0Q" org.eventb.core.comment="canastas ya contadas en el giro actual" org.eventb.core.identifier="pasaron"/>
+<org.eventb.core.invariant name="_4CBfuaYsEei9LrMP3-OL0Q" org.eventb.core.label="inv1,1" org.eventb.core.predicate="giros ∈ CANASTAS → 0‥maxg"/>
+<org.eventb.core.invariant name="_4CBfuqYsEei9LrMP3-OL0Q" org.eventb.core.label="inv1,2" org.eventb.core.predicate="pasaron ⊆ CANASTAS"/>
+<org.eventb.core.invariant name="_4CBfu6YsEei9LrMP3-OL0Q" org.eventb.core.label="inv1,3" org.eventb.core.predicate="er=detenida ⇒ giros(abajo) = maxg"/>
+<org.eventb.core.invariant name="_4CBfvKYsEei9LrMP3-OL0Q" org.eventb.core.comment="la canasta &quot;abajo&quot; es una de las que pasa" org.eventb.core.label="inv1,4" org.eventb.core.predicate="pasaron ≠  ∅ ∧ er=detenida ⇒  abajo ∈ pasaron"/>
+<org.eventb.core.event name="_4CCGwKYsEei9LrMP3-OL0Q" org.eventb.core.comment="siguiente canasta" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="seguir1">
+<org.eventb.core.parameter name="_4CCGwaYsEei9LrMP3-OL0Q" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_4CCGwqYsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,1" org.eventb.core.predicate="er = girando"/>
+<org.eventb.core.guard name="_4CCGw6YsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,2" org.eventb.core.predicate="c ∈ CANASTAS ∖ pasaron"/>
+<org.eventb.core.guard name="_4CCGxKYsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,3" org.eventb.core.predicate="giros(c) &lt; maxg"/>
+<org.eventb.core.action name="_4CCGxaYsEei9LrMP3-OL0Q" org.eventb.core.assignment="giros(c) ≔ giros(c) + 1" org.eventb.core.label="ac1,1"/>
+<org.eventb.core.action name="_4CCGxqYsEei9LrMP3-OL0Q" org.eventb.core.assignment="pasaron ≔ pasaron ∪ {c}" org.eventb.core.label="ac1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_4CCGx6YsEei9LrMP3-OL0Q" org.eventb.core.comment="siguiente vuelta de canastas" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="seguir2">
+<org.eventb.core.guard name="_4CCGyKYsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,1" org.eventb.core.predicate="er = girando"/>
+<org.eventb.core.guard name="_4CCGyaYsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,2" org.eventb.core.predicate="pasaron = CANASTAS"/>
+<org.eventb.core.guard name="_4CCGyqYsEei9LrMP3-OL0Q" org.eventb.core.label="grd1,3" org.eventb.core.predicate="∀d· d ∈ pasaron ⇒ giros(d) &lt; maxg"/>
+<org.eventb.core.action name="_4CCGy6YsEei9LrMP3-OL0Q" org.eventb.core.assignment="pasaron ≔ ∅" org.eventb.core.label="ac1,2"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

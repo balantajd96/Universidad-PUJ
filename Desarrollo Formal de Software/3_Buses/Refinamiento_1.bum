@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1534440870259" org.eventb.texttools.text_representation="machine Refinamiento_1 refines Abstracto  sees Contexto_1&#10;&#10;variables parq recorrido&#10;&#10;invariants&#10;  @inv1.1 recorrido ∈  BUSES ↔ ESTS&#10;  @inv1.2 ∀b·b∈BUSES⇒recorrido[{b}] ⊆ dom(rutaB(b) ⩥ {0})&#10;  @inv1.3 parq ∩ recorrido =  ∅&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;  @act1.1 recorrido≔∅&#10;  end&#10;&#10;  event llegar extends llegar&#10;  when&#10;  @act1.1 (b↦e) ∉ recorrido&#10;  end&#10;&#10;  event salir extends salir&#10;  then&#10;  @act1.1 recorrido ≔ recorrido ∪ {b↦parq(b)}&#10;  end&#10;&#10;  event terminar&#10;  any&#10;  b&#10;  where&#10;  @grd1.1 b ∈ dom(recorrido)∖ dom(parq)&#10;  @grd1.2 recorrido[{b}] = dom(rutaB(b) ⩥ {0})&#10;  then&#10;  @act1.1 recorrido≔ {b} ⩤ recorrido&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Abstracto"/>
+<org.eventb.core.seesContext name="_YmcowJ_NEeibN8yuBAXqgA" org.eventb.core.target="Contexto_1"/>
+<org.eventb.core.variable name="_hcpNYJ_NEeibN8yuBAXqgA" org.eventb.core.identifier="parq"/>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgB" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_CLhKcJ_mEeibN8yuBAXqgA" org.eventb.core.assignment="recorrido≔∅" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgC" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="llegar">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="llegar"/>
+<org.eventb.core.guard name="_cR75sJ_mEeibN8yuBAXqgA" org.eventb.core.label="act1,1" org.eventb.core.predicate="(b↦e) ∉ recorrido"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_hcpNYJ_NEeibN8yuBAXqgD" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="salir">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="salir"/>
+<org.eventb.core.action name="_y53v4J_mEeibN8yuBAXqgA" org.eventb.core.assignment="recorrido ≔ recorrido ∪ {b↦parq(b)}" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_M__9gJ_iEeibN8yuBAXqgA" org.eventb.core.identifier="recorrido"/>
+<org.eventb.core.invariant name="_NAAkkJ_iEeibN8yuBAXqgA" org.eventb.core.label="inv1,1" org.eventb.core.predicate="recorrido ∈  BUSES ↔ ESTS"/>
+<org.eventb.core.invariant name="_bkLYoJ_iEeibN8yuBAXqgA" org.eventb.core.label="inv1,2" org.eventb.core.predicate="∀b·b∈BUSES⇒recorrido[{b}] ⊆ dom(rutaB(b) ⩥ {0})"/>
+<org.eventb.core.invariant name="__0p2MJ_kEeibN8yuBAXqgA" org.eventb.core.label="inv1,3" org.eventb.core.predicate="parq ∩ recorrido =  ∅"/>
+<org.eventb.core.event name="_jXl4UJ_nEeibN8yuBAXqgA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="terminar">
+<org.eventb.core.parameter name="_jXmfYJ_nEeibN8yuBAXqgA" org.eventb.core.identifier="b"/>
+<org.eventb.core.guard name="_jXmfYZ_nEeibN8yuBAXqgA" org.eventb.core.label="grd1,1" org.eventb.core.predicate="b ∈ dom(recorrido)∖ dom(parq)"/>
+<org.eventb.core.guard name="_jXnGcJ_nEeibN8yuBAXqgA" org.eventb.core.label="grd1,2" org.eventb.core.predicate="recorrido[{b}] = dom(rutaB(b) ⩥ {0})"/>
+<org.eventb.core.action name="_jXntgJ_nEeibN8yuBAXqgA" org.eventb.core.assignment="recorrido≔ {b} ⩤ recorrido" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1534436636296" org.eventb.texttools.text_representation="context Contexto_2 extends Contexto_1&#10;sets&#10;DIR&#10;constants&#10;ida&#10;regreso&#10;axioms&#10;@ax2.1 partition(DIR,{ida},{regreso})&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="Contexto_1"/>
+<org.eventb.core.carrierSet name="_NZho8KFwEeinFt5Dz70U-w" org.eventb.core.identifier="DIR"/>
+<org.eventb.core.constant name="_NZho8aFwEeinFt5Dz70U-w" org.eventb.core.identifier="ida"/>
+<org.eventb.core.constant name="_NZiQAKFwEeinFt5Dz70U-w" org.eventb.core.identifier="regreso"/>
+<org.eventb.core.axiom name="_NZiQAaFwEeinFt5Dz70U-w" org.eventb.core.label="ax2,1" org.eventb.core.predicate="partition(DIR,{ida},{regreso})"/>
+</org.eventb.core.contextFile>

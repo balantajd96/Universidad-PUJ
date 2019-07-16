@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poIdentifier name="m" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="matrix" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×ℤ))"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="matriy" org.eventb.core.predicate="n∈ℕ1" org.eventb.core.source="/matrizCeros/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_7TMng7tfEeiOt4GoMJCrVw"/>
+<org.eventb.core.poPredicate name="matriz" org.eventb.core.predicate="m∈ℕ1" org.eventb.core.source="/matrizCeros/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_7TMnhLtfEeiOt4GoMJCrVw"/>
+<org.eventb.core.poPredicate name="matri{" org.eventb.core.predicate="matrix∈1 ‥ n → (1 ‥ m → ℕ)" org.eventb.core.source="/matrizCeros/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#_7TMnhbtfEeiOt4GoMJCrVw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poIdentifier name="result" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#EVTALLHYPresulu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="BOOL≠(∅ ⦂ ℙ(BOOL))" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.event#'|org.eventb.core.action#_f4OqsbtgEeiOt4GoMJCrVw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.event#'|org.eventb.core.action#_f4OqsbtgEeiOt4GoMJCrVw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#EVTALLHYPresulu"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTresulu" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poIdentifier name="result'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPresulu" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#EVTIDENTresulu" org.eventb.core.poStamp="5"/>
+<org.eventb.core.poSequent name="fin/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#ALLHYP"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀i⦂ℤ,j⦂ℤ·i∈1 ‥ n∧j∈1 ‥ m⇒(result=TRUE⇔j=m)∨(i=n⇒i∈dom(matrix)∧matrix∈ℤ ⇸ ℙ(ℤ × ℤ)∧j∈dom(matrix(i))∧matrix(i)∈ℤ ⇸ ℤ)" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.event#_f4UxULtgEeiOt4GoMJCrVw|org.eventb.core.guard#_f4VYYLtgEeiOt4GoMJCrVw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.event#_f4UxULtgEeiOt4GoMJCrVw|org.eventb.core.guard#_f4VYYLtgEeiOt4GoMJCrVw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#ALLHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTALLHYPresulv" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∀i⦂ℤ,j⦂ℤ·i∈1 ‥ n∧j∈1 ‥ m⇒(result=TRUE⇔j=m)∨(i=n∧matrix(i)(j)≠0)" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.event#_f4UxULtgEeiOt4GoMJCrVw|org.eventb.core.guard#_f4VYYLtgEeiOt4GoMJCrVw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="siga/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#EVTALLHYPresulw"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="BOOL≠(∅ ⦂ ℙ(BOOL))" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.event#_f4V_cbtgEeiOt4GoMJCrVw|org.eventb.core.action#_3HZmYLtoEeiOt4GoMJCrVw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.event#_f4V_cbtgEeiOt4GoMJCrVw|org.eventb.core.action#_3HZmYLtoEeiOt4GoMJCrVw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#EVTALLHYPresulw"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTresulw" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poIdentifier name="result'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPresulw" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#EVTIDENTresulw" org.eventb.core.poStamp="5"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/matrizCeros/Especificacion.bpo|org.eventb.core.poFile#Especificacion|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="result∈BOOL" org.eventb.core.source="/matrizCeros/Especificacion.bum|org.eventb.core.machineFile#Especificacion|org.eventb.core.invariant#_f4Oqs7tgEeiOt4GoMJCrVw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

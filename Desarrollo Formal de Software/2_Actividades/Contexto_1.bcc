@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="ax1" org.eventb.core.predicate="actCuarto∈ACTIVIDADES → CUARTOS" org.eventb.core.source="/2_Actividades/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_erJyoZ_MEeibN8yuBAXqgA" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="ACTIVIDADES" org.eventb.core.source="/2_Actividades/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_erJLkJ_MEeibN8yuBAXqgA" org.eventb.core.type="ℙ(ACTIVIDADES)"/>
+<org.eventb.core.scCarrierSet name="CUARTOS" org.eventb.core.source="/2_Actividades/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_erJLkZ_MEeibN8yuBAXqgA" org.eventb.core.type="ℙ(CUARTOS)"/>
+<org.eventb.core.scCarrierSet name="USUARIOS" org.eventb.core.source="/2_Actividades/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.carrierSet#_erIkgJ_MEeibN8yuBAXqgA" org.eventb.core.type="ℙ(USUARIOS)"/>
+<org.eventb.core.scConstant name="actCuarto" org.eventb.core.source="/2_Actividades/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.constant#_erJyoJ_MEeibN8yuBAXqgA" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+</org.eventb.core.scContextFile>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1534955136909" org.eventb.texttools.text_representation="context ctx&#10;sets PERSONAS CANASTAS ESTADO&#10;&#10;constants k // m'aximo cupo&#10;          cc // cupo m'aximo de cada canasta&#10;          detenida girando&#10;&#10;axioms&#10;  @axm7 partition(ESTADO, {detenida},{girando})&#10;  @axm1 finite(CANASTAS)&#10;  @axm2 k ∈ ℕ1&#10;  @axm5 cc ∈ CANASTAS → 1‥k&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_adQyAF5EEeaDq93gTU33Nw" org.eventb.core.identifier="PERSONAS"/>
+<org.eventb.core.carrierSet name="_adQyAV5EEeaDq93gTU33Nw" org.eventb.core.identifier="CANASTAS"/>
+<org.eventb.core.carrierSet name="_adRZEF5EEeaDq93gTU33Nw" org.eventb.core.identifier="ESTADO"/>
+<org.eventb.core.constant name="_adRZEV5EEeaDq93gTU33Nw" org.eventb.core.comment="m'aximo cupo" org.eventb.core.identifier="k"/>
+<org.eventb.core.constant name="_adRZEl5EEeaDq93gTU33Nw" org.eventb.core.comment="cupo m'aximo de cada canasta" org.eventb.core.identifier="cc"/>
+<org.eventb.core.constant name="_adRZE15EEeaDq93gTU33Nw" org.eventb.core.identifier="detenida"/>
+<org.eventb.core.constant name="_adRZFF5EEeaDq93gTU33Nw" org.eventb.core.identifier="girando"/>
+<org.eventb.core.axiom name="_adRZFV5EEeaDq93gTU33Nw" org.eventb.core.label="axm7" org.eventb.core.predicate="partition(ESTADO, {detenida},{girando})"/>
+<org.eventb.core.axiom name="_adSAIF5EEeaDq93gTU33Nw" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(CANASTAS)"/>
+<org.eventb.core.axiom name="_adSAIV5EEeaDq93gTU33Nw" org.eventb.core.label="axm2" org.eventb.core.predicate="k ∈ ℕ1"/>
+<org.eventb.core.axiom name="_adSAIl5EEeaDq93gTU33Nw" org.eventb.core.label="axm5" org.eventb.core.predicate="cc ∈ CANASTAS → 1‥k"/>
+</org.eventb.core.contextFile>

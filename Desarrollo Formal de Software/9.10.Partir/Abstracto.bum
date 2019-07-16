@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;org.eventb.codegen.ui.cgConfig" org.eventb.texttools.text_lastmodified="1536686021255" org.eventb.texttools.text_representation="machine Abstracto sees Contexto&#10;&#10;variables A&#10;&#10;invariants&#10;  @inv A ∈   1‥n  → ℕ&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 A :∈  1‥n  → ℕ&#10;  end&#10;&#10;  event fin&#10;    where&#10;      @grd1 A ∈ 1‥n  ↣  ℕ&#10;      @grd2 ran(A)=ran(S)&#10;      @grd3 ∃k · k ∈ 1‥n+1 ∧ (∀i· i ∈ 1‥k−1 ⇒ A(i) ≤ x) ∧  (∀j·j ∈k‥n ⇒ A(j)&gt; x)&#10;  end&#10;&#10;  anticipated event siga&#10;    then&#10;      @act1 A :∈  1‥n  → ℕ&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_8eMWMLH3Eeimr84T2lvYhw" org.eventb.core.target="Contexto"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_gU-zULH4Eeimr84T2lvYhw" org.eventb.core.assignment="A :∈  1‥n  → ℕ" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_gU-zUbH4Eeimr84T2lvYhw" org.eventb.core.identifier="A"/>
+<org.eventb.core.invariant name="_gU-zUrH4Eeimr84T2lvYhw" org.eventb.core.label="inv" org.eventb.core.predicate="A ∈   1‥n  → ℕ"/>
+<org.eventb.core.event name="_rdEiELH4Eeimr84T2lvYhw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="fin">
+<org.eventb.core.guard name="_rdFJILH4Eeimr84T2lvYhw" org.eventb.core.label="grd1" org.eventb.core.predicate="A ∈ 1‥n  ↣  ℕ"/>
+<org.eventb.core.guard name="_LWFN0LXlEeiKSMKmkUGGZg" org.eventb.core.label="grd2" org.eventb.core.predicate="ran(A)=ran(S)"/>
+<org.eventb.core.guard name="_B8vqcLXmEeiKSMKmkUGGZg" org.eventb.core.label="grd3" org.eventb.core.predicate="∃k · k ∈ 1‥n+1 ∧ (∀i· i ∈ 1‥k−1 ⇒ A(i) ≤ x) ∧  (∀j·j ∈k‥n ⇒ A(j)&gt; x)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_rdFJIbH4Eeimr84T2lvYhw" org.eventb.core.convergence="2" org.eventb.core.extended="false" org.eventb.core.label="siga">
+<org.eventb.core.action name="_rdFwMLH4Eeimr84T2lvYhw" org.eventb.core.assignment="A :∈  1‥n  → ℕ" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

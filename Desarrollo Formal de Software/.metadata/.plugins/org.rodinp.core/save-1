@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<index_root>
+<pim project="/Hotel">
+<rodin_index>
+<descriptor element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoh" name="INITIALISATION">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoh" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnoZEdEeiHgvWeDgRnog" name="clientes">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnoZEdEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.variable#_nhFnoZEdEeiHgvWeDgRnog" name="clientes">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_nhFno5EdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.action#_UTNwUJUJEeiHReaeoTTO_Q" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.action#_5sUFIJEhEeiHgvWeDgRnog" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.action#_5sUFIJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="20" loc_char_start="12"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.action#_UTNwUJUJEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="20" loc_char_start="12"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_ExVuRJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="23" loc_char_start="15"/>
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnoZEdEeiHgvWeDgRnog" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.variable#_nhFnoZEdEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_nhFnpJEdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="11"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#'|org.eventb.core.action#_ExL9QJEhEeiHgvWeDgRnog" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XsZEdEeiHgvWeDgRnog" name="nc">
+<occurrence element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XsZEdEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_nhFnpJEdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="26" loc_char_start="24"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_ExVuRZEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="6"/>
+<occurrence element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_FF4Xs5EdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.guard#_8IZyI5UIEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="6"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_erl7sZEfEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="9" loc_char_start="7"/>
+</descriptor>
+<descriptor element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XspEdEeiHgvWeDgRnog" name="cp">
+<occurrence element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XspEdEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#__iDwgJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="10"/>
+<occurrence element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_FF4XtJEdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_erl7sZEfEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="38" loc_char_start="36"/>
+</descriptor>
+<descriptor element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1" name="ref1">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_KLlp8JUSEei2VcSKuY5ucQ" name="registrarse">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_KLlp8JUSEei2VcSKuY5ucQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto" name="abstracto">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.refinesMachine#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.variable#_nhFnopEdEeiHgvWeDgRnog" name="reservas">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_erl7sJEfEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="15" loc_char_start="7"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_zTHR8JEiEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="16" loc_char_start="8"/>
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnopEdEeiHgvWeDgRnog" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_SqvHAJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.action#_5sUFIZEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="19" loc_char_start="11"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.action#_UTNwUZUJEeiHReaeoTTO_Q" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.action#_UTNwUZUJEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="19" loc_char_start="11"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.action#_5sUFIZEhEeiHgvWeDgRnog" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.guard#_8IZyJJUIEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.variable#_nhFnopEdEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_erl7sZEfEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="26" loc_char_start="18"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_nhFnpJEdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.action#_UTNwUJUJEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="31" loc_char_start="23"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#'|org.eventb.core.action#_ExVuQJEhEeiHgvWeDgRnog" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog" name="reservar">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoi|org.eventb.core.refinesEvent#'" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.parameter#_ExVuQpEhEeiHgvWeDgRnog" name="x">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.parameter#_ExVuQpEhEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#__iDwgJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="5"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_zTHR8JEiEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_ExVuRJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.action#_5sUFIJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="24" loc_char_start="23"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_MA9rwJEjEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="7"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_QepC4JEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.action#_5sUFIZEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="24" loc_char_start="23"/>
+</descriptor>
+<descriptor element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoi" name="reservar">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoi" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoh" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q" name="cancelar">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoj|org.eventb.core.refinesEvent#'" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnopEdEeiHgvWeDgRnog" name="reservas">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnopEdEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.parameter#_ExVuQ5EhEeiHgvWeDgRnog" name="c">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_ExVuRZEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.action#_5sUFIZEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="29" loc_char_start="28"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.parameter#_ExVuQ5EhEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_SqvHAJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="11"/>
+</descriptor>
+<descriptor element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.carrierSet#_FF4XsJEdEeiHgvWeDgRnog" name="PERSONAS">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.guard#_ExVuRJEhEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="4"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.invariant#_nhFno5EdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="12"/>
+<occurrence element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.carrierSet#_FF4XsJEdEeiHgvWeDgRnog" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoj" name="irse">
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoj" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1" name="ctx1">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.seesContext#_nhFnoJEdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.seesContext#_nhFnoJEdEeiHgvWeDgRnog" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.parameter#_8IZyIZUIEeiHReaeoTTO_Q" name="c">
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.guard#_8IZyJJUIEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="11"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.action#_UTNwUJUJEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="35" loc_char_start="34"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.parameter#_8IZyIZUIEeiHReaeoTTO_Q" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.action#_UTNwUZUJEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="24" loc_char_start="23"/>
+<occurrence element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.guard#_8IZyI5UIEeiHReaeoTTO_Q" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+</rodin_index>
+<export_table>
+<export file="/Hotel/ctx1.buc">
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XspEdEeiHgvWeDgRnog" name="cp"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.carrierSet#_FF4XsJEdEeiHgvWeDgRnog" name="PERSONAS"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XsZEdEeiHgvWeDgRnog" name="nc"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1" name="ctx1"/>
+</export>
+<export file="/Hotel/ref1.bum">
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XspEdEeiHgvWeDgRnog" name="cp"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto" name="abstracto"/>
+<exported element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnoZEdEeiHgvWeDgRnog" name="clientes"/>
+<exported element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoh" name="INITIALISATION"/>
+<exported element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1" name="ref1"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.carrierSet#_FF4XsJEdEeiHgvWeDgRnog" name="PERSONAS"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XsZEdEeiHgvWeDgRnog" name="nc"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1" name="ctx1"/>
+<exported element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoj" name="irse"/>
+<exported element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_nhFnopEdEeiHgvWeDgRnoi" name="reservar"/>
+<exported element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.variable#_nhFnopEdEeiHgvWeDgRnog" name="reservas"/>
+<exported element="/Hotel/ref1.bum|org.eventb.core.machineFile#ref1|org.eventb.core.event#_KLlp8JUSEei2VcSKuY5ucQ" name="registrarse"/>
+</export>
+<export file="/Hotel/abstracto.bum">
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q" name="cancelar"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_8IZyIJUIEeiHReaeoTTO_Q|org.eventb.core.parameter#_8IZyIZUIEeiHReaeoTTO_Q" name="c"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto" name="abstracto"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.carrierSet#_FF4XsJEdEeiHgvWeDgRnog" name="PERSONAS"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.variable#_nhFnoZEdEeiHgvWeDgRnog" name="clientes"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.parameter#_ExVuQpEhEeiHgvWeDgRnog" name="x"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XspEdEeiHgvWeDgRnog" name="cp"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.variable#_nhFnopEdEeiHgvWeDgRnog" name="reservas"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog" name="reservar"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.constant#_FF4XsZEdEeiHgvWeDgRnog" name="nc"/>
+<exported element="/Hotel/abstracto.bum|org.eventb.core.machineFile#abstracto|org.eventb.core.event#_ExVuQZEhEeiHgvWeDgRnog|org.eventb.core.parameter#_ExVuQ5EhEeiHgvWeDgRnog" name="c"/>
+<exported element="/Hotel/ctx1.buc|org.eventb.core.contextFile#ctx1" name="ctx1"/>
+</export>
+</export_table>
+<graph is_sorted="true">
+<node label="/Hotel/ctx1.buc" mark="false" order_pos="0"/>
+<node label="/Hotel/abstracto.bum" mark="false" order_pos="1">
+<predecessor label="/Hotel/ctx1.buc"/>
+</node>
+<node label="/Hotel/ref1.bum" mark="false" order_pos="2">
+<predecessor label="/Hotel/ctx1.buc"/>
+<predecessor label="/Hotel/abstracto.bum"/>
+</node>
+</graph>
+<unprocessed file="/Hotel/abstracto.bcm"/>
+<unprocessed file="/Hotel/abstracto.bpo"/>
+<unprocessed file="/Hotel/abstracto.bpr"/>
+<unprocessed file="/Hotel/abstracto.bps"/>
+<unprocessed file="/Hotel/ctx1.bcc"/>
+<unprocessed file="/Hotel/ctx1.bpo"/>
+<unprocessed file="/Hotel/ctx1.bpr"/>
+<unprocessed file="/Hotel/ctx1.bps"/>
+<unprocessed file="/Hotel/ref1.bcm"/>
+<unprocessed file="/Hotel/ref1.bpo"/>
+<unprocessed file="/Hotel/ref1.bpr"/>
+<unprocessed file="/Hotel/ref1.bps"/>
+</pim>
+<delta_list/>
+<indexer_registry>
+<registry_entry element_type="org.eventb.core.machineFile">
+<indexer id="machineIndexer"/>
+</registry_entry>
+<registry_entry element_type="org.eventb.core.contextFile">
+<indexer id="contextIndexer"/>
+</registry_entry>
+</indexer_registry>
+</index_root>

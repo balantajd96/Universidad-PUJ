@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ARCH" org.eventb.core.type="ℙ(ARCH)"/>
+<org.eventb.core.poIdentifier name="PERM" org.eventb.core.type="ℙ(PERM)"/>
+<org.eventb.core.poIdentifier name="USRS" org.eventb.core.type="ℙ(USRS)"/>
+<org.eventb.core.poIdentifier name="borr" org.eventb.core.type="PERM"/>
+<org.eventb.core.poIdentifier name="ejec" org.eventb.core.type="PERM"/>
+<org.eventb.core.poIdentifier name="esct" org.eventb.core.type="PERM"/>
+<org.eventb.core.poIdentifier name="lect" org.eventb.core.type="PERM"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/6_Archivos/Contexto_1.bpo|org.eventb.core.poFile#Contexto_1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(PERM,{lect},{esct},{ejec},{borr})" org.eventb.core.source="/6_Archivos/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_39FHQKxsEeiUDoNOpRQlQA"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

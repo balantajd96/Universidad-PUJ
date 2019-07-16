@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ACTIVIDADES" org.eventb.core.type="ℙ(ACTIVIDADES)"/>
+<org.eventb.core.poIdentifier name="CUARTOS" org.eventb.core.type="ℙ(CUARTOS)"/>
+<org.eventb.core.poIdentifier name="USUARIOS" org.eventb.core.type="ℙ(USUARIOS)"/>
+<org.eventb.core.poIdentifier name="actCuarto" org.eventb.core.type="ℙ(ACTIVIDADES×CUARTOS)"/>
+<org.eventb.core.poPredicate name="ACTIVIDADET" org.eventb.core.predicate="actCuarto∈ACTIVIDADES → CUARTOS" org.eventb.core.source="/2_Actividades/Contexto_1.buc|org.eventb.core.contextFile#Contexto_1|org.eventb.core.axiom#_erJyoZ_MEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="autorizacion" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.poIdentifier name="sitio" org.eventb.core.type="ℙ(USUARIOS×CUARTOS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPautorizacioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(USUARIOS×CUARTOS))∈USUARIOS ⇸ CUARTOS" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPautorizacioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀u⦂USUARIOS,c⦂CUARTOS·u ↦ c∈(∅ ⦂ ℙ(USUARIOS×CUARTOS))⇒actCuarto∼[{c}]⊆(∅ ⦂ ℙ(USUARIOS×ACTIVIDADES))[{u}]" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTautorizacioo" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="autorizacion'" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.poIdentifier name="sitio'" org.eventb.core.type="ℙ(USUARIOS×CUARTOS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPautorizacioo" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTautorizacioo" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="autorizar/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPautorizaciop"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀u0⦂USUARIOS,c⦂CUARTOS·u0 ↦ c∈sitio⇒actCuarto∼[{c}]⊆(autorizacion∪{u ↦ a})[{u0}]" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_wix7gJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#autorizar\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTautorizaciop" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="u" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.poIdentifier name="autorizacion'" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.poIdentifier name="a" org.eventb.core.type="ACTIVIDADES"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPautorizaciop" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTautorizaciop" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈USUARIOS" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_wix7gJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_wiyikZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a∈ACTIVIDADES" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_wix7gJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_wiyikp_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="u ↦ a∉autorizacion" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_wix7gJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_wizJoJ_MEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="entrar/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPautorizacioq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="sitio{u ↦ c}∈USUARIOS ⇸ CUARTOS" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_y7W8cJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#entrar\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="entrar/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPautorizacioq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀u0⦂USUARIOS,c0⦂CUARTOS·u0 ↦ c0∈sitio{u ↦ c}⇒actCuarto∼[{c0}]⊆autorizacion[{u0}]" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_y7W8cJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#entrar\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTautorizacioq" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="u" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="CUARTOS"/>
+<org.eventb.core.poIdentifier name="sitio'" org.eventb.core.type="ℙ(USUARIOS×CUARTOS)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPautorizacioq" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTautorizacioq" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈USUARIOS" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_y7W8cJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_y7YKkJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c∈CUARTOS" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_y7W8cJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_y7YKkZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="actCuarto∼[{c}]⊆autorizacion[{u}]" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_y7W8cJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_y7YxoJ_MEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="desautorizar/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTALLHYPautorizacior"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀u0⦂USUARIOS,c⦂CUARTOS·u0 ↦ c∈sitio⇒actCuarto∼[{c}]⊆(autorizacion ∖ {u ↦ a})[{u0}]" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_4OmXsJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poSequent#desautorizar\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTautorizacior" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="u" org.eventb.core.type="USUARIOS"/>
+<org.eventb.core.poIdentifier name="autorizacion'" org.eventb.core.type="ℙ(USUARIOS×ACTIVIDADES)"/>
+<org.eventb.core.poIdentifier name="a" org.eventb.core.type="ACTIVIDADES"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPautorizacior" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#EVTIDENTautorizacior" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈USUARIOS" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_4OmXsJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_4Om-wJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a∈ACTIVIDADES" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_4OmXsJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_4Om-wZ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="u ↦ a∈autorizacion" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_4OmXsJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_4Om-wp_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="a∉actCuarto∼[sitio[{u}]]" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.event#_4OmXsJ_MEeibN8yuBAXqgA|org.eventb.core.guard#_4Onl0J_MEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/2_Actividades/Abstracto.bpo|org.eventb.core.poFile#Abstracto|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="autorizacion∈USUARIOS ↔ ACTIVIDADES" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJpo8p_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="sitio∈USUARIOS ⇸ CUARTOS" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAJ_MEeibN8yuBAXqgA"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀u⦂USUARIOS,c⦂CUARTOS·u ↦ c∈sitio⇒actCuarto∼[{c}]⊆autorizacion[{u}]" org.eventb.core.source="/2_Actividades/Abstracto.bum|org.eventb.core.machineFile#Abstracto|org.eventb.core.invariant#_nJqQAZ_MEeibN8yuBAXqgA"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
