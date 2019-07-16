@@ -1,0 +1,34 @@
+show ip route
+show runing config
+
+router rip
+#version 1 -no soporta subneting
+network  "ip"
+version 2 -si
+no auto-summary
+
+eneable
+
+
+#VLAN
+enable
+interface fastethernet 0/1
+switchport access vlan 10
+
+#VLAN Router
+enable
+configure terminal
+interface fastEthernet 0/0.10
+encapsulation dilQ 10
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+
+clear mac-address-table
+
+#vlan ip
+configure terminal
+interface vlan 1
+ip address 10.0.0.1 255.0.0.0
+no shutdown
+
+ip show vlan brief
