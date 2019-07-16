@@ -1,0 +1,5 @@
+Planes---PLANESJIA*
+Pagos---PAGOSJIA*
+Servicios---SERVICIOSJIA*
+Clientes---CLIENTESJIA*
+Empresas---EMPRESASJIA
